@@ -1,3 +1,6 @@
-node_modules/
-temp/
-.idea/
+node_modules
+release
+vendor
+composer.lock
+phpunit.xml
+.idea

@@ -1,49 +1,31 @@
 {
-  "name": "generator-wp-make",
-  "version": "0.1.0",
-  "description": "Yeoman generator",
-  "license": "MIT",
-  "main": "app/index.js",
-  "repository": "10up/generator-wp-make",
+  "name": "tmi-2015",
+  "title": "TMI-2015",
+  "description": "2015 Redesign for TMI Consulting Inc",
+  "version": "0.0.1",
+  "homepage": "http://team-eight.com",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "author": {
-    "name": "Luke Woodward",
-    "email": "woodward.lucas@gmail.com",
-    "url": "https://github.com/lkwdwrd"
-  },
-  "contributors": [
-    {
-      "name": "Luke Woodward",
-      "email": "woodward.lucas@gmail.com",
-      "url": "https://github.com/lkwdwrd"
-    },
-    {
-      "name": "Eric Mann",
-      "email": "eric@eamann.com",
-      "url": "https://eamann.com"
-    }
-  ],
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "files": [
-    "app"
-  ],
-  "keywords": [
-    "yeoman-generator"
-  ],
-  "dependencies": {
-    "yeoman-generator": "~0.18.9",
-    "chalk": "~0.5.1",
-    "lodash": "~3.3.0"
+    "name": "Andrew Mowe and Spencer Hansen",
+    "email": "communicate@team-eight.com",
+    "url": "http://team-eight.com"
   },
   "devDependencies": {
-    "mocha": "*",
-    "async": "^0.9.0"
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-sass": "^1.0.0",
+    "grunt-autoprefixer": "^2.2.0",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-compress": "^0.13.0",
+    "load-grunt-tasks": "^3.1.0",
+    "susy": "^2.2.3"
   },
-  "peerDependencies": {
-    "yo": ">=1.4.5"
-  }
+  "keywords": []
 }
