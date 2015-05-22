@@ -1,0 +1,3 @@
+[submodule "patternlab"]
+    path = assets/patternlab
+    url = https://github.com/andrewmowe/tmi-patternlab.git
