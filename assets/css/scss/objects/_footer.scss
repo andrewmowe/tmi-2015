@@ -1,0 +1,87 @@
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+.footer {
+	clear: both;
+	overflow: hidden;
+	background: $footer;
+	line-height: 1.2;
+	padding-top: $pad*4;
+	color: $white;
+}
+
+	.footer--logo {
+		@include span(4 of 4);
+
+		@include susy-media($bp-med) {
+			@include span(6 of 12);
+		}
+
+		@include susy-media($bp-large) {
+			@include span(2 of 12);
+		}
+	}
+
+	.footer--contact-info {
+		@include span(4 of 4);
+
+		@include susy-media($bp-med) {
+			@include span(6 of 12);
+		}
+
+		@include susy-media($bp-large) {
+			@include span(3 of 12);
+		}
+	}
+
+	.footer--links {
+		a {
+			color: $white;
+		}
+
+		@include span(4 of 4);
+
+		@include susy-media($bp-med) {
+			@include span(12 of 12);
+		}
+
+		@include susy-media($bp-large) {
+			@include span(7 of 12 last);
+		}
+	}
+
+		.footer--link-list.link-list {
+			li {
+				border-color: $link-secondary;
+
+				&:before {
+					content: '';
+				}
+
+				&:hover {
+					background: $link-secondary;
+				}
+
+				.link-list--corner {
+					background: $link-secondary-alt;
+				}
+			}
+
+			a {
+				font-family: $font-secondary;
+				text-transform: uppercase;
+			}
+
+			@include susy-media($bp-large) {
+				columns: 2;
+			}
+		}
+
+	.sub-footer {
+		background: $footer-secondary;
+		margin-top: $space*2;
+		padding: $pad*2 0;
+	}
+
+		.copyright {
+		}

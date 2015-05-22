@@ -1,0 +1,68 @@
+.family--thumb {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: gutter();
+
+	@include gallery(4 of 4);
+
+	@include susy-media($bp-med) {
+		@include gallery(4 of 12);
+	}
+
+	@include susy-media($bp-large) {
+		@include gallery(3 of 12);
+	}
+
+	img {
+		width: 100%;
+		float: left;
+	}
+}
+
+	.family--card {
+		position: absolute;
+		background: $link-color;
+		width: 100%;
+		height: 300px;
+		transform: skewY(-16deg);
+		bottom: -350px;
+		left: 0;
+		opacity: 0.95;
+		@include transition( bottom, 0.2s, ease-out);
+
+		.family--thumb:hover & {
+			bottom: -125px;
+		}
+	}
+
+	.family--meta {
+		position: absolute;
+		color: $white;
+		bottom: 65px;
+		text-align: right;
+		width: 100%;
+		opacity: 0;
+		@include transition( opacity, 0s, ease-out);
+		transition-delay: 0s;
+
+		.family--thumb:hover & {
+			opacity: 1;
+			@include transition( opacity, 0.25s, ease-in-out);
+			transition-delay: 0.2s;
+		}
+	}
+
+		.family--name, .family--desc {
+			padding: 0 25px;
+		}
+
+		.family--name {
+			display: block;
+			font-family: $font-secondary;
+			font-size: 1.4em;
+			border-bottom: 1px solid $link-secondary-alt;
+		}
+
+		.family--desc {
+			font-style: italic;
+		}

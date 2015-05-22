@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+
+.nav {
+	clear: both;
+	overflow: hidden;
+	max-height: 0;
+	margin-top: $space;
+	margin-right: $space*2;
+
+	a {
+		display: block;
+		padding: $pad/4 $pad/2;
+		font-family: $font-secondary;
+		font-size: 1.5em;
+		margin-right: 10px;
+
+		&.active, &:hover, &:focus {
+			border-bottom: 1px solid $text-color;
+			color: $text-color;
+		}
+	}
+
+	@media all and (min-width: $bp-med) {
+		max-height: none;
+		float: right;
+		clear: none;
+
+		li {
+			float: left;
+		}
+
+		a {
+			border: 0;
+		}
+		
+	}
+}
+
+//Pagination
+.pagination {
+	overflow: hidden;
+
+	li {
+		float: left;
+		border-right: 1px solid $gray-light-2;
+
+		&:last-child {
+			border: 0;
+		}
+	}
+
+	a {
+		padding: $pad;
+	}
+}

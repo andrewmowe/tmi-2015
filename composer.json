@@ -1,0 +1,27 @@
+{
+	"name": "tmi-2015",
+	"description": "2015 Redesign for TMI Consulting Inc",
+	"version": "0.0.1",
+	"type": "wordpress-theme",
+	"keywords": [],
+	"homepage": "http://team-eight.com",
+	"license": "GPLv2.0+",
+	"authors": [
+		{
+			"name": "Andrew Mowe and Spencer Hansen",
+			"email": "communicate@team-eight.com",
+		"homepage": "http://team-eight.com",
+			"role": "Developer"
+		}
+	],
+    "minimum-stability": "dev",
+	"require": {
+		"php": ">=5.4"
+	},
+    "require-dev": {
+	    "antecedent/patchwork": "1.2.*",
+        "phpunit/phpunit"     : "*@stable",
+	    "brianium/paratest"   : "dev-master",
+        "10up/wp_mock"        : "dev-master"
+    }
+}

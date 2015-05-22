@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    $MAIN CONTENT AREA
+\*------------------------------------*/
+body {
+	background: $main-bg;
+	color: $text-color;
+}
+
+[role=main] {
+	padding: $pad-half $pad-half $pad-double;
+	overflow: hidden;
+	@extend .lc;
+	@extend .cf;
+}

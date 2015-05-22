@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    $MEDIA ELEMENTS
+\*------------------------------------*/
+
+/* Flexible Media */
+img, video, object {
+	max-width: 100%;
+	height: auto;
+}
+
+iframe {
+	margin-bottom: $space;
+}
+
+figure {
+	margin-bottom: $space;
+	img {
+		margin-bottom: $space-half;
+	}
+}
+figcaption {
+	font-style: italic;
+}
+
+.sliced-img {
+	display: inline-block;
+	position: relative;
+
+	&:after {
+		position: absolute;
+		content: '';
+		width: 200px;
+		background: $main-bg;
+		right: -22.5%;
+		top: 0;
+		bottom: 0;
+		display: block;
+		transform: skew(-16deg);
+	}
+
+}

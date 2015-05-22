@@ -1,0 +1,99 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+.btn {
+	display: block;
+	height: 56px;
+	background: $btn-primary;
+	color: $white;
+	line-height: 1;
+	padding: $pad $pad * 4;
+	border: 0;
+	text-align: center;
+	transform: skew(-16deg);
+	margin: 1em;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+
+	.corner {
+		width: 100px;
+		height: 100%;
+		background: $btn-primary-corner;
+		position: absolute;
+		top:0;
+		right: -103px;
+		transform: skew(52deg);
+		transition: background 0.2s ease-out, right 0.2s ease-out;
+	}
+
+	&:hover, &:focus {
+		.corner {
+		  right: -64px;
+		  background: $btn-primary-corner-hover;
+		}
+	}
+
+	> span {
+		display: block;
+		color: $white;
+		text-transform: uppercase;
+		transform: skew(15deg);
+		font-family: $font-secondary;
+		letter-spacing: 0.210em;
+		font-weight: bold;
+		@include font-size(1);
+	}
+	
+	&.disabled {
+		background: $gray-light-2;
+		color: $gray;
+	}
+
+	&.alt {
+		background: $btn-secondary;
+
+		.corner {
+			background: $btn-secondary-corner;
+		}
+
+		&:hover {
+			.corner {
+				background: $btn-primary-corner-hover;
+			}
+		}
+	}
+}
+
+.footer--btn {
+	font-family: $font-secondary;
+	text-transform: uppercase;
+	background: $link-secondary-alt;
+	border-radius: 5px;
+	font-size: 1.6em;
+	color: $white;
+	font-weight: bold;
+	letter-spacing: 0.21em;
+
+	&:hover {
+		background: $link-secondary;
+	}
+}
+
+.btn-small {
+	padding: $pad-half;
+}
+
+.btn-large {
+	padding: $pad-half;
+	text-transform: uppercase;
+	background: $gray;
+	font-size: 1.4rem;
+	font-weight: normal;
+}
+
+
+.text-btn {
+	font-style: italic;
+}

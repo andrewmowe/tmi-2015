@@ -1,0 +1,95 @@
+.hero {
+	width: 100%;
+
+	@include susy-media($bp-large) {
+		max-height: 432px;
+		@include aspect-ratio(16, 5);
+	}
+
+	.container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: $hero;
+		padding: $pad*2;
+
+		@include susy-media($bp-large) {
+			background: transparent;
+			padding: 75px $pad*2 0;
+		}
+	}
+}
+
+	.hero--img {
+		width: 100%;
+		background-size: cover;
+
+		@include susy-media($bp-large) {
+			width: 69%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	}
+
+	.hero--card {
+		background: $hero;
+		width: 100%;
+
+		@include susy-media($bp-large) {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: -50%;
+			transform: skew(45deg);
+		}
+	}
+
+	.hero--overlay {
+		background-color: $hero-trans;
+	
+		@include susy-media($bp-large) {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+
+	.hero--img-text {
+		@include span(4 of 4);
+		margin-bottom: $space*2;
+
+		@include susy-media($bp-large) {
+			@include span(6 of 12);
+			margin-bottom: 0;
+		}
+
+		span {
+			color: $white;
+		}
+	}
+
+	.hero--cta {
+		p {
+			color: $white;
+			font-family: $font-secondary;
+			@include font-size(1.4);
+		}
+
+		@include span(4 of 4);
+
+		@include susy-media($bp-large) {
+			@include span(5 of 12 last);
+			text-align: right;
+
+			button {
+				float: right;
+			}
+		}
+	}

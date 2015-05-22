@@ -1,0 +1,83 @@
+ol, ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Definition Lists */
+dl {
+	overflow: hidden;
+	margin: 0 0 $space;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 0;
+}
+
+.link-list {
+	columns: 1;
+	break-inside: avoid;
+
+	li {
+		position: relative;
+		@include transition( background, 0.3s, ease-in-out );
+		overflow: hidden;
+		border-bottom: 1px solid $link-color;
+
+		&:first-child {
+			border-top: 1px solid $link-color;
+		}
+
+		a {
+			padding: 10px 5px 10px 1em;
+			width: 100%;
+			display: block;
+			@include transition( color, 0.3s, ease-in-out );
+
+			&:hover {
+				color: $text-color;
+			}
+		}
+
+		&:before {
+			content: '\2022';
+			color: $link-color;
+			position: absolute;
+		}
+
+		&:hover {
+			background: $btn-secondary;
+
+			&:before {
+				color: $btn-secondary;
+			}
+		}
+	}
+
+	@include susy-media($bp-med) {
+		columns: 2;
+	}
+
+	@include susy-media($bp-large) {
+		columns: 3;
+	}
+}
+
+.link-list--corner {
+	position: absolute;
+	width: 50px;
+	height: 56px;
+	background: $mustard;
+	top: 0;
+	right: -56px;
+	transform: skew(-16deg);
+	@include transition( right, 0.1s, ease-out);
+
+	.link-list li:hover & {
+		right: -24px;
+	}
+}

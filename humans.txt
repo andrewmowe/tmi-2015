@@ -1,0 +1,21 @@
+/* TEAM */
+	Developer: Andrew Mowe and Spencer Hansen
+	Contact:   communicate@team-eight.com
+	URI:       http://team-eight.com
+
+/* THANKS */
+	Template Design: 10up
+	URI:             http://10up.com
+	Twitter:         @10up
+	
+	Template Design: Eric Mann
+	URI:             https://eamann.com
+	Twitter:         @ericmann
+
+	Template Design: Luke Woodward
+	URI:             http://lkwdwrd.com
+	Twitter:         @lkwdwrd
+	
+/* SITE */
+	Created:  Wed May 13 2015
+	Template: https://github.com/10up/generator-wp-make
