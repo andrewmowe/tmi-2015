@@ -57,7 +57,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 
 $susy: (
     columns: 12,
-    gutters: 1/4,
+    gutters: 1/2,
     container: 1120px,
     global-box-sizing: border-box
     );
@@ -128,5 +128,10 @@ $susy: (
 @import "scss/objects/messaging";
 @import "scss/objects/family";
 @import "scss/objects/hero";
+@import "scss/objects/cards";
 
+/*------------------------------------*\
+    $TEMPLATES
+\*------------------------------------*/
+@import "scss/templates/approach";
 

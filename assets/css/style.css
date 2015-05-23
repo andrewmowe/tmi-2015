@@ -184,18 +184,22 @@ a {
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1, .h1 {
   line-height: 1.2;
-  font-size: 6em; }
+  font-size: 96px;
+  font-size: 6rem; }
 
 h2, .h2 {
   line-height: 1.2;
-  font-size: 3em; }
+  font-size: 48px;
+  font-size: 3rem; }
 
 h3, .h3 {
   line-height: 1.2;
-  font-size: 2.3em; }
+  font-size: 36.8px;
+  font-size: 2.3rem; }
 
 h4, .h4 {
-  font-size: 1.5em;
+  font-size: 19.2px;
+  font-size: 1.2rem;
   text-transform: uppercase; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
@@ -321,7 +325,8 @@ figcaption {
 
 .sliced-img {
   display: inline-block;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .sliced-img:after {
     position: absolute;
     content: '';
@@ -462,7 +467,7 @@ td {
 /*------------------------------------*    $LAYOUT
 \*------------------------------------*/
 /* Layout Container */
-.lc, [role=main] {
+.lc {
   max-width: 72em;
   margin: 0 auto;
   padding: 0.5em; }
@@ -726,7 +731,7 @@ body {
   color: #2e2a26; }
 
 [role=main] {
-  padding: 0.5em 0.5em 2em;
+  padding: 4em 0;
   overflow: hidden; }
 
 /*------------------------------------*    $FOOTER
@@ -746,14 +751,14 @@ body {
   margin-right: 0; }
   @media (min-width: 46.8em) {
     .footer--logo {
-      width: 49.1525423729%;
+      width: 48.5714285714%;
       float: left;
-      margin-right: 1.6949152542%; } }
+      margin-right: 2.8571428571%; } }
   @media (min-width: 60em) {
     .footer--logo {
-      width: 15.2542372881%;
+      width: 14.2857142857%;
       float: left;
-      margin-right: 1.6949152542%; } }
+      margin-right: 2.8571428571%; } }
 
 .footer--contact-info {
   width: 100%;
@@ -762,14 +767,14 @@ body {
   margin-right: 0; }
   @media (min-width: 46.8em) {
     .footer--contact-info {
-      width: 49.1525423729%;
+      width: 48.5714285714%;
       float: left;
-      margin-right: 1.6949152542%; } }
+      margin-right: 2.8571428571%; } }
   @media (min-width: 60em) {
     .footer--contact-info {
-      width: 23.7288135593%;
+      width: 22.8571428571%;
       float: left;
-      margin-right: 1.6949152542%; } }
+      margin-right: 2.8571428571%; } }
 
 .footer--links {
   width: 100%;
@@ -786,7 +791,7 @@ body {
       margin-right: 0; } }
   @media (min-width: 60em) {
     .footer--links {
-      width: 57.6271186441%;
+      width: 57.1428571429%;
       float: right;
       margin-right: 0; } }
 
@@ -840,7 +845,7 @@ body {
     margin-bottom: 0; }
 
 .text-emphasis {
-  font-size: 1.6em; }
+  font-size: 1.2em; }
 
 /*------------------------------------*    $COMPONENTS
 \*------------------------------------*/
@@ -1198,6 +1203,9 @@ body {
 .section-title {
   margin-bottom: 0.5em; }
 
+.secondary-section {
+  background: #d6d2b5; }
+
 .article-header h1 {
   font-size: 2.5em; }
 
@@ -1259,7 +1267,7 @@ body {
 .family--thumb {
   position: relative;
   overflow: hidden;
-  margin-bottom: 1.6949152542%;
+  margin-bottom: 2.8571428571%;
   width: 100%;
   float: left; }
   .family--thumb:nth-child(1n + 1) {
@@ -1268,7 +1276,7 @@ body {
     clear: none; }
   @media (min-width: 46.8em) {
     .family--thumb {
-      width: 32.2033898305%;
+      width: 31.4285714286%;
       float: left; }
       .family--thumb:nth-child(3n + 1) {
         margin-left: 0;
@@ -1276,16 +1284,16 @@ body {
         clear: both;
         margin-left: 0; }
       .family--thumb:nth-child(3n + 2) {
-        margin-left: 33.8983050847%;
+        margin-left: 34.2857142857%;
         margin-right: -100%;
         clear: none; }
       .family--thumb:nth-child(3n + 3) {
-        margin-left: 67.7966101695%;
+        margin-left: 68.5714285714%;
         margin-right: -100%;
         clear: none; } }
   @media (min-width: 60em) {
     .family--thumb {
-      width: 23.7288135593%;
+      width: 22.8571428571%;
       float: left; }
       .family--thumb:nth-child(4n + 1) {
         margin-left: 0;
@@ -1293,15 +1301,15 @@ body {
         clear: both;
         margin-left: 0; }
       .family--thumb:nth-child(4n + 2) {
-        margin-left: 25.4237288136%;
+        margin-left: 25.7142857143%;
         margin-right: -100%;
         clear: none; }
       .family--thumb:nth-child(4n + 3) {
-        margin-left: 50.8474576271%;
+        margin-left: 51.4285714286%;
         margin-right: -100%;
         clear: none; }
       .family--thumb:nth-child(4n + 4) {
-        margin-left: 76.2711864407%;
+        margin-left: 77.1428571429%;
         margin-right: -100%;
         clear: none; } }
   .family--thumb img {
@@ -1355,7 +1363,9 @@ body {
   font-style: italic; }
 
 .hero {
-  width: 100%; }
+  width: 100%;
+  border-bottom: 10px solid #e4ef92;
+  margin-bottom: 2em; }
   @media (min-width: 60em) {
     .hero {
       max-height: 432px;
@@ -1420,9 +1430,9 @@ body {
   margin-bottom: 2em; }
   @media (min-width: 60em) {
     .hero--img-text {
-      width: 49.1525423729%;
+      width: 48.5714285714%;
       float: left;
-      margin-right: 1.6949152542%;
+      margin-right: 2.8571428571%;
       margin-bottom: 0; } }
   .hero--img-text span {
     color: #fff; }
@@ -1439,9 +1449,82 @@ body {
     font-size: 1.4rem; }
   @media (min-width: 60em) {
     .hero--cta {
-      width: 40.6779661017%;
+      width: 40%;
       float: right;
       margin-right: 0;
       text-align: right; }
       .hero--cta button {
         float: right; } }
+
+.card {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1em; }
+  @media (min-width: 60em) {
+    .card.small {
+      width: 48.5714285714%;
+      float: left;
+      margin-right: 2.8571428571%;
+      padding-left: 8.5714285714%;
+      padding-right: 0%; }
+      .card.small + .small {
+        padding-left: 0%;
+        padding-right: 8.5714285714%;
+        float: right;
+        margin-right: 0; } }
+  @media (min-width: 60em) {
+    .card.large {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      font-size: 0; } }
+
+.card--img {
+  width: 100%;
+  margin-bottom: 1em; }
+  .card--img img {
+    width: 100%; }
+  @media (min-width: 60em) {
+    .large .card--img {
+      width: 48.5714285714%;
+      margin-right: 2.8571428571%;
+      display: inline-block;
+      vertical-align: middle; } }
+
+@media (min-width: 60em) {
+  .large .card--info {
+    width: 48.5714285714%;
+    margin-right: 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    font-size: 1rem; } }
+
+.card--title {
+  border-bottom: 1px solid #3f5b58;
+  margin-bottom: 1em; }
+  @media (min-width: 60em) {
+    .large .card--title {
+      text-transform: none;
+      font-size: 32px;
+      font-size: 2rem; } }
+
+/*------------------------------------*    $TEMPLATES
+\*------------------------------------*/
+.btn-separator {
+  margin: 5em 0;
+  background: -webkit-linear-gradient(transparent 0, transparent 27px, #00b2a9 27px, #00b2a9 28px, transparent, 28px, transparent 56px);
+  background: linear-gradient(transparent 0, transparent 27px, #00b2a9 27px, #00b2a9 28px, transparent, 28px, transparent 56px); }
+  .btn-separator .btn {
+    margin: 0 auto; }
+
+.approach-cases {
+  background: #d6d2b5;
+  padding: 4em 0; }
+
+.approach-cases--title {
+  border-bottom: 1px solid #3f5b58;
+  text-align: center; }

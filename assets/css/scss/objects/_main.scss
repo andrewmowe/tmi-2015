@@ -7,8 +7,7 @@ body {
 }
 
 [role=main] {
-	padding: $pad-half $pad-half $pad-double;
+	padding: $pad*4 0;
 	overflow: hidden;
-	@extend .lc;
 	@extend .cf;
 }
