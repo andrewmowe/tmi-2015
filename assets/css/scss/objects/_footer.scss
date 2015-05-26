@@ -84,4 +84,15 @@
 	}
 
 		.copyright {
+			display: inline-block;
+			vertical-align: middle;
+
+			@include susy-media($bp-large) {
+				width: 75%;
+			}
+		}
+
+		.social-list {
+			display: inline-block;
+			vertical-align: middle;
 		}

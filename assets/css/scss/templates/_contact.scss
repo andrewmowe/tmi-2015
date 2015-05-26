@@ -1,0 +1,42 @@
+.contact {
+
+}
+
+	.contact--intro {
+		margin-bottom: $space*1.5;
+
+		@include span(full);
+
+		p {
+			@include span(4 of 4);
+			
+			@include susy-media($bp-large) {
+				@include span(8);
+			}
+		}
+
+		a {
+			display: block;
+			clear: left;
+		}
+	}
+
+	.contact--main {
+		@include span(4 of 4);
+
+		@include susy-media($bp-large) {
+			@include span(7);
+		}
+	}
+
+	.contact--careers {
+		@include span(4 of 4);
+		
+		@include susy-media($bp-large) {
+			@include span(4 last);
+		}
+	}
+
+		.contact--careers--header {
+			border-bottom: 1px solid $heading-color;
+		}

@@ -1,0 +1,64 @@
+.card {
+	@include span(4 of 4);
+	margin-bottom: $space;
+
+	&.small {
+		@include susy-media($bp-large) {
+			@include span(6 of 12);
+			@include pad(1, 0);
+
+			&+.small {
+				@include pad(0, 1);
+				@include last();
+			}
+		}
+	}
+
+	&.large {
+		@include susy-media($bp-large) {
+			@include span(12 of 12);
+			font-size: 0;
+		}
+	}
+}
+
+	.card--img {
+		width: 100%;
+		margin-bottom: $space;
+
+		img {
+			width: 100%;
+		}
+
+		@include susy-media($bp-large) {
+			.large & {
+				width: span(6 of 12);
+				margin-right: gutter();
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	.card--info {
+		@include susy-media($bp-large) {
+			.large & {
+				width: span(6 of 12);
+				margin-right: 0;
+				display: inline-block;
+				vertical-align: middle;
+				@include font-size(1);
+			}
+		}
+	}
+
+		.card--title {
+			border-bottom: 1px solid $heading-color;
+			margin-bottom: $space;
+			@include susy-media($bp-large) {
+				.large & {
+					text-transform: none;
+					@include font-size(2);
+				}
+			}
+		}

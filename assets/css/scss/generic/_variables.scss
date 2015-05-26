@@ -97,7 +97,7 @@ $placeholder: $gray-light;
 $max-width: 72em;
 
 //Defaults
-$space : 1em;
+$space : gutter();
 $space-and-half : $space*1.5;
 $space-double : $space*2;
 $space-quad : $space*4;

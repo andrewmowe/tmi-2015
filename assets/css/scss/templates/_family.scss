@@ -1,0 +1,53 @@
+.family--single {
+
+	.family--portrait {
+		margin-bottom: $space;
+		@include span(4 of 4);
+
+		@include susy-media($bp-large) {
+			@include span(6 last);
+		}
+	}
+
+	.family--content {
+		margin-bottom: $space;
+		@include span(4 of 4);
+
+		@include susy-media($bp-large) {
+			@include span(6);
+		}
+	}
+
+		.family--header {
+			margin-bottom: $space*2;
+
+			.h3 {
+				border-bottom: 1px solid $heading-color;
+				margin-bottom: $space;
+			}
+
+			span, a {
+				display: block;
+			}
+		}
+
+	.family--info {
+		margin-bottom: $space;
+		@include span(4 of 4);
+
+		@include susy-media($bp-large) {
+			@include span(5 last);
+		}
+
+		h4 {
+			border-bottom: 1px solid $heading-color;
+		}
+	}
+}
+
+.family--subtitle {
+	width: 100%;
+	border-bottom: 1px solid $heading-color;
+	text-align: center;
+	margin-bottom: $space;
+}

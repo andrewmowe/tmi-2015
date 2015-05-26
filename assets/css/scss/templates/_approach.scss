@@ -1,0 +1,18 @@
+.btn-separator {
+	margin: $space*5 0;
+	background: linear-gradient( transparent 0, transparent 27px, #00b2a9 27px, #00b2a9 28px, transparent, 28px, transparent 56px);
+
+	.btn {
+		margin: 0 auto;
+	}
+}
+
+.approach-cases {
+	background: $secondary-bg;
+	padding: $pad*4 0;
+}
+
+	.approach-cases--title {
+		border-bottom: 1px solid $heading-color;
+		text-align: center;
+	}

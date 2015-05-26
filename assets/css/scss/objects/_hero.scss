@@ -95,3 +95,49 @@
 			}
 		}
 	}
+
+.contact-hero {
+	@include susy-media($bp-large) {
+		max-height: 500px;
+		@include aspect-ratio(16, 6);
+	}
+
+	.container {
+		background: $secondary-bg;
+
+		@include susy-media($bp-large) {
+			background: transparent;
+		}
+	}
+	.hero--card {
+		background-color: $secondary-bg;
+
+		@include susy-media($bp-large) {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: -47%;
+			transform: skew(-15deg);
+		}
+	}
+
+	.hero--cta {
+		span, a {
+			color: $text-color;
+			display: block;
+		}
+
+		.h3 {
+			color: $heading-color;
+			@include font-size(2.3);
+		}
+
+		.social-list {
+			float: right;
+
+			a {
+				color: $secondary-bg;
+			}
+		}
+	}
+}
