@@ -1,4 +1,5 @@
 .family--thumb {
+	display: block;
 	position: relative;
 	overflow: hidden;
 	margin-bottom: gutter();
@@ -13,6 +14,10 @@
 		@include gallery(3 of 12);
 	}
 
+	&:hover {
+		box-shadow: 0 5px 5px -5px #000;
+	}
+
 	img {
 		width: 100%;
 		float: left;
@@ -22,23 +27,25 @@
 	.family--card {
 		position: absolute;
 		background: $link-color;
-		width: 100%;
-		height: 275px;
+		top: 120%;
+		bottom: -120%;
+		left: 0;
+		right: 0;
 		transform: skewY(-16deg);
-		bottom: -350px;
 		left: 0;
 		opacity: 0.95;
-		@include transition( bottom, 0.2s, ease-out);
+		@include transition( top, 0.2s, ease-out);
+
 
 		.family--thumb:hover & {
-			bottom: -125px;
+			top: 60%;
 		}
 	}
 
 	.family--meta {
 		position: absolute;
 		color: $white;
-		bottom: 15px;
+		top: 67%;
 		text-align: right;
 		width: 100%;
 		opacity: 0;
@@ -59,7 +66,7 @@
 		.family--name {
 			display: block;
 			font-family: $font-secondary;
-			font-size: 1.4em;
+			@include font-size(1.4);
 			border-bottom: 1px solid $link-secondary-alt;
 		}
 

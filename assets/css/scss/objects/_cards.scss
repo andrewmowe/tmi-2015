@@ -59,6 +59,12 @@
 				.large & {
 					text-transform: none;
 					@include font-size(2);
+
+					&.punchline {
+						border: none;
+						color: $link-color;
+						@include font-size(3.5);
+					}
 				}
 			}
 		}

@@ -212,6 +212,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-family: Arquitecta, Helvetica, Arial, sans-serif;
   font-weight: normal; }
 
+.section--title {
+  width: 100%;
+  border-bottom: 1px solid #3f5b58;
+  text-align: center;
+  margin-bottom: 2.8571428571%;
+  font-size: 36.8px;
+  font-size: 2.3rem; }
+
 /* Text-Related Elements */
 p {
   margin-bottom: 2.8571428571%; }
@@ -643,7 +651,8 @@ td {
 .container {
   max-width: 1120px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 0 1em; }
   .container:after {
     content: " ";
     display: block;
@@ -694,8 +703,7 @@ td {
   clear: both;
   overflow: hidden;
   max-height: 0;
-  margin-top: 2.8571428571%;
-  margin-right: 5.7142857143%; }
+  margin-top: 2.8571428571%; }
   .nav a {
     display: block;
     padding: 0.25em 0.5em;
@@ -1279,6 +1287,7 @@ section {
   background: #ffbebe; }
 
 .family--thumb {
+  display: block;
   position: relative;
   overflow: hidden;
   margin-bottom: 2.8571428571%;
@@ -1326,6 +1335,8 @@ section {
         margin-left: 77.1428571429%;
         margin-right: -100%;
         clear: none; } }
+  .family--thumb:hover {
+    box-shadow: 0 5px 5px -5px #000; }
   .family--thumb img {
     width: 100%;
     float: left; }
@@ -1333,23 +1344,24 @@ section {
 .family--card {
   position: absolute;
   background: #00afaa;
-  width: 100%;
-  height: 275px;
+  top: 120%;
+  bottom: -120%;
+  left: 0;
+  right: 0;
   -webkit-transform: skewY(-16deg);
       -ms-transform: skewY(-16deg);
           transform: skewY(-16deg);
-  bottom: -350px;
   left: 0;
   opacity: 0.95;
-  -webkit-transition: bottom 0.2s ease-out;
-  transition: bottom 0.2s ease-out; }
+  -webkit-transition: top 0.2s ease-out;
+  transition: top 0.2s ease-out; }
   .family--thumb:hover .family--card {
-    bottom: -125px; }
+    top: 60%; }
 
 .family--meta {
   position: absolute;
   color: #fff;
-  bottom: 15px;
+  top: 67%;
   text-align: right;
   width: 100%;
   opacity: 0;
@@ -1370,7 +1382,8 @@ section {
 .family--name {
   display: block;
   font-family: Arquitecta, Helvetica, Arial, sans-serif;
-  font-size: 1.4em;
+  font-size: 22.4px;
+  font-size: 1.4rem;
   border-bottom: 1px solid #b99f30; }
 
 .family--desc {
@@ -1378,7 +1391,7 @@ section {
 
 .hero {
   width: 100%;
-  border-bottom: 10px solid #e4ef92;
+  border-bottom: 10px solid #d6d2b5;
   margin-bottom: 5.7142857143%; }
   @media (min-width: 60em) {
     .hero {
@@ -1566,16 +1579,130 @@ section {
     .large .card--title {
       text-transform: none;
       font-size: 32px;
-      font-size: 2rem; } }
+      font-size: 2rem; }
+      .large .card--title.punchline {
+        border: none;
+        color: #00afaa;
+        font-size: 56px;
+        font-size: 3.5rem; } }
+
+.approach-cases {
+  position: relative; }
+  .approach-cases .case-study {
+    display: block;
+    position: relative;
+    margin-bottom: 2.8571428571%;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    @media (min-width: 46.8em) {
+      .approach-cases .case-study {
+        width: 31.4285714286%;
+        float: left; }
+        .approach-cases .case-study:nth-child(3n + 1) {
+          margin-left: 0;
+          margin-right: -100%;
+          clear: both;
+          margin-left: 0; }
+        .approach-cases .case-study:nth-child(3n + 2) {
+          margin-left: 34.2857142857%;
+          margin-right: -100%;
+          clear: none; }
+        .approach-cases .case-study:nth-child(3n + 3) {
+          margin-left: 68.5714285714%;
+          margin-right: -100%;
+          clear: none; } }
+    .approach-cases .case-study:hover .case-study--card {
+      top: -40%; }
+    .approach-cases .case-study:hover .case-study--text {
+      opacity: 1;
+      -webkit-transition: opacity 0.5s ease-in-out;
+              transition: opacity 0.5s ease-in-out;
+      -webkit-transition-delay: 0.1s;
+              transition-delay: 0.1s; }
+  .approach-cases .case-study--img {
+    float: left;
+    width: 100%; }
+  .approach-cases .case-study--card {
+    position: absolute;
+    top: 140%;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: rgba(63, 91, 88, 0.75);
+    -webkit-transition: top 0.2s ease-out;
+            transition: top 0.2s ease-out;
+    -webkit-transform: skewY(-16deg);
+        -ms-transform: skewY(-16deg);
+            transform: skewY(-16deg); }
+  .approach-cases .case-study--text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: white;
+    text-align: center;
+    padding: 0 1em;
+    -webkit-transition: opacity 0s ease-out;
+            transition: opacity 0s ease-out;
+    opacity: 0; }
+  .approach-cases .case-study--title {
+    display: block;
+    position: relative;
+    text-transform: capitalize;
+    font-family: Arquitecta, Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid #d6d2b5;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 22.4px;
+    font-size: 1.4rem; }
+    .approach-cases .case-study--title:after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: #d6d2b5;
+      -webkit-transform: skew(-16deg, -16deg);
+          -ms-transform: skew(-16deg, -16deg);
+              transform: skew(-16deg, -16deg);
+      display: inline-block;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto; }
+  .approach-cases .case-study--subtitle {
+    display: block;
+    text-transform: lowercase;
+    font-style: italic; }
 
 /*------------------------------------*    $TEMPLATES
 \*------------------------------------*/
 .btn-separator {
-  margin: 14.2857142857% 0;
+  margin: 8.5714285714% 0;
   background: -webkit-linear-gradient(transparent 0, transparent 27px, #00b2a9 27px, #00b2a9 28px, transparent, 28px, transparent 56px);
-  background: linear-gradient(transparent 0, transparent 27px, #00b2a9 27px, #00b2a9 28px, transparent, 28px, transparent 56px); }
+  background: linear-gradient(transparent 0, transparent 27px, #00b2a9 27px, #00b2a9 28px, transparent, 28px, transparent 56px);
+  position: relative;
+  text-align: center; }
+  .btn-separator:after {
+    content: '';
+    width: 150px;
+    height: 150px;
+    background: #d6d2b5;
+    z-index: -1;
+    margin-top: -100px;
+    -webkit-transform: skew(-16deg, -16deg);
+        -ms-transform: skew(-16deg, -16deg);
+            transform: skew(-16deg, -16deg);
+    display: inline-block; }
   .btn-separator .btn {
-    margin: 0 auto; }
+    margin: 0 auto;
+    z-index: 1; }
 
 .approach-cases {
   background: #d6d2b5;
@@ -1584,6 +1711,20 @@ section {
 .approach-cases--title {
   border-bottom: 1px solid #3f5b58;
   text-align: center; }
+
+.family-header {
+  padding: 2em 0; }
+  .family-header > * {
+    display: inline-block;
+    vertical-align: middle; }
+  .family-header .backslash {
+    width: 1px;
+    height: 75px;
+    background: #3f5b58;
+    -webkit-transform: skew(-16deg);
+        -ms-transform: skew(-16deg);
+            transform: skew(-16deg);
+    margin: 0 50px; }
 
 .family--single .family--portrait {
   margin-bottom: 2.8571428571%;
@@ -1630,12 +1771,6 @@ section {
       margin-right: 0; } }
   .family--single .family--info h4 {
     border-bottom: 1px solid #3f5b58; }
-
-.family--subtitle {
-  width: 100%;
-  border-bottom: 1px solid #3f5b58;
-  text-align: center;
-  margin-bottom: 2.8571428571%; }
 
 .contact--intro {
   margin-bottom: 4.2857142857%;

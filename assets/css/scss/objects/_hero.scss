@@ -1,6 +1,6 @@
 .hero {
 	width: 100%;
-	border-bottom: 10px solid darken($main-bg, 20%);
+	border-bottom: 10px solid $secondary-bg;
 	margin-bottom: $space*2;
 
 	@include susy-media($bp-large) {

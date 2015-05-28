@@ -1,9 +1,23 @@
 .btn-separator {
-	margin: $space*5 0;
+	margin: $space*3 0;
 	background: linear-gradient( transparent 0, transparent 27px, #00b2a9 27px, #00b2a9 28px, transparent, 28px, transparent 56px);
+	position: relative;
+	text-align: center;
+
+	&:after {
+		content: '';
+		width: 150px;
+		height: 150px;
+		background: $secondary-bg;
+		z-index: -1;
+		margin-top: -100px;
+		transform: skew(-16deg, -16deg);
+		display: inline-block;
+	}
 
 	.btn {
 		margin: 0 auto;
+		z-index: 1;
 	}
 }
 

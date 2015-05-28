@@ -39,3 +39,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	font-family: $font-secondary;
 	font-weight: normal;
 }
+
+.section--title {
+	width: 100%;
+	border-bottom: 1px solid $heading-color;
+	text-align: center;
+	margin-bottom: $space;
+	@include font-size(2.3);
+}

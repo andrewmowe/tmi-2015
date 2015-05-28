@@ -30,6 +30,7 @@ $plum-lt : rgb(214, 0, 86);
 $paper : rgb(250,252,235);
 $tan: rgb(214,210,181);
 $graygreen: rgb(63,91,88);
+$graygreen-trans: rgba(63, 91, 88, 0.75);
 $darkgray: rgb(46,42,38);
 $graybrown: rgb(126, 125, 114);
 $darkgraybrown: rgb(83, 83, 75);
@@ -92,6 +93,9 @@ $footer-secondary: $darkgraybrown;
 $label: $graygreen;
 $input-border: $graygreen;
 $placeholder: $gray-light;
+
+//Case Studies
+$case-overlay: $graygreen-trans;
 
 //Layout
 $max-width: 72em;

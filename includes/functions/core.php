@@ -73,7 +73,7 @@ function styles( $debug = false ) {
 
 	wp_enqueue_style(
 		'tmi',
-		TMI_URL . "/assets/css/tmi-{$min}.css",
+		TMI_URL . "/assets/css/style.css",
 		array(),
 		TMI_VERSION
 	);

@@ -1,0 +1,91 @@
+.approach-cases {
+	position: relative;
+
+	.case-study {
+		display: block;
+		position: relative;
+		margin-bottom: $space;
+		overflow: hidden;
+
+		@include span(4 of 4);
+
+		@include susy-media($bp-med) {
+			@include gallery(4);
+		}
+
+		&:hover {
+			.case-study--card {
+				top: -40%;
+			}
+
+			.case-study--text {
+				opacity: 1;
+				transition: opacity 0.5s ease-in-out;
+				transition-delay: 0.1s;
+			}
+		}
+	}
+
+	.case-study--img {
+		float: left;
+		width: 100%;
+	}
+
+	.case-study--card {
+		position: absolute;
+		top: 140%;
+		bottom: -100%;
+		left: 0;
+		right: 0;
+		background: $case-overlay;
+		transition: top 0.2s ease-out;
+		transform: skewY(-16deg);
+	}
+
+	.case-study--text {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		color: white;
+		text-align: center;
+		padding: 0 $pad;
+		transition: opacity 0s ease-out;
+		opacity: 0;
+	}
+
+		.case-study--title {
+			display: block;
+			position: relative;
+			text-transform: capitalize;
+			font-family: $font-secondary;
+			border-bottom: 1px solid $secondary-bg;
+			margin-bottom: $pad/2;
+			padding-bottom: $pad/2;
+			@include font-size(1.4);
+
+			&:after {
+				content: '';
+				position: absolute;
+				width: 10px;
+				height: 10px;
+				background: $secondary-bg;
+				transform: skew(-16deg, -16deg);
+				display: inline-block;
+				bottom: -5px;
+				left: 0;
+				right: 0;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+		}
+
+		.case-study--subtitle {
+			display: block;
+			text-transform: lowercase;
+			font-style: italic;
+		}
+
+}

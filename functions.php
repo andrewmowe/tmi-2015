@@ -27,3 +27,18 @@ require_once TMI_INC . 'functions/core.php';
 
 // Run the setup functions
 TenUp\TMI_2015\Core\setup();
+
+function tmi_menus() {
+	register_nav_menus(
+		array(
+			'main'		=> __( 'Main Nav'),
+			'footer'	=> __( 'Footer Nav' )
+		)
+	);
+}
+add_action( 'init', 'tmi_menus' );
+
+// This theme uses post thumbnails
+add_theme_support( 'post-thumbnails', array( 'post', 'page', 'case-study', 'family', 'service' ) );
+
+add_image_size( 'family-thumb', 273, 364, true );
