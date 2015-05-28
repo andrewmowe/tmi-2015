@@ -67,7 +67,7 @@
 			display: block;
 			font-family: $font-secondary;
 			@include font-size(1.4);
-			border-bottom: 1px solid $link-secondary-alt;
+			border-bottom: 1px solid $secondary-bg;
 		}
 
 		.family--desc {

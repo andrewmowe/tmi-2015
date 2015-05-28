@@ -174,11 +174,11 @@ body {
 
 /* Links */
 a {
-  color: #333;
-  text-decoration: none;
+  color: #2e2a26;
+  text-decoration: underline;
   outline: 0; }
   a:hover, a:focus {
-    color: #808080; }
+    color: #00afaa; }
 
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
@@ -276,6 +276,7 @@ dd {
       padding: 10px 5px 10px 1em;
       width: 100%;
       display: block;
+      text-decoration: none;
       -webkit-transition: color 0.3s ease-in-out;
       transition: color 0.3s ease-in-out; }
       .link-list li a:hover {
@@ -706,10 +707,13 @@ td {
   margin-top: 2.8571428571%; }
   .nav a {
     display: block;
+    text-decoration: none;
     padding: 0.25em 0.5em;
     font-family: Arquitecta, Helvetica, Arial, sans-serif;
     font-size: 1.5em;
-    margin-right: 10px; }
+    margin-right: 10px;
+    color: #3f5b58;
+    border-bottom: 1px solid transparent; }
     .nav a.active, .nav a:hover, .nav a:focus {
       border-bottom: 1px solid #2e2a26;
       color: #2e2a26; }
@@ -719,9 +723,7 @@ td {
       float: right;
       clear: none; }
       .nav li {
-        float: left; }
-      .nav a {
-        border: 0; } }
+        float: left; } }
 
 .pagination {
   overflow: hidden; }
@@ -1384,7 +1386,7 @@ section {
   font-family: Arquitecta, Helvetica, Arial, sans-serif;
   font-size: 22.4px;
   font-size: 1.4rem;
-  border-bottom: 1px solid #b99f30; }
+  border-bottom: 1px solid #d6d2b5; }
 
 .family--desc {
   font-style: italic; }
@@ -1759,6 +1761,7 @@ section {
     display: block; }
 
 .family--single .family--info {
+  clear: both;
   margin-bottom: 2.8571428571%;
   width: 100%;
   float: left;
@@ -1771,6 +1774,8 @@ section {
       margin-right: 0; } }
   .family--single .family--info h4 {
     border-bottom: 1px solid #3f5b58; }
+  .family--single .family--info ul {
+    margin-bottom: 2.8571428571%; }
 
 .contact--intro {
   margin-bottom: 4.2857142857%;

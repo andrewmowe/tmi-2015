@@ -42,3 +42,6 @@ add_action( 'init', 'tmi_menus' );
 add_theme_support( 'post-thumbnails', array( 'post', 'page', 'case-study', 'family', 'service' ) );
 
 add_image_size( 'family-thumb', 273, 364, true );
+
+// Remove wpautop from ACF fields
+remove_filter ('acf_the_content', 'wpautop');

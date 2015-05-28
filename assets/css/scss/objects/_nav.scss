@@ -10,10 +10,13 @@
 
 	a {
 		display: block;
+		text-decoration: none;
 		padding: $pad/4 $pad/2;
 		font-family: $font-secondary;
 		font-size: 1.5em;
 		margin-right: 10px;
+		color: $heading-color;
+		border-bottom: 1px solid transparent;
 
 		&.active, &:hover, &:focus {
 			border-bottom: 1px solid $text-color;
@@ -28,10 +31,6 @@
 
 		li {
 			float: left;
-		}
-
-		a {
-			border: 0;
 		}
 		
 	}

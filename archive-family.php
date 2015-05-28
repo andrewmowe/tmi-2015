@@ -31,7 +31,7 @@ get_header();
 					<div class="family--card"></div>
 					<div class="family--meta">
 						<span class="family--name"><?php the_title(); ?></span>
-						<span class="family--desc">add position</span>
+						<span class="family--desc"><?php the_field( 'position' ); ?></span>
 					</div>
 				</a>
 

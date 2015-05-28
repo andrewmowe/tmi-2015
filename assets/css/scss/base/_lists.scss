@@ -36,6 +36,7 @@ dd {
 			padding: 10px 5px 10px 1em;
 			width: 100%;
 			display: block;
+			text-decoration: none;
 			@include transition( color, 0.3s, ease-in-out );
 
 			&:hover {

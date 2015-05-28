@@ -37,6 +37,8 @@ if( isset($hero_img) && !empty($hero_img) ) : ?>
 endif;
 ?>
 
+<div class="container">
+
 <?php
 $top_left_title = get_field( 'card_title_tl' );
 $top_left_text = get_field( 'card_text_tl' );
@@ -50,7 +52,7 @@ if( isset( $top_left_title ) && !empty( $top_left_title ) ) : ?>
 	endif; ?>
 	<div class="card--info">
 		<?php if( isset( $top_left_title ) && !empty( $top_left_title ) ) : ?>
-			<h4><?php echo $top_left_title; ?></h4>
+			<h4 class="card--title"><?php echo $top_left_title; ?></h4>
 		<?php endif; ?>
 		<?php if( isset( $top_left_text ) && !empty( $top_left_text ) ) : ?>
 			<p class="text-emphasis">
@@ -77,7 +79,7 @@ if( isset( $top_right_title ) && !empty( $top_right_title ) ) : ?>
 	endif; ?>
 	<div class="card--info">
 		<?php if( isset( $top_right_title ) && !empty( $top_right_title ) ) : ?>
-			<h4><?php echo $top_right_title; ?></h4>
+			<h4 class="card--title"><?php echo $top_right_title; ?></h4>
 		<?php endif; ?>
 		<?php if( isset( $top_right_text ) && !empty( $top_right_text ) ) : ?>
 			<p class="text-emphasis">
@@ -104,7 +106,7 @@ if( isset( $large_title ) && !empty( $large_title ) ) : ?>
 	endif; ?>
 	<div class="card--info">
 		<?php if( isset( $large_title ) && !empty( $large_title ) ) : ?>
-			<h4><?php echo $large_title; ?></h4>
+			<h4 class="card--title"><?php echo $large_title; ?></h4>
 		<?php endif; ?>
 		<?php if( isset( $large_text ) && !empty( $large_text ) ) : ?>
 			<p class="text-emphasis">
@@ -117,6 +119,8 @@ if( isset( $large_title ) && !empty( $large_title ) ) : ?>
 <?php
 endif;
 ?>
+
+</div>
 
 <?php
 get_footer();

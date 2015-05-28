@@ -9,7 +9,7 @@
 	<footer class="footer" role="contentinfo">
 		<div class="container">
 			<div class="footer--logo">
-				<a href="<?php get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/src/tmi-logo.svg" alt="TMI logo" class="logo"></a>
+				<a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/src/tmi-logo.svg" alt="TMI logo" class="logo"></a>
 			</div>
 			<div class="footer--contact-info">
 				<p>213 E Grace Street, #101,<br>Richmond, Virginia 23219, USA</p>
