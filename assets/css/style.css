@@ -907,7 +907,8 @@ body {
   float: left;
   border-radius: 50%;
   text-align: center;
-  color: #fafceb; }
+  color: #fafceb;
+  text-decoration: none; }
   .icon-twitter:hover, .icon-facebook:hover, .icon-linkedin:hover {
     background: #00b2a9;
     color: #fafceb; }
@@ -1634,8 +1635,8 @@ section {
     left: 0;
     right: 0;
     background: rgba(63, 91, 88, 0.75);
-    -webkit-transition: top 0.2s ease-out;
-            transition: top 0.2s ease-out;
+    -webkit-transition: top 0.3s ease-out;
+            transition: top 0.3s ease-out;
     -webkit-transform: skewY(-16deg);
         -ms-transform: skewY(-16deg);
             transform: skewY(-16deg); }

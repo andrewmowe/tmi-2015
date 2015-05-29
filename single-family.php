@@ -5,9 +5,9 @@ the_post();
 
 $position = get_field('position');
 $email = get_field('email');
-$awards = get_field('awards');
-$certs = get_field('certs');
-$talks = get_field('talks');
+$awards = get_field('awards', false, false );
+$certs = get_field('certs', false, false );
+$talks = get_field('talks', false, false );
 ?>
 
 	<main role="main">
