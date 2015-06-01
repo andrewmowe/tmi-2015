@@ -1,20 +1,3 @@
-.family-header {
-	padding: $pad*2 0;
-
-	> * {
-		display: inline-block;
-		vertical-align: middle;
-	}
-
-	.backslash {
-		width: 1px;
-		height: 75px;
-		background: $heading-color;
-		transform: skew(-16deg);
-		margin: 0 50px;
-	}
-}
-
 .family--single {
 
 	.family--portrait {

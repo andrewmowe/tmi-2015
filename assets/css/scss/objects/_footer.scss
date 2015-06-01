@@ -51,6 +51,8 @@
 	}
 
 		.footer--link-list.link-list {
+			margin-bottom: $space*2;
+
 			li {
 				border-color: $link-secondary;
 
@@ -65,6 +67,20 @@
 				.link-list--corner {
 					background: $link-secondary-alt;
 				}
+
+				@include span(full);
+
+				@include susy-media($bp-med) {
+					@include gallery(6 of 12);
+
+					&:nth-child(-n+2) {
+						border-top: 1px solid $link-secondary;
+					}
+
+					&:nth-child(3) {
+						border-top: none;
+					}
+				}
 			}
 
 			a {
@@ -72,9 +88,6 @@
 				text-transform: uppercase;
 			}
 
-			@include susy-media($bp-large) {
-				columns: 2;
-			}
 		}
 
 	.sub-footer {

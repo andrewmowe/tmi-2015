@@ -1,5 +1,15 @@
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+	color: $heading-color;
+	font-family: $font-secondary;
+	font-weight: normal;
+
+	&.tisa {
+		font-family: inherit;
+	}
+}
+
 h1, .h1   { 
 	line-height: 1.2;
 	@include font-size(6);
@@ -28,16 +38,26 @@ h6, .h6    {
 	
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-	color: $heading-color;
-	font-family: $font-secondary;
-	font-weight: normal;
-}
-
 /* Subheadings */
 .subheading {
-	font-family: $font-secondary;
-	font-weight: normal;
+	padding: $pad*3 0;
+
+	.category & {
+		margin-bottom: 5%;
+	}
+
+	.container > * {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.backslash {
+		width: 1px;
+		height: 75px;
+		background: $heading-color;
+		transform: skew(-16deg);
+		margin: 0 50px;
+	}
 }
 
 .section--title {

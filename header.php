@@ -14,7 +14,7 @@
 		<script>try{Typekit.load();}catch(e){}</script>
 		<?php wp_head(); ?>
 	</head>
-	<body class="tisa">
+	<body <?php body_class( 'tisa' ); ?>>
 		<!-- Begin .header -->
 		<header class="header cf" role="banner">
 			<div class="container">

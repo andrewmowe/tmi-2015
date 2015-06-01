@@ -3,6 +3,7 @@
 	position: relative;
 	overflow: hidden;
 	margin-bottom: gutter();
+	@include transition( all, 0.2s, ease-out );
 
 	@include gallery(4 of 4);
 
@@ -15,7 +16,7 @@
 	}
 
 	&:hover {
-		box-shadow: 0 5px 5px -5px #000;
+		box-shadow: 0 6px 5px -3px #000;
 	}
 
 	img {
@@ -73,3 +74,7 @@
 		.family--desc {
 			font-style: italic;
 		}
+
+.family {
+	padding-top: $space*3;
+}

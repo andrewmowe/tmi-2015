@@ -93,7 +93,7 @@ get_header();
 			<button class="btn alt"><span>let's get started</span><span class="corner"></span></button>
 		</div>
 
-		<section class="container">
+		<section class="container approach-services">
 			
 			<h4>We implement a broad array of resources and interventions</h4>
 
@@ -101,7 +101,8 @@ get_header();
 				
 				<?php
 				$args = array(
-					'post_type' => 'service'
+					'post_type' => 'service',
+					'order'	=> 'ASC'
 				);
 				$services = get_posts($args);
 				foreach ($services as $service) : ?>
@@ -116,10 +117,10 @@ get_header();
 		</section>
 
 		<?php
-		$cases = get_posts( array( 'post_type' => 'case-study' ) );
-		if( isset( $cases ) && !empty( $cases ) ) : ?>
+		//$cases = get_posts( array( 'post_type' => 'case-study' ) );
+		//if( isset( $cases ) && !empty( $cases ) ) : ?>
 
-		<section class="section approach-cases">
+<!-- 		<section class="section approach-cases">
 
 			<div class="container">
 				
@@ -147,10 +148,10 @@ get_header();
 
 			</div>
 
-		</section>
+		</section> -->
 
 		<?php
-		endif;
+		//endif;
 		?>
 
 	</main>

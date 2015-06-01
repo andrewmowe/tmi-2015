@@ -1,6 +1,11 @@
 .header {
 	background: linear-gradient( -75deg, $header-highlight 0, $header-highlight 48%, $white 48%);
 	padding: $pad;
+	position: fixed;
+	width: 100%;
+	display: block;
+	z-index: 1000;
+	box-shadow: 0 -15px 20px 10px #000;
 }
 
 .logo {

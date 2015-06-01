@@ -25,6 +25,14 @@
 					'items_wrap'		=> '<ul class="footer--link-list link-list">%3$s</ul>'
 					);
 				wp_nav_menu( $args ); ?>
+
+				<p>Get in our heads on the topics of diversity and inclusion in the workplace. Sign up for our quarterly-ish newsletter.</p>
+
+			    <form class="newsletter cf" name="newsletter" action="">
+			        <input id="text" type="text" placeholder="Your name...">
+				    <button class="footer--btn">Sign Up</button>
+			    </form>
+
 			</div>
 		</div>
 		<div class="sub-footer">

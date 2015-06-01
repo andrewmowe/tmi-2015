@@ -11,6 +11,7 @@ $gray-med : #666;
 $gray-dark : #333;
 $gray-dark-2 : #131313;
 $white : #fff;
+$white-trans: rgba( 255, 255, 255, 0.95);
 $black : #000;
 $dim : rgba(0,0,0,0.5);
 $error : #f00;
@@ -37,7 +38,7 @@ $darkgraybrown: rgb(83, 83, 75);
 
 $main-bg: $paper;
 $secondary-bg: $tan;
-$header-highlight: $aqua-lightest;
+$header-highlight: $white-trans;
 
 //Typography
 @font-face {

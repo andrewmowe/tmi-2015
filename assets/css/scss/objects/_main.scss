@@ -6,7 +6,13 @@ body {
 	color: $text-color;
 }
 
-[role=main] {
+main {
 	overflow: hidden;
 	@extend .cf;
+	padding-top: 112px;
+
+	&.has-hero {
+		padding-top: 0;
+	}
+
 }

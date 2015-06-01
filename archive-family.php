@@ -2,11 +2,11 @@
 get_header();
 ?>
 
-	<main role="main">
+	<main role="main" class="has-subheading">
 
-		<div class="container">
+		<header class="subheading">
 
-			<header class="family-header">
+			<div class="container">
 				
 				<h1 class="h2">Meet the family.</h1>
 
@@ -14,9 +14,9 @@ get_header();
 
 				<span>These are some super great ppl</span>
 
-			</header>
+			</div>
 
-		</div>
+		</header>
 
 		<section class="family secondary-section">
 			

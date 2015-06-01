@@ -43,5 +43,14 @@ add_theme_support( 'post-thumbnails', array( 'post', 'page', 'case-study', 'fami
 
 add_image_size( 'family-thumb', 273, 364, true );
 
-// Remove wpautop from ACF fields
-// remove_filter ('acf_the_content', 'wpautop');
+// Remove square brackets from excerpt ellipsis
+function new_excerpt_more( $more ) {
+	return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+// Reduce excerpt length
+function custom_excerpt_length( $length ) {
+	return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

@@ -40,6 +40,20 @@ input, textarea {
 	}
 }
 
+.newsletter {
+	input {
+		width: 60%;
+		float: left;
+	}
+
+	button {
+		width: 38%;
+		float: right;
+		font-size: 1.2em;
+		height: 46px;
+	}
+}
+
 input[type=text], input[type=search], input[type=url], input[type=number], textarea {
 	-webkit-appearance: none;
 }

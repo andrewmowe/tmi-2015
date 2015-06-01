@@ -3,7 +3,7 @@
 	margin-bottom: $space;
 
 	&.small {
-		@include susy-media($bp-large) {
+		@include susy-media($bp-med) {
 			@include span(6 of 12);
 			@include pad(1, 0);
 
@@ -15,7 +15,7 @@
 	}
 
 	&.large {
-		@include susy-media($bp-large) {
+		@include susy-media($bp-med) {
 			@include span(12 of 12);
 			font-size: 0;
 		}
@@ -30,7 +30,7 @@
 			width: 100%;
 		}
 
-		@include susy-media($bp-large) {
+		@include susy-media($bp-med) {
 			.large & {
 				width: span(6 of 12);
 				margin-right: gutter();
@@ -41,7 +41,7 @@
 	}
 
 	.card--info {
-		@include susy-media($bp-large) {
+		@include susy-media($bp-med) {
 			.large & {
 				width: span(6 of 12);
 				margin-right: 0;
@@ -55,7 +55,7 @@
 		.card--title {
 			border-bottom: 1px solid $heading-color;
 			margin-bottom: $space;
-			@include susy-media($bp-large) {
+			@include susy-media($bp-med) {
 				.large & {
 					text-transform: none;
 					@include font-size(2);

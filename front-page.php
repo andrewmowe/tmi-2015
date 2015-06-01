@@ -37,90 +37,94 @@ if( isset($hero_img) && !empty($hero_img) ) : ?>
 endif;
 ?>
 
-<div class="container">
+<main role="main" class="has-hero">
 
-<?php
-$top_left_title = get_field( 'card_title_tl' );
-$top_left_text = get_field( 'card_text_tl' );
-$top_left_img = get_field( 'card_image_tl' );
+	<div class="container">
 
-if( isset( $top_left_title ) && !empty( $top_left_title ) ) : ?>
+	<?php
+	$top_left_title = get_field( 'card_title_tl' );
+	$top_left_text = get_field( 'card_text_tl' );
+	$top_left_img = get_field( 'card_image_tl' );
 
-<div class="card small">
-	<?php if( isset( $top_left_img ) && !empty( $top_left_img ) ) :
-		echo wp_get_attachment_image( $top_left_img, 'large', false, array( 'class' => 'card--img' ) );
-	endif; ?>
-	<div class="card--info">
-		<?php if( isset( $top_left_title ) && !empty( $top_left_title ) ) : ?>
-			<h4 class="card--title"><?php echo $top_left_title; ?></h4>
-		<?php endif; ?>
-		<?php if( isset( $top_left_text ) && !empty( $top_left_text ) ) : ?>
-			<p class="text-emphasis">
-				<?php echo $top_left_text; ?>
-			</p>
-		<?php endif; ?>
+	if( isset( $top_left_title ) && !empty( $top_left_title ) ) : ?>
+
+	<div class="card small">
+		<?php if( isset( $top_left_img ) && !empty( $top_left_img ) ) :
+			echo wp_get_attachment_image( $top_left_img, 'large', false, array( 'class' => 'card--img' ) );
+		endif; ?>
+		<div class="card--info">
+			<?php if( isset( $top_left_title ) && !empty( $top_left_title ) ) : ?>
+				<h4 class="card--title"><?php echo $top_left_title; ?></h4>
+			<?php endif; ?>
+			<?php if( isset( $top_left_text ) && !empty( $top_left_text ) ) : ?>
+				<p class="text-emphasis">
+					<?php echo $top_left_text; ?>
+				</p>
+			<?php endif; ?>
+		</div>
 	</div>
-</div>
 
-<?php
-endif;
-?>
+	<?php
+	endif;
+	?>
 
-<?php
-$top_right_title = get_field( 'card_title_tr' );
-$top_right_text = get_field( 'card_text_tr' );
-$top_right_img = get_field( 'card_image_tr' );
+	<?php
+	$top_right_title = get_field( 'card_title_tr' );
+	$top_right_text = get_field( 'card_text_tr' );
+	$top_right_img = get_field( 'card_image_tr' );
 
-if( isset( $top_right_title ) && !empty( $top_right_title ) ) : ?>
+	if( isset( $top_right_title ) && !empty( $top_right_title ) ) : ?>
 
-<div class="card small">
-	<?php if( isset( $top_right_img ) && !empty( $top_right_img ) ) :
-		echo wp_get_attachment_image( $top_right_img, 'large', false, array( 'class' => 'card--img' ) );
-	endif; ?>
-	<div class="card--info">
-		<?php if( isset( $top_right_title ) && !empty( $top_right_title ) ) : ?>
-			<h4 class="card--title"><?php echo $top_right_title; ?></h4>
-		<?php endif; ?>
-		<?php if( isset( $top_right_text ) && !empty( $top_right_text ) ) : ?>
-			<p class="text-emphasis">
-				<?php echo $top_right_text; ?>
-			</p>
-		<?php endif; ?>
+	<div class="card small">
+		<?php if( isset( $top_right_img ) && !empty( $top_right_img ) ) :
+			echo wp_get_attachment_image( $top_right_img, 'large', false, array( 'class' => 'card--img' ) );
+		endif; ?>
+		<div class="card--info">
+			<?php if( isset( $top_right_title ) && !empty( $top_right_title ) ) : ?>
+				<h4 class="card--title"><?php echo $top_right_title; ?></h4>
+			<?php endif; ?>
+			<?php if( isset( $top_right_text ) && !empty( $top_right_text ) ) : ?>
+				<p class="text-emphasis">
+					<?php echo $top_right_text; ?>
+				</p>
+			<?php endif; ?>
+		</div>
 	</div>
-</div>
 
-<?php
-endif;
-?>
+	<?php
+	endif;
+	?>
 
-<?php
-$large_title = get_field( 'card_title_lg' );
-$large_text = get_field( 'card_text_lg' );
-$large_img = get_field( 'card_image_lg' );
+	<?php
+	$large_title = get_field( 'card_title_lg' );
+	$large_text = get_field( 'card_text_lg' );
+	$large_img = get_field( 'card_image_lg' );
 
-if( isset( $large_title ) && !empty( $large_title ) ) : ?>
+	if( isset( $large_title ) && !empty( $large_title ) ) : ?>
 
-<div class="card large">
-	<?php if( isset( $large_img ) && !empty( $large_img ) ) :
-		echo wp_get_attachment_image( $large_img, 'large', false, array( 'class' => 'card--img' ) );
-	endif; ?>
-	<div class="card--info">
-		<?php if( isset( $large_title ) && !empty( $large_title ) ) : ?>
-			<h4 class="card--title"><?php echo $large_title; ?></h4>
-		<?php endif; ?>
-		<?php if( isset( $large_text ) && !empty( $large_text ) ) : ?>
-			<p class="text-emphasis">
-				<?php echo $large_text; ?>
-			</p>
-		<?php endif; ?>
+	<div class="card large">
+		<?php if( isset( $large_img ) && !empty( $large_img ) ) :
+			echo wp_get_attachment_image( $large_img, 'large', false, array( 'class' => 'card--img' ) );
+		endif; ?>
+		<div class="card--info">
+			<?php if( isset( $large_title ) && !empty( $large_title ) ) : ?>
+				<h4 class="card--title"><?php echo $large_title; ?></h4>
+			<?php endif; ?>
+			<?php if( isset( $large_text ) && !empty( $large_text ) ) : ?>
+				<p class="text-emphasis">
+					<?php echo $large_text; ?>
+				</p>
+			<?php endif; ?>
+		</div>
 	</div>
-</div>
 
-<?php
-endif;
-?>
+	<?php
+	endif;
+	?>
 
-</div>
+	</div>
+
+</main>
 
 <?php
 get_footer();

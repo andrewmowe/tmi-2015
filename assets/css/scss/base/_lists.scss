@@ -19,17 +19,29 @@ dd {
 }
 
 .link-list {
-	columns: 1;
-	break-inside: avoid;
+	@include span(4 of 4);
+
+	@include susy-media($bp-med) {
+		@include span(12);
+	}
 
 	li {
 		position: relative;
 		@include transition( background, 0.3s, ease-in-out );
 		overflow: hidden;
 		border-bottom: 1px solid $link-color;
+		@include span(4 of 4);
 
-		&:first-child {
+		&:nth-child(1) {
 			border-top: 1px solid $link-color;
+		}
+
+		@include susy-media($bp-med) {
+			@include gallery(4);
+
+			&:nth-child(-n+3) {
+				border-top: 1px solid $link-color;
+			}
 		}
 
 		a {
@@ -48,6 +60,7 @@ dd {
 			content: '\2022';
 			color: $link-color;
 			position: absolute;
+			padding: 10px 0;
 		}
 
 		&:hover {
@@ -59,13 +72,6 @@ dd {
 		}
 	}
 
-	@include susy-media($bp-med) {
-		columns: 2;
-	}
-
-	@include susy-media($bp-large) {
-		columns: 3;
-	}
 }
 
 .link-list--corner {

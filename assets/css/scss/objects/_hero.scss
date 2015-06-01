@@ -2,23 +2,24 @@
 	width: 100%;
 	border-bottom: 10px solid $secondary-bg;
 	margin-bottom: $space*2;
+	position: relative;
 
 	@include susy-media($bp-large) {
-		max-height: 432px;
-		@include aspect-ratio(16, 5);
+		max-height: 532px;
+		@include aspect-ratio(16, 7);
 	}
 
 	.container {
 		position: absolute;
-		top: 0;
+		top: 50%;
 		left: 0;
 		right: 0;
 		background: $hero;
 		padding: $pad*2;
+		transform: translateY(-50%);
 
 		@include susy-media($bp-large) {
 			background: transparent;
-			padding: 75px $pad*2 0;
 		}
 	}
 }
