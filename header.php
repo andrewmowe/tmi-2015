@@ -12,6 +12,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<script src="//use.typekit.net/nuh3ria.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
+
+		<style type="text/css">
+
+		.acf-map {
+			width: 100%;
+			height: 100%;
+		}
+
+		</style>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class( 'tisa' ); ?>>

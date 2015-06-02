@@ -35,7 +35,7 @@
 		}
 	}
 
-	> span {
+	> span, > a {
 		display: block;
 		color: $white;
 		text-transform: uppercase;
@@ -64,6 +64,11 @@
 			}
 		}
 	}
+}
+
+a.btn {
+	text-decoration: none;
+	display: inline-block;
 }
 
 .footer--btn {

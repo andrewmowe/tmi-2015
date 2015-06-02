@@ -3,6 +3,7 @@
 	border-bottom: 10px solid $secondary-bg;
 	margin-bottom: $space*2;
 	position: relative;
+	overflow: hidden;
 
 	@include susy-media($bp-large) {
 		max-height: 532px;
@@ -27,6 +28,7 @@
 	.hero--img {
 		width: 100%;
 		background-size: cover;
+		overflow: hidden;
 
 		@include susy-media($bp-large) {
 			width: 69%;
@@ -98,6 +100,7 @@
 	}
 
 .contact-hero {
+	border-bottom: none;
 	@include susy-media($bp-large) {
 		max-height: 500px;
 		@include aspect-ratio(16, 6);
@@ -109,6 +112,11 @@
 		@include susy-media($bp-large) {
 			background: transparent;
 		}
+	}
+
+	.hero--overlay {
+		background-color: $contact-hero;
+
 	}
 	.hero--card {
 		background-color: $secondary-bg;

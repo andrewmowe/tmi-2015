@@ -52,10 +52,14 @@ function scripts( $debug = false ) {
 
 	wp_enqueue_script(
 		'tmi',
-		TMI_TEMPLATE_URL . "/assets/js/tmi-{$min}.js",
-		array(),
+		TMI_TEMPLATE_URL . "/assets/js/tmi{$min}.js",
+		array('jquery'),
 		TMI_VERSION,
 		true
+	);
+
+	wp_enqueue_script(
+		'jquery'
 	);
 }
 

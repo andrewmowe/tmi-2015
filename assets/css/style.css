@@ -1033,7 +1033,7 @@ main {
   .btn:hover .corner, .btn:focus .corner {
     right: -64px;
     background: #ffc72c; }
-  .btn > span {
+  .btn > span, .btn > a {
     display: block;
     color: #fff;
     text-transform: uppercase;
@@ -1054,6 +1054,10 @@ main {
       background: #3cc3b2; }
     .btn.alt:hover .corner {
       background: #ffc72c; }
+
+a.btn {
+  text-decoration: none;
+  display: inline-block; }
 
 .footer--btn {
   font-family: Arquitecta, Helvetica, Arial, sans-serif;
@@ -1466,7 +1470,8 @@ section {
   width: 100%;
   border-bottom: 10px solid #d6d2b5;
   margin-bottom: 5.7142857143%;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   @media (min-width: 60em) {
     .hero {
       max-height: 532px;
@@ -1492,7 +1497,8 @@ section {
 
 .hero--img {
   width: 100%;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
   @media (min-width: 60em) {
     .hero--img {
       width: 69%;
@@ -1559,47 +1565,46 @@ section {
       .hero--cta button {
         float: right; } }
 
-@media (min-width: 60em) {
-  .contact-hero {
-    max-height: 500px;
-    position: relative; }
-    .contact-hero:before {
-      display: block;
-      content: "";
-      width: 100%;
-      padding-top: 37.5%; } }
-
-.contact-hero .container {
-  background: #d6d2b5; }
+.contact-hero {
+  border-bottom: none; }
   @media (min-width: 60em) {
-    .contact-hero .container {
-      background: transparent; } }
-
-.contact-hero .hero--card {
-  background-color: #d6d2b5; }
-  @media (min-width: 60em) {
-    .contact-hero .hero--card {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: -47%;
-      -webkit-transform: skew(-15deg);
-          -ms-transform: skew(-15deg);
-              transform: skew(-15deg); } }
-
-.contact-hero .hero--cta span, .contact-hero .hero--cta a {
-  color: #2e2a26;
-  display: block; }
-
-.contact-hero .hero--cta .h3 {
-  color: #3f5b58;
-  font-size: 36.8px;
-  font-size: 2.3rem; }
-
-.contact-hero .hero--cta .social-list {
-  float: right; }
-  .contact-hero .hero--cta .social-list a {
-    color: #d6d2b5; }
+    .contact-hero {
+      max-height: 500px;
+      position: relative; }
+      .contact-hero:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 37.5%; } }
+  .contact-hero .container {
+    background: #d6d2b5; }
+    @media (min-width: 60em) {
+      .contact-hero .container {
+        background: transparent; } }
+  .contact-hero .hero--overlay {
+    background-color: rgba(214, 210, 181, 0.25); }
+  .contact-hero .hero--card {
+    background-color: #d6d2b5; }
+    @media (min-width: 60em) {
+      .contact-hero .hero--card {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -47%;
+        -webkit-transform: skew(-15deg);
+            -ms-transform: skew(-15deg);
+                transform: skew(-15deg); } }
+  .contact-hero .hero--cta span, .contact-hero .hero--cta a {
+    color: #2e2a26;
+    display: block; }
+  .contact-hero .hero--cta .h3 {
+    color: #3f5b58;
+    font-size: 36.8px;
+    font-size: 2.3rem; }
+  .contact-hero .hero--cta .social-list {
+    float: right; }
+    .contact-hero .hero--cta .social-list a {
+      color: #d6d2b5; }
 
 .card {
   width: 100%;
@@ -1868,7 +1873,8 @@ section {
       .contact--intro p {
         width: 65.7142857143%;
         float: left;
-        margin-right: 2.8571428571%; } }
+        margin-right: 2.8571428571%;
+        margin-bottom: 1em; } }
   .contact--intro a {
     display: block;
     clear: left; }

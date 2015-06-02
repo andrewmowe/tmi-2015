@@ -90,7 +90,7 @@ get_header();
 		</section>
 
 		<div class="btn-separator">
-			<button class="btn alt"><span>let's get started</span><span class="corner"></span></button>
+			<button href="http://google.com" class="btn alt"><a href="/contact">let's get started</a><span class="corner"></span></button>
 		</div>
 
 		<section class="container approach-services">

@@ -54,3 +54,10 @@ function custom_excerpt_length( $length ) {
 	return 30;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+// Button Shortcode
+function tmi_button($atts, $content = null ) {
+	extract( shortcode_atts( array( 'link' => '#', 'class' => '' ), $atts ) );
+	return '<a href='.$link.' class="btn '. $class .'"><span>'.do_shortcode( $content ).'</span><span class="corner"></span></a>';
+}
+add_shortcode('button', 'tmi_button');
