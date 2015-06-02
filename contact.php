@@ -6,37 +6,38 @@ get_header();
 
 the_post();
 
-$hero_img = get_field( 'home_hero_image' );
-
-if( isset($hero_img) && !empty($hero_img) ) : ?>
+$location = get_field('map');
+?>
 
 <div class="hero contact-hero cf">
-	<div class="hero--img cf" style="background-image: url(<?php echo wp_get_attachment_url( $hero_img ); ?>);"></div>
+	<div class="hero--img cf">
+		<?php
+		if( !empty($location) ):
+		?>
+		<div class="acf-map">
+			<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+		</div>
+		<?php else : echo 'poop'; ?>
+		<?php endif; ?>	
+	</div>
+	<div class="hero--overlay"></div>
 	<div class="hero--card"></div>
 
-	<?php
-	$hero_text = get_field( 'home_hero_text' );
-	$hero_cta = get_field( 'home_hero_cta', false, false );
-
-	if( isset( $hero_text ) || isset( $hero_cta ) ) : ?>
-
 	<div class="container">
-		<div class="hero--img-text">
-			<?php echo ( !empty( $hero_text ) ? $hero_text : ''); ?>
-		</div>
-		<div class="hero--cta">
-			<?php echo ( !empty( $hero_cta ) ? $hero_cta : ''); ?>
+		<div class="hero--cta cf">
+			<p class="h3"><?php the_field('address'); ?></p>
+			<a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
+			<span>phone: <?php the_field('phone'); ?></span>
+			<span>fax: <?php the_field('fax'); ?></span>
+			<div class="icons social-list cf">
+				<a href="" class="icon-linkedin"></a>
+				<a href="" class="icon-facebook"></a>
+				<a href="" class="icon-twitter"></a>
+			</div>
 		</div>
 	</div>
 
-	<?php
-	endif;
-	?>
 </div>
-
-<?php
-endif;
-?>
 
 <main role="main" class="has-hero">
 
@@ -44,11 +45,11 @@ endif;
 		
 		<div class="contact--intro">
 			
-			<h2>We would love to hear from you</h2>
+			<h2><?php the_field('subheadline'); ?></h2>
 
-			<p class="text-emphasis"></p>
+			<p class="text-emphasis"><?php echo get_the_content(); ?></p>
 
-			<a href="mailto:tmi@tmiconsultinginc.com">tmi@tmiconsultinginc.com</a>
+			<a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
 
 		</div>
 
@@ -77,11 +78,11 @@ endif;
 
 		<div class="contact--careers">
 			
-			<h4 class="contact--careers--header">Career Opportunities</h4>
+			<h4 class="contact--careers--header"><?php the_field('title'); ?></h4>
 
-			<p class="text-emphasis">Interested in being part of a values-based business?</p>
+			<p class="text-emphasis"><?php the_field('subtitle'); ?></p>
 
-			<?php the_content(); ?>
+			<p><?php the_field('text'); ?></p>
 
 		</div>
 

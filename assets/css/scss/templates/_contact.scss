@@ -12,6 +12,7 @@
 			
 			@include susy-media($bp-large) {
 				@include span(8);
+				margin-bottom: $pad;
 			}
 		}
 

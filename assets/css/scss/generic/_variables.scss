@@ -30,6 +30,7 @@ $plum : rgb(170, 0, 97);
 $plum-lt : rgb(214, 0, 86);
 $paper : rgb(250,252,235);
 $tan: rgb(214,210,181);
+$tan-trans: rgba(214,210,181,0.25);
 $graygreen: rgb(63,91,88);
 $graygreen-trans: rgba(63, 91, 88, 0.75);
 $darkgray: rgb(46,42,38);
@@ -85,6 +86,8 @@ $btn-secondary-corner: $aqua-lt;
 //Header
 $hero: $aqua;
 $hero-trans: $aqua-trans;
+
+$contact-hero: $tan-trans;
 
 //Footer
 $footer: $graybrown;

@@ -10,8 +10,8 @@ if( isset($hero_img) && !empty($hero_img) ) : ?>
 
 <div class="hero cf">
 	<div class="hero--img cf" style="background-image: url(<?php echo wp_get_attachment_url( $hero_img ); ?>);"></div>
-	<div class="hero--card"></div>
 	<div class="hero--overlay"></div>
+	<div class="hero--card"></div>
 
 	<?php
 	$hero_text = get_field( 'home_hero_text' );
