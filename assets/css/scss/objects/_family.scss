@@ -78,3 +78,13 @@
 .family {
 	padding-top: $space*3;
 }
+
+	.family--the-content {
+		> * {
+			@include pad(1, 0);
+		}
+		p:first-of-type {
+			@extend .text-emphasis;
+			@include pad(0);
+		}
+	}

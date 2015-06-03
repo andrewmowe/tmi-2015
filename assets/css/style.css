@@ -931,7 +931,7 @@ main {
   .text ol ol {
     margin-bottom: 0; }
 
-.text-emphasis, .entry p:first-of-type {
+.text-emphasis, .family--the-content p:first-of-type, .entry p:first-of-type {
   font-size: 1.2em; }
 
 /*------------------------------------*    $COMPONENTS
@@ -1466,6 +1466,14 @@ section {
 .family {
   padding-top: 8.5714285714%; }
 
+.family--the-content > * {
+  padding-left: 8.5714285714%;
+  padding-right: 0%; }
+
+.family--the-content p:first-of-type {
+  padding-left: 0%;
+  padding-right: 0%; }
+
 .hero {
   width: 100%;
   border-bottom: 10px solid #d6d2b5;
@@ -1842,7 +1850,6 @@ section {
     display: block; }
 
 .family--single .family--info {
-  clear: both;
   margin-bottom: 2.8571428571%;
   width: 100%;
   float: left;
