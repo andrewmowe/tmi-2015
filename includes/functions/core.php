@@ -81,6 +81,12 @@ function styles( $debug = false ) {
 		array(),
 		TMI_VERSION
 	);
+	wp_enqueue_style(
+		'tmi-fontarqui',
+		TMI_URL . "/assets/css/fontarqui.css",
+		array(),
+		TMI_VERSION
+	);
 }
 
 /**
