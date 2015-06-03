@@ -1,0 +1,36 @@
+.page-template-default {
+
+}
+
+.post-password-form {
+	label {
+		@include span(7 of 10);
+		margin-bottom: $space;
+	}
+
+	input {
+		height: 46px;
+	}
+
+	input[type="password"] {
+	}
+
+	input[type="submit"] {
+		clear: both;
+		@include span(3 of 10);
+		font-family: $font-secondary;
+		color: $white;
+		background: $link-secondary-alt;
+		border: none;
+		border-radius: 5px;
+		text-transform: uppercase;
+		@include font-size(1.2);
+		font-weight: bold;
+		letter-spacing: 0.21em;
+		margin-bottom: $space*2;
+
+		&:hover {
+			background: $link-secondary;
+		}
+	}
+}
