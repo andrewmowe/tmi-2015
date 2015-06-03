@@ -59,6 +59,9 @@
 				.large & {
 					text-transform: none;
 					@include font-size(2);
+					font-weight: normal;
+  					letter-spacing: .1px;
+  					  line-height: 1.1;
 
 					&.punchline {
 						border: none;

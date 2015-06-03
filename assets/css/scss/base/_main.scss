@@ -3,4 +3,11 @@ body {
 	font: 100%/1.5 $font;
 	-webkit-text-size-adjust: 100%;
 	color: $gray-dark;
+	-webkit-font-smoothing: antialiased;
+
+	@media all and (min-width: $bp-large) {
+		text-rendering: optimizeLegibility;
+
+	}
+
 }

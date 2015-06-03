@@ -26,7 +26,8 @@ h3, .h3   {
 }
 
 h4, .h4   {
-	@include font-size(1.2);
+	font-weight:bold;
+	letter-spacing:2px;
 	text-transform: uppercase;
 }
 
