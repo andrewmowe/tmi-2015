@@ -26,13 +26,13 @@ get_header(); ?>
 
 				<div <?php post_class( 'entry' ); ?>>
 					
-					<?php the_post_thumbnail( 'medium' ); ?>
+					<a class="entry--thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a>
 
 					<div class="entry--content">
 						
 						<header>
 							
-							<h3><?php the_title(); ?></h3>
+							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
 							<span class="byline"><?php the_field( 'subheadline' ); ?></span>
 
@@ -44,7 +44,7 @@ get_header(); ?>
 
 					<footer class="entry--footer cf">
 						
-						<span class="h4 entry--meta"><?php the_date(); ?> | <?php echo get_the_category_list( ', ' ); ?></span>
+						<span class="h4 entry--meta"><?php the_date(); ?></span>
 
 						<a href="<?php the_permalink(); ?>" class="h4 entry--more">Read More ></a>
 
@@ -53,6 +53,8 @@ get_header(); ?>
 				</div>
 
 			<?php endwhile; endif; ?>
+
+			<?php echo paginate_links(); ?>
 
 			</div>
 

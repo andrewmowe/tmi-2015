@@ -185,6 +185,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-weight: normal; }
   h1.tisa, .h1.tisa, h2.tisa, .h2.tisa, h3.tisa, .h3.tisa, h4.tisa, .h4.tisa {
     font-family: inherit; }
+  h1 > a, .h1 > a, h2 > a, .h2 > a, h3 > a, .h3 > a, h4 > a, .h4 > a {
+    color: #3f5b58;
+    text-decoration: none; }
+    h1 > a:hover, .h1 > a:hover, h2 > a:hover, .h2 > a:hover, h3 > a:hover, .h3 > a:hover, h4 > a:hover, .h4 > a:hover {
+      color: #00b2a9; }
 
 h1, .h1 {
   line-height: 1.2;
@@ -202,8 +207,8 @@ h3, .h3 {
   font-size: 2.3rem; }
 
 h4, .h4 {
-  font-weight: bold;
-  letter-spacing: 2px;
+  font-size: 19.2px;
+  font-size: 1.2rem;
   text-transform: uppercase; }
 
 /* Subheadings */
@@ -1964,27 +1969,55 @@ section {
 .entry--more {
   float: right; }
 
-.entry-list .entry {
-  width: 65.7142857143%;
+.entry-list {
+  width: 100%;
   float: left;
-  margin-right: 2.8571428571%; }
-  .entry-list .entry header {
-    margin-bottom: 1.4285714286%; }
-    .entry-list .entry header h3 {
-      font-size: 32px;
-      font-size: 2rem; }
-  .entry-list .entry p:first-of-type {
-    font-size: 16px;
-    font-size: 1rem; }
-  .entry-list .entry.has-post-thumbnail .wp-post-image {
-    margin: 0;
-    width: 34.7826086957%;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 60em) {
+    .entry-list {
+      width: 65.7142857143%;
+      float: left;
+      margin-right: 2.8571428571%; } }
+  .entry-list .entry {
+    width: 100%;
     float: left;
-    margin-right: 4.347826087%; }
-  .entry-list .entry.has-post-thumbnail > div {
-    width: 60.8695652174%;
-    float: right;
-    margin-right: 0; }
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2em; }
+    .entry-list .entry header {
+      margin-bottom: 1.4285714286%; }
+      .entry-list .entry header h3 {
+        font-size: 32px;
+        font-size: 2rem; }
+    .entry-list .entry p:first-of-type {
+      font-size: 16px;
+      font-size: 1rem; }
+    .entry-list .entry.has-post-thumbnail .entry--thumb {
+      margin: 0;
+      margin-bottom: 2.8571428571%;
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+      @media (min-width: 60em) {
+        .entry-list .entry.has-post-thumbnail .entry--thumb {
+          margin-bottom: 0;
+          width: 34.7826086957%;
+          float: left;
+          margin-right: 4.347826087%; } }
+      .entry-list .entry.has-post-thumbnail .entry--thumb img {
+        margin: 0; }
+    .entry-list .entry.has-post-thumbnail > div {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+      @media (min-width: 60em) {
+        .entry-list .entry.has-post-thumbnail > div {
+          width: 60.8695652174%;
+          float: right;
+          margin-right: 0; } }
 
 .sidebar {
   width: 100%;

@@ -8,6 +8,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	&.tisa {
 		font-family: inherit;
 	}
+
+	> a {
+		color: $heading-color;
+		text-decoration: none;
+
+		&:hover {
+			color: $link-hover;
+		}
+	}
 }
 
 h1, .h1   { 
@@ -26,8 +35,7 @@ h3, .h3   {
 }
 
 h4, .h4   {
-	font-weight:bold;
-	letter-spacing:2px;
+	@include font-size(1.2);
 	text-transform: uppercase;
 }
 

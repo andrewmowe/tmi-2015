@@ -67,9 +67,15 @@
 		}
 
 .entry-list {
+	@include span(4 of 4);
+
+	@include susy-media($bp-large) {
+		@include span(8);
+	}
 
 	.entry {
-		@include span(8);
+		@include span(full);
+		margin-bottom: $pad*2;
 
 		header {
 			margin-bottom: $space/2;
@@ -85,13 +91,27 @@
 
 		&.has-post-thumbnail {
 
-			.wp-post-image {
+			.entry--thumb {
 				margin: 0;
-				@include span(3 of 8);
+				margin-bottom: $space;
+				@include span(full);
+
+				@include susy-media($bp-large) {
+					margin-bottom: 0;
+					@include span(3 of 8);					
+				}
+
+				img {
+					margin: 0;
+				}
 			}
 
 			> div {
-				@include span(5 of 8 last);
+				@include span(full);
+
+				@include susy-media($bp-large) {
+					@include span(5 of 8 last);					
+				}
 			}
 		}
 	}
