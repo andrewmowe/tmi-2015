@@ -55,13 +55,6 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 
 /*------------------------------------*    $VARIABLES
 \*------------------------------------*/
-@font-face {
-  font-family: 'Arquitecta';
-  src: url("latinotype_-_arquitectamedium-webfont.eot");
-  src: url("latinotype_-_arquitectamedium-webfont.eot?#iefix") format("embedded-opentype"), url("latinotype_-_arquitectamedium-webfont.woff2") format("woff2"), url("latinotype_-_arquitectamedium-webfont.woff") format("woff"), url("latinotype_-_arquitectamedium-webfont.ttf") format("truetype"), url("latinotype_-_arquitectamedium-webfont.svg#arquitecta_mediummedium") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /*------------------------------------*    $MIXINS
 \*------------------------------------*/
 /* CSS Transition

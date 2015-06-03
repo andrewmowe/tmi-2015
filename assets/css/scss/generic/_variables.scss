@@ -42,18 +42,6 @@ $secondary-bg: $tan;
 $header-highlight: $white-trans;
 
 //Typography
-@font-face {
-    font-family: 'Arquitecta';
-    src: url('latinotype_-_arquitectamedium-webfont.eot');
-    src: url('latinotype_-_arquitectamedium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('latinotype_-_arquitectamedium-webfont.woff2') format('woff2'),
-         url('latinotype_-_arquitectamedium-webfont.woff') format('woff'),
-         url('latinotype_-_arquitectamedium-webfont.ttf') format('truetype'),
-         url('latinotype_-_arquitectamedium-webfont.svg#arquitecta_mediummedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 $font : "HelveticaNeue", "Helvetica", "Arial", serif;
 $font-secondary : Arquitecta, Helvetica, Arial, sans-serif;
