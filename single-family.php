@@ -40,7 +40,11 @@ $talks = get_field('talks', false, false );
 
 				</header>
 
+				<section class="family--the-content">
+
 				<?php the_content(); ?>
+
+				</section>
 
 			</div>
 
@@ -48,61 +52,7 @@ $talks = get_field('talks', false, false );
 
 				<?php if( isset( $awards ) && !empty( $awards ) ) : ?>
 
-					<?php $awards = explode( ',', $awards ); ?>
-
-					<h4>Awards and Recognition</h4>
-
-					<ul>
-
-					<?php
-					foreach( $awards as $award ) :
-
-						echo '<li>'.trim($award).'</li>';
-
-					endforeach;
-					?>
-
-					</ul>
-
-				<?php endif; ?>
-
-				<?php if( isset( $certs ) && !empty( $certs ) ) : ?>
-
-					<?php $certs = explode( ',', $certs ); ?>
-
-					<h4>Certifications</h4>
-
-					<ul>
-
-					<?php
-					foreach( $certs as $cert ) :
-
-						echo '<li>'.trim($cert).'</li>';
-
-					endforeach;
-					?>
-
-					</ul>
-
-				<?php endif; ?>
-
-				<?php if( isset( $talks ) && !empty( $talks ) ) : ?>
-
-					<?php $talks = explode( ',', $talks ); ?>
-
-					<h4>Talks</h4>
-
-					<ul>
-
-					<?php
-					foreach( $talks as $talk ) :
-
-						echo '<li>'.trim($talk).'</li>';
-
-					endforeach;
-					?>
-
-					</ul>
+					<?php echo $awards; ?>
 
 				<?php endif; ?>
 
