@@ -3,6 +3,7 @@ get_header();
 
 the_post();
 
+$img = get_field('wide_img');
 $position = get_field('position');
 $email = get_field('email');
 $awards = get_field('awards', false, false );
@@ -16,7 +17,7 @@ $talks = get_field('talks', false, false );
 
 			<div class="sliced-img family--portrait">
 			
-			<?php the_post_thumbnail( 'large' ); ?>
+			<?php echo wp_get_attachment_image( $img, 'large' ); ?>
 
 			</div>
 
