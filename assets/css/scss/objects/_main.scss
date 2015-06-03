@@ -9,10 +9,20 @@ body {
 main {
 	overflow: hidden;
 	@extend .cf;
-	padding-top: 112px;
+	padding-top: 142px;
 
 	&.has-hero {
 		padding-top: 0;
+	}
+
+	&.has-headline {
+		padding-top: 112px;
+	}
+
+	.page-template-default & .container {
+		@include susy-media($bp-med) {
+			@include pad(1, 1);
+		}
 	}
 
 }

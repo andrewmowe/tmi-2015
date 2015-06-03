@@ -155,6 +155,15 @@ $(document).ready(function(){
 
 	});
 
+	$opt_in = 'Welcome to the TMI client portal. The materials here are available to you as a client of TMI, for continuation of our work together. These materials and data are proprietary to TMI, and in many cases confidential to our clients.  The materials and data on our portal, as well as login information and passwords, may not be copied or shared with any person who is not a part of our consulting team or an authorized employee of our client. Thank you for your cooperation.';
+
+	$('form.post-password-form').on('submit', function(e){
+		var $thisform = this;
+			e.preventDefault();
+			alert($opt_in);
+			$thisform.submit();
+	});
+	
 });
 
 })(jQuery);
