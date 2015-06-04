@@ -104,7 +104,7 @@ endif;
 
 	<div class="card large">
 		<?php if( isset( $large_img ) && !empty( $large_img ) ) :
-			echo wp_get_attachment_image( $large_img, 'large', false, array( 'class' => 'card--img' ) );
+			echo '<div class="sliced-img card--img">'.wp_get_attachment_image( $large_img, 'large', false, array() ).'</div>';
 		endif; ?>
 		<div class="card--info">
 			<?php if( isset( $large_title ) && !empty( $large_title ) ) : ?>

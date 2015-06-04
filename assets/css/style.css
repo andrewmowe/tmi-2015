@@ -55,6 +55,13 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 
 /*------------------------------------*    $VARIABLES
 \*------------------------------------*/
+@font-face {
+  font-family: 'Arquitecta';
+  src: url("latinotype_-_arquitectamedium-webfont.eot");
+  src: url("latinotype_-_arquitectamedium-webfont.eot?#iefix") format("embedded-opentype"), url("latinotype_-_arquitectamedium-webfont.woff2") format("woff2"), url("latinotype_-_arquitectamedium-webfont.woff") format("woff"), url("latinotype_-_arquitectamedium-webfont.ttf") format("truetype"), url("latinotype_-_arquitectamedium-webfont.svg#arquitecta_mediummedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*------------------------------------*    $MIXINS
 \*------------------------------------*/
 /* CSS Transition
@@ -171,7 +178,7 @@ body {
 
 /* Links */
 a {
-  color: #443e3a;
+  color: #2e2a26;
   text-decoration: underline;
   outline: 0; }
   a:hover, a:focus {
@@ -183,9 +190,9 @@ a {
   background: linear-gradient(#00afaa, #00afaa) no-repeat;
   background-size: 100% 1px;
   background-position: 0 1.4em;
-  text-shadow: 0.1em 0 #f8f7ea, -0.1em 0 #f8f7ea; }
+  text-shadow: 0.1em 0 #fafceb, -0.1em 0 #fafceb; }
   .contact-hero .text > a, .contact-hero .text p > a {
-    text-shadow: 0.1em 0 #e0dcc1, -0.1em 0 #e0dcc1; }
+    text-shadow: 0.1em 0 #d6d2b5, -0.1em 0 #d6d2b5; }
 
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
@@ -334,7 +341,7 @@ dd {
       -webkit-transition: color 0.3s ease-in-out;
       transition: color 0.3s ease-in-out; }
       .link-list li a:hover {
-        color: #443e3a; }
+        color: #2e2a26; }
     .link-list li:before {
       content: '\2022';
       color: #00afaa;
@@ -386,7 +393,7 @@ figcaption {
     position: absolute;
     content: '';
     width: 200px;
-    background: #f8f7ea;
+    background: #fafceb;
     right: -22.5%;
     top: 0;
     bottom: 0;
@@ -422,11 +429,11 @@ input, textarea {
   border: 2px solid #3f5b58;
   border-radius: 2px;
   padding: 0.5em 0.65rem;
-  color: #443e3a;
-  background: #f8f7ea; }
+  color: #2e2a26;
+  background: #fafceb; }
   .footer input, .footer textarea {
     border-color: #ffc72c;
-    background: #7f7f73;
+    background: #7e7d72;
     color: #fff; }
 
 .newsletter input {
@@ -775,8 +782,8 @@ td {
     color: #3f5b58;
     border-bottom: 1px solid transparent; }
     .nav a.active, .nav a:hover, .nav a:focus {
-      border-bottom: 1px solid #443e3a;
-      color: #443e3a; }
+      border-bottom: 1px solid #2e2a26;
+      color: #2e2a26; }
   @media all and (min-width: 46.8em) {
     .nav {
       max-height: none;
@@ -798,8 +805,8 @@ td {
 /*------------------------------------*    $MAIN CONTENT AREA
 \*------------------------------------*/
 body {
-  background: #f8f7ea;
-  color: #443e3a; }
+  background: #fafceb;
+  color: #2e2a26; }
 
 main {
   overflow: hidden;
@@ -818,7 +825,7 @@ main {
 .footer {
   clear: both;
   overflow: hidden;
-  background: #7f7f73;
+  background: #7e7d72;
   line-height: 1.2;
   padding-top: 4em;
   color: #fff; }
@@ -912,7 +919,7 @@ main {
     letter-spacing: 2px; }
 
 .sub-footer {
-  background: #525349;
+  background: #53534b;
   margin-top: 5.7142857143%;
   padding: 2em 0; }
 
@@ -987,24 +994,24 @@ main {
 
 .icon-twitter, .icon-facebook, .icon-linkedin {
   font-size: 1.5em;
-  background: #49c3b2;
+  background: #3cc3b2;
   width: 45px;
   height: 45px;
   margin: 10px 20px;
   float: left;
   border-radius: 50%;
   text-align: center;
-  color: #f8f7ea;
+  color: #fafceb;
   text-decoration: none; }
   .icon-twitter:hover, .icon-facebook:hover, .icon-linkedin:hover {
     background: #00b2a9;
-    color: #f8f7ea; }
+    color: #fafceb; }
   .sub-footer .icon-twitter, .sub-footer .icon-facebook, .sub-footer .icon-linkedin {
     background: #b99f30;
-    color: #525349; }
+    color: #53534b; }
     .sub-footer .icon-twitter:hover, .sub-footer .icon-facebook:hover, .sub-footer .icon-linkedin:hover {
       background: #ffc72c;
-      color: #525349; }
+      color: #53534b; }
 
 .icon-twitter {
   padding-top: 10px; }
@@ -1072,7 +1079,7 @@ main {
   .btn.alt {
     background: #00b2a9; }
     .btn.alt .corner {
-      background: #49c3b2; }
+      background: #3cc3b2; }
     .btn.alt:hover .corner {
       background: #ffc72c; }
 
@@ -1317,7 +1324,7 @@ a.btn {
   margin-bottom: 1.4285714286%; }
 
 .secondary-section {
-  background: #e0dcc1; }
+  background: #d6d2b5; }
 
 section {
   padding: 2em 0; }
@@ -1479,7 +1486,7 @@ section {
   font-family: Arquitecta, Helvetica, Arial, sans-serif;
   font-size: 22.4px;
   font-size: 1.4rem;
-  border-bottom: 1px solid #e0dcc1; }
+  border-bottom: 1px solid #d6d2b5; }
 
 .family--desc {
   font-style: italic; }
@@ -1497,7 +1504,7 @@ section {
 
 .hero {
   width: 100%;
-  border-bottom: 10px solid #e0dcc1;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.5);
   margin-bottom: 5.7142857143%;
   position: relative;
   overflow: hidden; }
@@ -1512,7 +1519,7 @@ section {
         padding-top: 43.75%; } }
   .hero .container {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 0;
     right: 0;
     background: #00b2a9;
@@ -1551,7 +1558,7 @@ section {
               transform: skew(45deg); } }
 
 .hero--overlay {
-  background-color: rgba(0, 178, 169, 0.25); }
+  background-color: rgba(0, 178, 169, 0.6); }
   @media (min-width: 60em) {
     .hero--overlay {
       position: absolute;
@@ -1606,14 +1613,14 @@ section {
         width: 100%;
         padding-top: 37.5%; } }
   .contact-hero .container {
-    background: #e0dcc1; }
+    background: #d6d2b5; }
     @media (min-width: 60em) {
       .contact-hero .container {
         background: transparent; } }
   .contact-hero .hero--overlay {
     background-color: rgba(214, 210, 181, 0.25); }
   .contact-hero .hero--card {
-    background-color: #e0dcc1; }
+    background-color: #d6d2b5; }
     @media (min-width: 60em) {
       .contact-hero .hero--card {
         position: absolute;
@@ -1624,7 +1631,7 @@ section {
             -ms-transform: skew(-15deg);
                 transform: skew(-15deg); } }
   .contact-hero .hero--cta span, .contact-hero .hero--cta a {
-    color: #443e3a;
+    color: #2e2a26;
     display: block; }
   .contact-hero .hero--cta .h3 {
     color: #3f5b58;
@@ -1633,7 +1640,7 @@ section {
   .contact-hero .hero--cta .social-list {
     float: right; }
     .contact-hero .hero--cta .social-list a {
-      color: #e0dcc1; }
+      color: #d6d2b5; }
 
 .card {
   width: 100%;
@@ -1649,8 +1656,6 @@ section {
       padding-left: 8.5714285714%;
       padding-right: 0%; }
       .card.small + .small {
-        padding-left: 0%;
-        padding-right: 8.5714285714%;
         float: right;
         margin-right: 0; } }
   @media (min-width: 46.8em) {
@@ -1769,7 +1774,7 @@ section {
     position: relative;
     text-transform: capitalize;
     font-family: Arquitecta, Helvetica, Arial, sans-serif;
-    border-bottom: 1px solid #e0dcc1;
+    border-bottom: 1px solid #d6d2b5;
     margin-bottom: 0.5em;
     padding-bottom: 0.5em;
     font-size: 22.4px;
@@ -1779,7 +1784,7 @@ section {
       position: absolute;
       width: 10px;
       height: 10px;
-      background: #e0dcc1;
+      background: #d6d2b5;
       -webkit-transform: skew(-16deg, -16deg);
           -ms-transform: skew(-16deg, -16deg);
               transform: skew(-16deg, -16deg);
@@ -1817,7 +1822,7 @@ section {
     content: '';
     width: 150px;
     height: 150px;
-    background: #e0dcc1;
+    background: #d6d2b5;
     z-index: -1;
     margin-top: -100px;
     -webkit-transform: skew(-16deg, -16deg);
@@ -1834,7 +1839,7 @@ section {
     margin-bottom: 1.4285714286%; }
 
 .approach-cases {
-  background: #e0dcc1;
+  background: #d6d2b5;
   padding: 4em 0; }
 
 .approach-cases--title {
@@ -1987,7 +1992,7 @@ section {
     display: block;
     font-style: italic;
     padding-bottom: 1.4285714286%;
-    border-bottom: 1px solid #e0dcc1; }
+    border-bottom: 1px solid #d6d2b5; }
   .entry .wp-post-image {
     float: right;
     margin: 0 0 2.8571428571% 2.8571428571%; }
@@ -1998,8 +2003,8 @@ section {
 .entry--footer {
   width: 100%;
   clear: both;
-  border-top: 1px solid #e0dcc1;
-  border-bottom: 1px solid #e0dcc1;
+  border-top: 1px solid #d6d2b5;
+  border-bottom: 1px solid #d6d2b5;
   padding: 0.5em 0; }
   .entry--footer a {
     text-decoration: none; }
