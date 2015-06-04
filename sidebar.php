@@ -1,4 +1,4 @@
-			<aside class="text sidebar">
+			<aside class="sidebar">
 
 				<h4>Topics</h4>
 				

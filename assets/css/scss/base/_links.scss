@@ -9,4 +9,16 @@ a {
 	}
 }
 
+.text > a, .text p > a {
+	text-decoration: none;
+	background: linear-gradient($link-color, $link-color) no-repeat;
+	background-size: 100% 1px;
+	background-position: 0 1.4em;
+	text-shadow: .1em 0 $main-bg, -.1em 0 $main-bg;
+
+	.contact-hero & {
+		text-shadow: .1em 0 $secondary-bg, -.1em 0 $secondary-bg;
+	}
+}
+
 // @include smart_underline($main-bg, $text-color, $link-color, 82%);
