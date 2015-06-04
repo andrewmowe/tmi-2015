@@ -9,7 +9,7 @@
 
 	.card.small {
 		@include susy-media($bp-med) {
-			@include pad(0);
+			@include pad(0, 1);
 		}
 	}
 
