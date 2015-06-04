@@ -10,11 +10,10 @@
 
 .logo {
 	float: left;
-	max-width: 8rem;
-	margin: 0.4rem;
+	max-width: 8em;
 
 	@media all and (min-width: $bp-med) {
-		max-width: 9rem;
+		max-width: 9em;
 	}
 }
 

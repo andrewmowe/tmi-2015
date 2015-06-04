@@ -730,7 +730,7 @@ td {
 /*-------------------*	SUSY
 \*-------------------*/
 .container {
-  max-width: 1120px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1em; }
@@ -738,6 +738,9 @@ td {
     content: " ";
     display: block;
     clear: both; }
+  @media (min-width: 1200px) {
+    .container {
+      padding: 0; } }
 
 /*------------------------------------*    $PAGE STRUCTURE
 \*------------------------------------*/
@@ -753,11 +756,10 @@ td {
 
 .logo {
   float: left;
-  max-width: 8rem;
-  margin: 0.4rem; }
+  max-width: 8em; }
   @media all and (min-width: 46.8em) {
     .logo {
-      max-width: 9rem; } }
+      max-width: 9em; } }
 
 .nav-toggle {
   float: right;
@@ -789,7 +791,7 @@ td {
   clear: both;
   overflow: hidden;
   max-height: 0;
-  margin-top: 2.8571428571%; }
+  margin-top: 1em; }
   .nav a {
     display: block;
     text-decoration: none;

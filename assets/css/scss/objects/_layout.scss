@@ -293,4 +293,8 @@
 .container {
 	@include container();
 	padding: 0 $pad;
+
+	@include susy-media(1200px) {
+		padding: 0;
+	}
 }
