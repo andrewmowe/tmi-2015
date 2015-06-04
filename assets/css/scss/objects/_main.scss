@@ -9,10 +9,10 @@ body {
 main {
 	overflow: hidden;
 	@extend .cf;
-	padding-top: 142px;
+	padding-top: 135px;
 
 	@include susy-media($bp-med) {
-		padding-top: 200px;
+		padding-top: 185px;
 	}
 
 	&.has-hero {
@@ -20,7 +20,7 @@ main {
 	}
 
 	&.has-subheading {
-		padding-top: 112px;
+		padding-top: 97px;
 	}
 
 	.page-template-default & .container {

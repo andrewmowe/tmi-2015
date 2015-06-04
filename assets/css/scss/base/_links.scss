@@ -19,10 +19,23 @@ a {
 	.contact-hero & {
 		text-shadow: .1em 0 $secondary-bg, -.1em 0 $secondary-bg;
 	}
+
+	.sub-footer & {
+		text-shadow: $footer-secondary;
+	}
 }
 
 .text > a, .text p > a {
 	@extend %smart_underline;
+}
+
+.copyright a {
+	text-decoration: none;
+	color: $white;
+
+	&:hover {
+		color: $link-color;
+	}
 }
 
 // @include smart_underline($main-bg, $text-color, $link-color, 82%);

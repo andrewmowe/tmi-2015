@@ -194,6 +194,14 @@ a {
   text-shadow: 0.1em 0 #fafceb, -0.1em 0 #fafceb; }
   .contact-hero .family--single .family--info ul li a, .family--single .family--info ul li .contact-hero a {
     text-shadow: 0.1em 0 #d6d2b5, -0.1em 0 #d6d2b5; }
+  .sub-footer .family--single .family--info ul li a, .family--single .family--info ul li .sub-footer a {
+    text-shadow: #53534b; }
+
+.copyright a {
+  text-decoration: none;
+  color: #fff; }
+  .copyright a:hover {
+    color: #00afaa; }
 
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
@@ -830,14 +838,14 @@ body {
 
 main {
   overflow: hidden;
-  padding-top: 142px; }
+  padding-top: 135px; }
   @media (min-width: 46.8em) {
     main {
-      padding-top: 200px; } }
+      padding-top: 185px; } }
   main.has-hero {
     padding-top: 0; }
   main.has-subheading {
-    padding-top: 112px; }
+    padding-top: 97px; }
   @media (min-width: 46.8em) {
     .page-template-default main .container {
       padding-left: 8.5714285714%;
@@ -870,20 +878,27 @@ main {
       margin-right: 2.8571428571%; } }
 
 .footer--contact-info {
+  line-height: 1.7;
   width: 100%;
   float: left;
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  padding-left: 0%;
+  padding-right: 0%; }
   @media (min-width: 46.8em) {
     .footer--contact-info {
       width: 48.5714285714%;
       float: left;
-      margin-right: 2.8571428571%; } }
+      margin-right: 2.8571428571%;
+      padding-left: 0%;
+      padding-right: 0%; } }
   @media (min-width: 60em) {
     .footer--contact-info {
-      width: 22.8571428571%;
+      width: 31.4285714286%;
       float: left;
-      margin-right: 2.8571428571%; } }
+      margin-right: 2.8571428571%;
+      padding-left: 8.5714285714%;
+      padding-right: 0%; } }
 
 .footer--links {
   width: 100%;
@@ -900,12 +915,14 @@ main {
       margin-right: 0; } }
   @media (min-width: 60em) {
     .footer--links {
-      width: 57.1428571429%;
+      width: 40%;
       float: right;
       margin-right: 0; } }
+  .footer--links p {
+    margin-bottom: 5.7142857143%; }
 
 .footer--link-list.link-list {
-  margin-bottom: 5.7142857143%; }
+  margin-bottom: 8.5714285714%; }
   .footer--link-list.link-list li {
     border-color: #ffc72c;
     width: 100%;
@@ -935,11 +952,24 @@ main {
           border-top: 1px solid #ffc72c; }
         .footer--link-list.link-list li:nth-child(3) {
           border-top: none; } }
+    @media (min-width: 60em) {
+      .footer--link-list.link-list li {
+        width: 46.4285714286%;
+        float: left; }
+        .footer--link-list.link-list li:nth-child(2n + 1) {
+          margin-left: 0;
+          margin-right: -100%;
+          clear: both;
+          margin-left: 0; }
+        .footer--link-list.link-list li:nth-child(2n + 2) {
+          margin-left: 53.5714285714%;
+          margin-right: -100%;
+          clear: none; } }
   .footer--link-list.link-list a {
     font-family: Arquitecta, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 2px; }
+    letter-spacing: 1px; }
 
 .sub-footer {
   background: #53534b;

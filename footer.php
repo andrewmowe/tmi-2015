@@ -37,7 +37,7 @@
 		</div>
 		<div class="sub-footer">
 			<div class="container">
-				<span class="copyright">&copy; 2015 TMI Consulting Inc / site by Team Eight</span>
+				<span class="copyright">&copy; 2015 TMI Consulting Inc / site by <a href="http://team-eight.com">Team Eight</a></span>
 				<div class="icons social-list cf">
 					<a href="" class="icon-linkedin"></a>
 					<a href="" class="icon-facebook"></a>
