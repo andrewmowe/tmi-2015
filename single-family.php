@@ -71,7 +71,16 @@ $talks = get_field('talks', false, false );
 					
 					<?php
 
-					$family = get_posts( array( 'post_type' => 'family', 'numberposts' => '-1' ) );
+					$exclude = array( $post->ID );
+
+					$args = array(
+						'post_type' => 'family',
+						'numberposts' => '4',
+						'orderby' => 'rand',
+						'post__not_in' => $exclude
+					);
+
+					$family = get_posts( $args );
 
 					foreach( $family as $member ) : ?>
 
