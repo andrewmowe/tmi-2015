@@ -1391,14 +1391,13 @@ section {
   position: relative;
   overflow: hidden;
   margin-bottom: 2.8571428571%;
+  box-shadow: 0 6px 5px -3px rgba(0, 0, 0, 0.25);
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   width: 100%;
-  float: left; }
-  .family--thumb:nth-child(1n + 1) {
-    margin-left: 0;
-    margin-right: -100%;
-    clear: none; }
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
   @media (min-width: 46.8em) {
     .family--thumb {
       width: 31.4285714286%;
@@ -1438,7 +1437,7 @@ section {
         margin-right: -100%;
         clear: none; } }
   .family--thumb:hover {
-    box-shadow: 0 6px 5px -3px #000; }
+    box-shadow: 0 6px 5px -3px rgba(0, 0, 0, 0.5); }
   .family--thumb img {
     width: 100%;
     float: left; }
@@ -1455,8 +1454,8 @@ section {
           transform: skewY(-16deg);
   left: 0;
   opacity: 0.95;
-  -webkit-transition: top 0.2s ease-out;
-  transition: top 0.2s ease-out; }
+  -webkit-transition: top 0.3s ease-out;
+  transition: top 0.3s ease-out; }
   .family--thumb:hover .family--card {
     top: 60%; }
 
@@ -1479,7 +1478,7 @@ section {
             transition-delay: 0.2s; }
 
 .family--name, .family--desc {
-  padding: 0 25px; }
+  padding: 0 15px; }
 
 .family--name {
   display: block;
