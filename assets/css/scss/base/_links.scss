@@ -9,7 +9,7 @@ a {
 	}
 }
 
-.text > a, .text p > a {
+%smart-underline {
 	text-decoration: none;
 	background: linear-gradient($link-color, $link-color) no-repeat;
 	background-size: 100% 1px;
@@ -19,6 +19,10 @@ a {
 	.contact-hero & {
 		text-shadow: .1em 0 $secondary-bg, -.1em 0 $secondary-bg;
 	}
+}
+
+.text > a, .text p > a {
+	@extend %smart_underline;
 }
 
 // @include smart_underline($main-bg, $text-color, $link-color, 82%);

@@ -6,9 +6,9 @@ p {
 
 /* Blockquote */
 blockquote {
-    font: 1.5em/2;
+    font: 1.6em/2;
     color: $link-color;
-	margin-bottom: $space;
+	margin: $space*2 0;
     @extend .tisa;
     font-style: italic;
     quotes: "\201C""\201D""\2018""\2019";
