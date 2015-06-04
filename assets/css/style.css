@@ -2163,6 +2163,9 @@ section {
       .sidebar ul li:first-child, .sidebar ul li:nth-child(2), .sidebar ul li:nth-child(3) {
         border-top: none; }
 
+.page-template-default main {
+  padding-bottom: 100px; }
+
 .post-password-form label {
   width: 68.9655172414%;
   float: left;
