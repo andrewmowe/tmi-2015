@@ -18,10 +18,11 @@
 		color: $heading-color;
 		border-bottom: 1px solid transparent;
 
-		&.active, &:hover, &:focus {
+		&:hover, &:focus {
 			border-bottom: 1px solid $text-color;
 			color: $text-color;
 		}
+
 	}
 
 	@media all and (min-width: $bp-med) {
@@ -35,6 +36,10 @@
 		
 	}
 }
+
+	.current-menu-item a {
+		border-bottom: 1px solid $secondary-bg;
+	}
 
 //Pagination
 .pagination {

@@ -23,7 +23,7 @@ main {
 		padding-top: 97px;
 	}
 
-	.page-template-default & .container {
+	.page-template-default & .container, .single-service & .container {
 		@include susy-media($bp-med) {
 			@include pad(1, 1);
 		}

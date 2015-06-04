@@ -106,11 +106,28 @@ get_header();
 				);
 				$services = get_posts($args);
 				foreach ($services as $service) : ?>
-					<li>
-						<a href="<?php echo get_permalink($service->ID); ?>"><?php echo $service->post_title; ?></a>
+
+				<?php
+				if ( !empty( $service->post_content ) ) { ?>
+
+					<li class="linked">
+						<a href="<?php echo get_permalink($service->ID); ?>">
+						<?php echo $service->post_title; ?>
+						</a>
+
 						<span class="link-list--corner"></span>
 					</li>
+
 				<?php
+				} else { ?>
+
+					<li>
+						<span class="link-list--item--no-link"><?php echo $service->post_title; ?></span>
+					</li>
+					
+				<?php
+				}
+
 				endforeach;
 				?>
 			</ul>

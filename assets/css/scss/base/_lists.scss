@@ -56,6 +56,18 @@ dd {
 			}
 		}
 
+		.link-list--item--no-link {
+			padding: 10px 5px 10px 1em;
+			width: 100%;
+			display: block;
+		}
+
+		&.linked a:after {
+			content: '\2192';
+			color: $link-color;
+			margin-left: 1em;
+		}
+
 		&:before {
 			content: '\2022';
 			color: $link-color;
@@ -63,7 +75,7 @@ dd {
 			padding: 10px 0;
 		}
 
-		&:hover {
+		&:hover.linked {
 			background: $btn-secondary;
 
 			&:before {

@@ -383,14 +383,22 @@ dd {
       transition: color 0.3s ease-in-out; }
       .link-list li a:hover {
         color: #fff; }
+    .link-list li .link-list--item--no-link {
+      padding: 10px 5px 10px 1em;
+      width: 100%;
+      display: block; }
+    .link-list li.linked a:after {
+      content: '\2192';
+      color: #00afaa;
+      margin-left: 1em; }
     .link-list li:before {
       content: '\2022';
       color: #00afaa;
       position: absolute;
       padding: 10px 0; }
-    .link-list li:hover {
+    .link-list li:hover.linked {
       background: #00b2a9; }
-      .link-list li:hover:before {
+      .link-list li:hover.linked:before {
         color: #00b2a9; }
 
 .link-list--corner {
@@ -831,7 +839,7 @@ td {
     margin-right: 10px;
     color: #3f5b58;
     border-bottom: 1px solid transparent; }
-    .nav a.active, .nav a:hover, .nav a:focus {
+    .nav a:hover, .nav a:focus {
       border-bottom: 1px solid #2e2a26;
       color: #2e2a26; }
   @media all and (min-width: 46.8em) {
@@ -841,6 +849,9 @@ td {
       clear: none; }
       .nav li {
         float: left; } }
+
+.current-menu-item a {
+  border-bottom: 1px solid #d6d2b5; }
 
 .pagination {
   overflow: hidden; }
@@ -869,7 +880,7 @@ main {
   main.has-subheading {
     padding-top: 97px; }
   @media (min-width: 46.8em) {
-    .page-template-default main .container {
+    .page-template-default main .container, .single-service main .container {
       padding-left: 8.5714285714%;
       padding-right: 8.5714285714%; } }
 
@@ -2254,7 +2265,7 @@ section {
       .sidebar ul li:first-child, .sidebar ul li:nth-child(2), .sidebar ul li:nth-child(3) {
         border-top: none; }
 
-.page-template-default main {
+.page-template-default main, .single-service main {
   padding-bottom: 100px; }
 
 .post-password-form label {
