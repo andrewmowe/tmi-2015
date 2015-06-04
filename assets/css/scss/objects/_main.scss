@@ -20,7 +20,11 @@ main {
 	}
 
 	&.has-subheading {
-		padding-top: 97px;
+		padding-top: 82px;
+		
+		@include susy-media($bp-med) {
+			padding-top: 97px;
+		}
 	}
 
 	.page-template-default & .container, .single-service & .container {

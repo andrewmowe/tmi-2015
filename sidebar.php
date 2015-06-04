@@ -2,7 +2,7 @@
 
 				<h4>Topics</h4>
 				
-				<ul class="link-list">
+				<ul class="link-list linked">
 				<?php
 				$args = array(
 					'title_li' => '',

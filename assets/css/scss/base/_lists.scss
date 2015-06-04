@@ -62,7 +62,7 @@ dd {
 			display: block;
 		}
 
-		&.linked a:after {
+		&.linked a:after, .linked a:after {
 			content: '\2192';
 			color: $link-color;
 			margin-left: 1em;
@@ -85,6 +85,10 @@ dd {
 	}
 
 }
+
+	.linked li:hover {
+		background: $btn-secondary;
+	}
 
 .link-list--corner {
 	position: absolute;

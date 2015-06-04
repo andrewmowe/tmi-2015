@@ -1,11 +1,5 @@
 .single-post {
-	main {
-		padding-top: 28%;
 
-		@include susy-media($bp-med) {
-			padding-top: 15%;
-		}
-	}
 }
 
 .entry {
@@ -36,6 +30,12 @@
 		margin: 0 0 $space $space;
 	}
 }
+
+	.entry--thumb {
+		img {
+			width: 100%;
+		}
+	}
 
 	.entry--content {
 		margin-bottom: $space;
@@ -68,6 +68,7 @@
 
 .entry-list {
 	@include span(4 of 4);
+	margin-bottom: $space*2;
 
 	@include susy-media($bp-large) {
 		@include span(8);
@@ -119,6 +120,7 @@
 
 .sidebar {
 	@include span(4 of 4);
+	margin-bottom: $space*2;
 
 	@include susy-media($bp-large) {
 		@include span(4 last);
@@ -133,14 +135,17 @@
 
 		li {
 			@include span(full);
-
-			@include susy-media($bp-med) {
-				@include span(full);
-			}
+			margin: 0 !important;
 
 			&:first-child, &:nth-child(2), &:nth-child(3) {
 				border-top: none;
 			}
+		}
+
+		a:after {
+			content: '\2192';
+			color: $link-color;
+			margin-left: 1em;
 		}
 
 	}
