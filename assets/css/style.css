@@ -214,7 +214,7 @@ h4, .h4 {
 /* Subheadings */
 .subheading {
   padding: 3em 0; }
-  .category .subheading {
+  .category .subheading, .page-template-dialogue .subheading {
     margin-bottom: 5%; }
   .subheading .container > * {
     display: inline-block;
@@ -796,7 +796,7 @@ main {
   padding-top: 142px; }
   main.has-hero {
     padding-top: 0; }
-  main.has-headline {
+  main.has-subheading {
     padding-top: 112px; }
   @media (min-width: 46.8em) {
     .page-template-default main .container {
