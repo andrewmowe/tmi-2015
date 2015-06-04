@@ -185,16 +185,17 @@ a {
   a:hover, a:focus {
     color: #00afaa; }
 
-.family--single .family--info ul li a {
+.text > a, .text > p > a, .contact-hero .hero--cta .contact--email, .family--single .family--info ul li a {
   text-decoration: none;
   background: -webkit-linear-gradient(#00afaa, #00afaa) no-repeat;
   background: linear-gradient(#00afaa, #00afaa) no-repeat;
   background-size: 100% 1px;
-  background-position: 0 1.4em;
-  text-shadow: 0.1em 0 #fafceb, -0.1em 0 #fafceb; }
-  .contact-hero .family--single .family--info ul li a, .family--single .family--info ul li .contact-hero a {
+  background-position: 0 1.3em;
+  text-shadow: 0.1em 0 #fafceb, -0.1em 0 #fafceb;
+  display: inline-block; }
+  .contact-hero .text > a, .contact-hero .text > p > a, .contact-hero .hero--cta .contact--email, .contact-hero .family--single .family--info ul li a, .family--single .family--info ul li .contact-hero a {
     text-shadow: 0.1em 0 #d6d2b5, -0.1em 0 #d6d2b5; }
-  .sub-footer .family--single .family--info ul li a, .family--single .family--info ul li .sub-footer a {
+  .sub-footer .text > a, .sub-footer .text > p > a, .sub-footer .contact-hero .hero--cta .contact--email, .contact-hero .hero--cta .sub-footer .contact--email, .sub-footer .family--single .family--info ul li a, .family--single .family--info ul li .sub-footer a {
     text-shadow: #53534b; }
 
 .copyright a {
@@ -245,9 +246,11 @@ h3, .h3 {
       font-size: 2.3rem; } }
 
 h4, .h4 {
-  font-size: 19.2px;
-  font-size: 1.2rem;
-  text-transform: uppercase; }
+  font-size: 16px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold; }
 
 /* Subheadings */
 .subheading {
@@ -475,14 +478,21 @@ input, textarea {
     color: #fff; }
 
 .newsletter input {
-  width: 60%;
-  float: left; }
+  width: 100%;
+  margin-bottom: 2.8571428571%; }
+  @media (min-width: 46.8em) {
+    .newsletter input {
+      width: 60%;
+      float: left; } }
 
 .newsletter button {
-  width: 38%;
-  float: right;
+  width: 100%;
   font-size: 1.2em;
   height: 46px; }
+  @media (min-width: 46.8em) {
+    .newsletter button {
+      width: 38%;
+      float: right; } }
 
 input[type=text], input[type=search], input[type=url], input[type=number], textarea {
   -webkit-appearance: none; }
@@ -877,7 +887,8 @@ main {
   width: 100%;
   float: left;
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  margin-bottom: 5.7142857143%; }
   @media (min-width: 46.8em) {
     .footer--logo {
       width: 48.5714285714%;
@@ -891,6 +902,7 @@ main {
 
 .footer--contact-info {
   line-height: 1.7;
+  margin-bottom: 5.7142857143%;
   width: 100%;
   float: left;
   margin-left: 0;
@@ -913,6 +925,7 @@ main {
       padding-right: 0%; } }
 
 .footer--links {
+  margin-bottom: 5.7142857143%;
   width: 100%;
   float: left;
   margin-left: 0;
@@ -990,14 +1003,24 @@ main {
 
 .copyright {
   display: inline-block;
-  vertical-align: middle; }
-  @media (min-width: 60em) {
+  vertical-align: middle;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5.7142857143%; }
+  @media (min-width: 46.8em) {
     .copyright {
-      width: 75%; } }
+      width: 75%;
+      text-align: left;
+      margin-bottom: 0; } }
 
 .social-list {
-  display: inline-block;
-  vertical-align: middle; }
+  display: block;
+  margin: 0 auto 5.7142857143%; }
+  @media (min-width: 46.8em) {
+    .social-list {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0; } }
 
 /*------------------------------------*    $TEXT Styles
 \*------------------------------------*/
@@ -1024,7 +1047,7 @@ main {
   .text ol ol {
     margin-bottom: 0; }
 
-.text-emphasis, .family--the-content p:first-of-type, .contact--intro p:first-of-type, .entry p:first-of-type {
+.text-emphasis, .family--the-content p:first-of-type, .contact--intro p, .entry p:first-of-type {
   font-size: 1.2em; }
 
 /*------------------------------------*    $COMPONENTS
@@ -1069,7 +1092,7 @@ main {
   color: #fafceb;
   text-decoration: none; }
   .icon-twitter:hover, .icon-facebook:hover, .icon-linkedin:hover {
-    background: #00b2a9;
+    background: #606737;
     color: #fafceb; }
   .sub-footer .icon-twitter, .sub-footer .icon-facebook, .sub-footer .icon-linkedin {
     background: #b99f30;
@@ -1701,7 +1724,9 @@ section {
     position: absolute; }
     @media (min-width: 46.8em) {
       .contact-hero .container {
-        background: transparent; } }
+        background: transparent;
+        height: auto;
+        padding-top: 0; } }
   .contact-hero .hero--img {
     display: none; }
     @media (min-width: 46.8em) {
@@ -1724,6 +1749,10 @@ section {
   .contact-hero .hero--cta span, .contact-hero .hero--cta a {
     color: #2e2a26;
     display: block; }
+  .contact-hero .hero--cta .contact--email {
+    display: inline-block; }
+    .contact-hero .hero--cta .contact--email:hover {
+      color: #00afaa; }
   .contact-hero .hero--cta .h3 {
     color: #3f5b58;
     font-size: 25.6px;
@@ -1733,7 +1762,8 @@ section {
         font-size: 36.8px;
         font-size: 2.3rem; } }
   .contact-hero .hero--cta .social-list {
-    float: left; }
+    float: left;
+    margin-top: 5.7142857143%; }
     .contact-hero .hero--cta .social-list a {
       color: #d6d2b5; }
       .contact-hero .hero--cta .social-list a:first-child {
@@ -1960,6 +1990,8 @@ section {
       width: 48.5714285714%;
       float: right;
       margin-right: 0; } }
+  .family--single .family--portrait img {
+    width: 100%; }
 
 .family--single .family--content {
   margin-bottom: 2.8571428571%;
@@ -2065,17 +2097,25 @@ section {
 
 .gform_wrapper {
   margin: 0 !important;
-  max-width: 100% !important; }
+  max-width: 100% !important;
+  margin-bottom: 5.7142857143% !important; }
 
 .gform_wrapper .top_label .gfield_label {
   margin: 0 !important;
   font-weight: normal !important; }
 
+.gform_wrapper .gform_footer {
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 0 !important;
+  height: 0 !important; }
+
 .contact--careers {
   width: 100%;
   float: left;
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  margin-bottom: 5.7142857143%; }
   @media (min-width: 60em) {
     .contact--careers {
       width: 31.4285714286%;
@@ -2083,7 +2123,8 @@ section {
       margin-right: 0; } }
 
 .contact--careers--header {
-  border-bottom: 1px solid #3f5b58; }
+  border-bottom: 1px solid #3f5b58;
+  margin-bottom: 2.8571428571%; }
 
 .single-post main {
   padding-top: 28%; }

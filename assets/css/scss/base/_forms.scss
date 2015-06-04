@@ -42,15 +42,24 @@ input, textarea {
 
 .newsletter {
 	input {
-		width: 60%;
-		float: left;
+		width: 100%;
+		margin-bottom: $space;
+
+		@include susy-media($bp-med) {
+			width: 60%;
+			float: left;
+		}
 	}
 
 	button {
-		width: 38%;
-		float: right;
+		width: 100%;
 		font-size: 1.2em;
 		height: 46px;
+
+		@include susy-media($bp-med) {
+			width: 38%;
+			float: right;
+		}
 	}
 }
 

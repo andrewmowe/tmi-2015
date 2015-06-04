@@ -131,6 +131,8 @@
 
 		@include susy-media($bp-med) {
 			background: transparent;
+			height: auto;
+			padding-top: 0;
 		}
 	}
 
@@ -165,6 +167,15 @@
 			display: block;
 		}
 
+		.contact--email {
+			@extend %smart-underline;
+			display: inline-block;
+
+			&:hover {
+				color: $link-color;
+			}
+		}
+
 		.h3 {
 			color: $heading-color;
 			@include font-size(1.6);
@@ -176,6 +187,7 @@
 
 		.social-list {
 			float: left;
+			margin-top: $space*2;
 
 			a {
 				color: $secondary-bg;

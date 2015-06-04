@@ -47,8 +47,10 @@ h3, .h3   {
 }
 
 h4, .h4   {
-	@include font-size(1.2);
+	@include font-size(1);
 	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
 }
 
 h5, .h5 { 

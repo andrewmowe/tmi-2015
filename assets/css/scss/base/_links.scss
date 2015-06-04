@@ -13,8 +13,9 @@ a {
 	text-decoration: none;
 	background: linear-gradient($link-color, $link-color) no-repeat;
 	background-size: 100% 1px;
-	background-position: 0 1.4em;
+	background-position: 0 1.3em;
 	text-shadow: .1em 0 $main-bg, -.1em 0 $main-bg;
+	display: inline-block;
 
 	.contact-hero & {
 		text-shadow: .1em 0 $secondary-bg, -.1em 0 $secondary-bg;
@@ -25,8 +26,8 @@ a {
 	}
 }
 
-.text > a, .text p > a {
-	@extend %smart_underline;
+.text > a, .text > p > a {
+	@extend %smart-underline;
 }
 
 .copyright a {

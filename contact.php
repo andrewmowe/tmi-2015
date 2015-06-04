@@ -26,13 +26,13 @@ $location = get_field('map');
 	<div class="container">
 		<div class="hero--cta text cf">
 			<p class="h3"><?php the_field('address'); ?></p>
-			<a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
+			<a class="contact--email" href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
 			<span>phone: <?php the_field('phone'); ?></span>
 			<span>fax: <?php the_field('fax'); ?></span>
 			<div class="icons social-list cf">
-				<a href="" class="icon-linkedin"></a>
-				<a href="" class="icon-facebook"></a>
-				<a href="" class="icon-twitter"></a>
+				<a href="http://www.linkedin.com/company/tmi-consulting-inc" class="icon-linkedin"></a>
+				<a href="https://www.facebook.com/tmiconsulting" class="icon-facebook"></a>
+				<a href="https://twitter.com/tmi_consulting" class="icon-twitter"></a>
 			</div>
 		</div>
 	</div>
@@ -43,7 +43,7 @@ $location = get_field('map');
 
 	<div class="container">
 		
-		<div class="contact--intro">
+		<div class="contact--intro text">
 
 			<?php the_content(); ?>
 

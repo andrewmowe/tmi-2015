@@ -14,9 +14,7 @@
 				@include span(8);
 				margin-bottom: $pad;
 			}
-		}
 
-		p:first-of-type {
 			@extend .text-emphasis;
 		}
 
@@ -61,6 +59,7 @@
 	.gform_wrapper {
 		margin: 0 !important;
 		max-width: 100% !important;
+		margin-bottom: $space*2 !important;
 	}
 
 	.gform_wrapper .top_label .gfield_label {
@@ -68,8 +67,16 @@
 		font-weight: normal !important;
 	}
 
+	.gform_wrapper .gform_footer {
+		padding: 0 !important;
+		margin: 0 !important;
+		line-height: 0 !important;
+		height: 0 !important;
+	}
+
 	.contact--careers {
 		@include span(4 of 4);
+		margin-bottom: $space*2;
 		
 		@include susy-media($bp-large) {
 			@include span(4 last);
@@ -78,4 +85,5 @@
 
 		.contact--careers--header {
 			border-bottom: 1px solid $heading-color;
+			margin-bottom: $space;
 		}

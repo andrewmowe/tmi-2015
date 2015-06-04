@@ -8,6 +8,10 @@
 			margin-bottom: $space*3;
 			@include span(6 last);
 		}
+
+		img {
+			width: 100%;
+		}
 	}
 
 	.family--content {
