@@ -177,6 +177,16 @@ a {
   a:hover, a:focus {
     color: #00afaa; }
 
+.text > a, .text p > a {
+  text-decoration: none;
+  background: -webkit-linear-gradient(#00afaa, #00afaa) no-repeat;
+  background: linear-gradient(#00afaa, #00afaa) no-repeat;
+  background-size: 100% 1px;
+  background-position: 0 1.4em;
+  text-shadow: 0.1em 0 #f8f7ea, -0.1em 0 #f8f7ea; }
+  .contact-hero .text > a, .contact-hero .text p > a {
+    text-shadow: 0.1em 0 #e0dcc1, -0.1em 0 #e0dcc1; }
+
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {

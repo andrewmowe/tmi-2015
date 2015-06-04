@@ -24,7 +24,7 @@ $location = get_field('map');
 	<div class="hero--card"></div>
 
 	<div class="container">
-		<div class="hero--cta cf">
+		<div class="hero--cta text cf">
 			<p class="h3"><?php the_field('address'); ?></p>
 			<a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
 			<span>phone: <?php the_field('phone'); ?></span>
