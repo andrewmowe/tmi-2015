@@ -16,18 +16,56 @@
 			}
 		}
 
+		p:first-of-type {
+			@extend .text-emphasis;
+		}
+
 		a {
 			display: block;
 			clear: left;
 		}
 	}
 
-	.contact--main {
+	.contact--main.contact--main.contact--main {
 		@include span(4 of 4);
 
 		@include susy-media($bp-large) {
 			@include span(7);
 		}
+
+		input[type="text"], input[type="email"], textarea {
+			width: 100% !important;
+			margin-bottom: $space !important;
+		}
+
+		input[type="submit"] {
+			clear: both;
+			@include span(3 of 10);
+			font-family: $font-secondary;
+			color: $white;
+			background: $link-secondary-alt;
+			border: none;
+			border-radius: 5px;
+			text-transform: uppercase;
+			@include font-size(1.2);
+			font-weight: bold;
+			letter-spacing: 0.21em;
+			margin-bottom: $space*2;
+
+			&:hover {
+				background: $link-secondary;
+			}
+		}
+	}
+
+	.gform_wrapper {
+		margin: 0 !important;
+		max-width: 100% !important;
+	}
+
+	.gform_wrapper .top_label .gfield_label {
+		margin: 0 !important;
+		font-weight: normal !important;
 	}
 
 	.contact--careers {

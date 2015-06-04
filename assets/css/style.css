@@ -942,7 +942,7 @@ main {
   .text ol ol {
     margin-bottom: 0; }
 
-.text-emphasis, .family--the-content p:first-of-type, .entry p:first-of-type {
+.text-emphasis, .family--the-content p:first-of-type, .contact--intro p:first-of-type, .entry p:first-of-type {
   font-size: 1.2em; }
 
 /*------------------------------------*    $COMPONENTS
@@ -1900,16 +1900,45 @@ section {
     display: block;
     clear: left; }
 
-.contact--main {
+.contact--main.contact--main.contact--main {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0; }
   @media (min-width: 60em) {
-    .contact--main {
+    .contact--main.contact--main.contact--main {
       width: 57.1428571429%;
       float: left;
       margin-right: 2.8571428571%; } }
+  .contact--main.contact--main.contact--main input[type="text"], .contact--main.contact--main.contact--main input[type="email"], .contact--main.contact--main.contact--main textarea {
+    width: 100% !important;
+    margin-bottom: 2.8571428571% !important; }
+  .contact--main.contact--main.contact--main input[type="submit"] {
+    clear: both;
+    width: 27.5862068966%;
+    float: left;
+    margin-right: 3.4482758621%;
+    font-family: Arquitecta, Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #b99f30;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.21em;
+    margin-bottom: 5.7142857143%; }
+    .contact--main.contact--main.contact--main input[type="submit"]:hover {
+      background: #ffc72c; }
+
+.gform_wrapper {
+  margin: 0 !important;
+  max-width: 100% !important; }
+
+.gform_wrapper .top_label .gfield_label {
+  margin: 0 !important;
+  font-weight: normal !important; }
 
 .contact--careers {
   width: 100%;
