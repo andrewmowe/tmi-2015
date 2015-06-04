@@ -3,24 +3,30 @@
 	box-shadow: 0 2px 25px rgba(0, 0, 0, 0.5);
 	margin-bottom: $space*2;
 	position: relative;
-	overflow: hidden;
+	height: 500px;
+	padding-top: 97px;
 
-	@include susy-media($bp-large) {
+	@include susy-media($bp-med) {
 		max-height: 532px;
 		@include aspect-ratio(16, 7);
+		overflow: hidden;
 	}
 
 	.container {
 		position: absolute;
-		top: 60%;
+		top: 0;
 		left: 0;
 		right: 0;
 		background: $hero;
 		padding: $pad*2;
-		transform: translateY(-50%);
+		padding-top: 97px;
+		height: 500px;
 
-		@include susy-media($bp-large) {
+
+		@include susy-media($bp-med) {
 			background: transparent;
+			top: 60%;
+			transform: translateY(-50%);
 		}
 	}
 }
@@ -30,7 +36,7 @@
 		background-size: cover;
 		overflow: hidden;
 
-		@include susy-media($bp-large) {
+		@include susy-media($bp-med) {
 			width: 69%;
 			position: absolute;
 			top: 0;
@@ -44,7 +50,7 @@
 		background: $hero;
 		width: 100%;
 
-		@include susy-media($bp-large) {
+		@include susy-media($bp-med) {
 			position: absolute;
 			top: 0;
 			bottom: 0;
@@ -56,7 +62,7 @@
 	.hero--overlay {
 		background-color: $hero-trans;
 	
-		@include susy-media($bp-large) {
+		@include susy-media($bp-med) {
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -70,9 +76,17 @@
 		@include span(4 of 4);
 		margin-bottom: $space*2;
 
-		@include susy-media($bp-large) {
+		.h3 {
+			@include font-size(1.6);
+		}
+
+		@include susy-media($bp-med) {
 			@include span(6 of 12);
 			margin-bottom: 0;
+
+			.h3 {
+				@include font-size(2.3);
+			}
 		}
 
 		span {
@@ -89,7 +103,7 @@
 
 		@include span(4 of 4);
 
-		@include susy-media($bp-large) {
+		@include susy-media($bp-med) {
 			@include span(5 of 12 last);
 			text-align: right;
 
@@ -100,17 +114,31 @@
 	}
 
 .contact-hero {
-	border-bottom: none;
-	@include susy-media($bp-large) {
-		max-height: 500px;
+	height: 380px;
+	padding-top: 97px;
+
+	@include susy-media($bp-med) {
+		max-height: 600px;
 		@include aspect-ratio(16, 6);
+		height: 600px;
 	}
 
 	.container {
 		background: $secondary-bg;
+		padding-top: 97px;
+		height: 380px;
+		position: absolute;
 
-		@include susy-media($bp-large) {
+		@include susy-media($bp-med) {
 			background: transparent;
+		}
+	}
+
+	.hero--img {
+		display: none;
+
+		@include susy-media($bp-med) {
+			display: block;
 		}
 	}
 
@@ -120,8 +148,9 @@
 	}
 	.hero--card {
 		background-color: $secondary-bg;
+		position: relative;
 
-		@include susy-media($bp-large) {
+		@include susy-media($bp-med) {
 			position: absolute;
 			top: 0;
 			bottom: 0;
@@ -138,14 +167,30 @@
 
 		.h3 {
 			color: $heading-color;
-			@include font-size(2.3);
+			@include font-size(1.6);
+
+			@include susy-media($bp-med) {
+				@include font-size(2.3);
+			}
 		}
 
 		.social-list {
-			float: right;
+			float: left;
 
 			a {
 				color: $secondary-bg;
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+
+			@include susy-media($bp-med) {
+				float: right;
+
+				a:first-child {
+					margin-left: 20px;
+				}
 			}
 		}
 	}

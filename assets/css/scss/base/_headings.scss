@@ -21,17 +21,29 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 h1, .h1   { 
 	line-height: 1.2;
-	@include font-size(6);
+	@include font-size(3);
+
+	@include susy-media($bp-med) {
+		@include font-size(6);
+	}
 }
 
 h2, .h2    { 
 	line-height: 1.2;
-	@include font-size(3);
+	@include font-size(2);
+
+	@include susy-media($bp-med) {
+		@include font-size(3);
+	}
 }
 
 h3, .h3   { 
 	line-height: 1.2;
-	@include font-size(2.3);
+	@include font-size(1.6);
+
+	@include susy-media($bp-med) {
+		@include font-size(2.3);
+	}
 }
 
 h4, .h4   {
