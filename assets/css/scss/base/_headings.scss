@@ -51,7 +51,7 @@ h6, .h6    {
 .subheading {
 	padding: $pad*3 0;
 
-	.category & {
+	.category &, .page-template-dialogue & {
 		margin-bottom: 5%;
 	}
 
