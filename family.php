@@ -28,7 +28,8 @@ get_header();
 				<?php
 				$args = array(
 					'post_type' => 'family',
-					'orderby' => 'menu_order'
+					'orderby' => 'menu_order',
+					'order' => 'ASC'
 				);
 
 				$query = new WP_Query( $args );
