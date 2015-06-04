@@ -44,35 +44,14 @@ $location = get_field('map');
 	<div class="container">
 		
 		<div class="contact--intro">
-			
-			<h2><?php the_field('subheadline'); ?></h2>
 
-			<p class="text-emphasis"><?php echo get_the_content(); ?></p>
-
-			<a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
+			<?php the_content(); ?>
 
 		</div>
 
 		<div class="contact--main">
 			
-			<form action="">
-				
-			    <div class="field-container">
-			        <label for="text">Text Input</label>
-			        <input id="text" type="text" placeholder="Your name...">
-			    </div>
-			    <div class="field-container">
-			        <label for="emailaddress">Email Address</label>
-			        <input id="emailaddress" type="email" placeholder="Your email address...">
-			    </div>
-			    <div class="field-container">
-			        <label for="textarea">Textarea</label>
-			        <textarea id="textarea" rows="8" cols="48" placeholder="Your hopes, dreams, and fears..."></textarea>
-			    </div>
-
-			    <button type="submit" class="btn alt"><span>Submit</span><span class="corner"></span></button>
-
-			</form>
+			<?php gravity_form(1, false, false); ?>
 
 		</div>
 
