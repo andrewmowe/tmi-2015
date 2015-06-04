@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*                                                                                                                                         
                                                 ,,            ,,                          ,,                                             
  .M"""bgd mm                                    db          `7MM        mm         mm   `7MM                                    OO OO OO 
@@ -200,7 +201,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   color: #3f5b58;
   font-family: Arquitecta, Helvetica, Arial, sans-serif;
   font-weight: normal; }
-  h1.tisa, .h1.tisa, h2.tisa, .h2.tisa, h3.tisa, .h3.tisa, h4.tisa, .h4.tisa {
+  h1.tisa, .h1.tisa, blockquote.h1, h2.tisa, .h2.tisa, blockquote.h2, h3.tisa, .h3.tisa, blockquote.h3, h4.tisa, .h4.tisa, blockquote.h4 {
     font-family: inherit; }
   h1 > a, .h1 > a, h2 > a, .h2 > a, h3 > a, .h3 > a, h4 > a, .h4 > a {
     color: #3f5b58;
@@ -260,9 +261,26 @@ p {
 
 /* Blockquote */
 blockquote {
-  font: italic 2em/1.2 Georgia;
+  font: 1.5em/2;
   color: #00afaa;
-  margin-bottom: 2.8571428571%; }
+  margin-bottom: 2.8571428571%;
+  font-style: italic;
+  quotes: "“" "”" "‘" "’";
+  position: relative; }
+
+blockquote:before {
+  color: #00afaa;
+  font-family: Arquitecta, Helvetica, Arial, sans-serif;
+  content: open-quote;
+  font-style: normal;
+  line-height: 0.1em;
+  position: absolute;
+  font-size: 3em;
+  left: 0.15em;
+  top: 0.5em; }
+  @media (min-width: 46.8em) {
+    blockquote:before {
+      font-size: 5em; } }
 
 /* Horizontal Rule */
 hr {
@@ -811,6 +829,9 @@ body {
 main {
   overflow: hidden;
   padding-top: 142px; }
+  @media (min-width: 46.8em) {
+    main {
+      padding-top: 200px; } }
   main.has-hero {
     padding-top: 0; }
   main.has-subheading {

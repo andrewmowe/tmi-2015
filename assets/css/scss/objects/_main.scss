@@ -11,6 +11,10 @@ main {
 	@extend .cf;
 	padding-top: 142px;
 
+	@include susy-media($bp-med) {
+		padding-top: 200px;
+	}
+
 	&.has-hero {
 		padding-top: 0;
 	}

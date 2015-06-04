@@ -41,11 +41,11 @@ $talks = get_field('talks', false, false );
 
 				</header>
 
-				<section class="family--the-content">
+				<div class="family--the-content">
 
 				<?php the_content(); ?>
 
-				</section>
+				</div>
 
 			</div>
 
