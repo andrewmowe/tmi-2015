@@ -61,3 +61,12 @@ function tmi_button($atts, $content = null ) {
 	return '<a href='.$link.' class="btn '. $class .'"><span>'.do_shortcode( $content ).'</span><span class="corner"></span></a>';
 }
 add_shortcode('button', 'tmi_button');
+
+// Family Archive menu order
+function tmi_family_order( $query ) {
+	if ( is_post_type_archive( 'family' ) ) {
+		$query->set( 'orderby', 'menu_order' );
+		return;
+	}
+}
+add_action( 'pre_get_posts', 'tmi_family_order' );

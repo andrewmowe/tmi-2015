@@ -1,4 +1,7 @@
 <?php
+/*
+Template Name: Family Archive
+*/
 get_header();
 ?>
 
@@ -8,11 +11,11 @@ get_header();
 
 			<div class="container">
 				
-				<h1 class="h2">Meet the family.</h1>
+				<h1 class="h2"><?php the_field( 'headline' ); ?></h1>
 
 				<div class="backslash"></div>
 
-				<span>These are some super great ppl</span>
+				<span><?php the_field( 'subheadline' ); ?></span>
 
 			</div>
 
@@ -23,7 +26,14 @@ get_header();
 			<div class="container">
 
 				<?php
-				if( have_posts() ) : while( have_posts() ) : the_post();
+				$args = array(
+					'post_type' => 'family',
+					'orderby' => 'menu_order'
+				);
+
+				$query = new WP_Query( $args );
+
+				if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
 				?>
 				
 				<a href="<?php the_permalink(); ?>" class="family--thumb">
@@ -39,6 +49,8 @@ get_header();
 				endwhile;
 
 				endif;
+
+				wp_reset_postdata();
 				?>
 				
 
