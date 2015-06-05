@@ -13,6 +13,7 @@
 		el.innerHTML = '<span style="font-family: \'icons\'">' + entity + '</span>' + html;
 	}
 	var icons = {
+		'icon-menu': '&#xe603;',
 		'icon-linkedin': '&#xe600;',
 		'icon-facebook': '&#xe601;',
 		'icon-twitter': '&#xe602;',

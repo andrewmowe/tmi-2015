@@ -150,6 +150,9 @@ function center_map( map ) {
 
 $(document).ready(function(){
 
+	$mobileToggle = $('.mobile-toggle');
+	$menu = $('.menu');
+
 	$('.acf-map').each(function(){
 
 		render_map( $(this) );
@@ -163,6 +166,10 @@ $(document).ready(function(){
 			e.preventDefault();
 			alert($opt_in);
 			$thisform.submit();
+	});
+
+	$mobileToggle.on('click', function(e){
+		$menu.slideToggle();
 	});
 	
 });
