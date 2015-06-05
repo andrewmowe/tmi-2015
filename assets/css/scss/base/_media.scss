@@ -26,17 +26,18 @@ figcaption {
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
-
-	&:after {
-		position: absolute;
-		content: '';
-		width: 200px;
-		background: $main-bg;
-		right: -22.5%;
-		top: 0;
-		bottom: 0;
-		display: block;
-		transform: skew(-16deg);
+	@media all and (min-width: $bp-med) {
+		&:after {
+			position: absolute;
+			content: '';
+			width: 200px;
+			background: $main-bg;
+			right: -22.5%;
+			top: 0;
+			bottom: 0;
+			display: block;
+			transform: skew(-16deg);
+		}
 	}
 
 }

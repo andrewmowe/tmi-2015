@@ -444,18 +444,19 @@ figcaption {
   display: inline-block;
   position: relative;
   overflow: hidden; }
-  .sliced-img:after {
-    position: absolute;
-    content: '';
-    width: 200px;
-    background: #fafceb;
-    right: -22.5%;
-    top: 0;
-    bottom: 0;
-    display: block;
-    -webkit-transform: skew(-16deg);
-        -ms-transform: skew(-16deg);
-            transform: skew(-16deg); }
+  @media all and (min-width: 46.8em) {
+    .sliced-img:after {
+      position: absolute;
+      content: '';
+      width: 200px;
+      background: #fafceb;
+      right: -22.5%;
+      top: 0;
+      bottom: 0;
+      display: block;
+      -webkit-transform: skew(-16deg);
+          -ms-transform: skew(-16deg);
+              transform: skew(-16deg); } }
 
 /*------------------------------------*    $FORMS
 \*------------------------------------*/
