@@ -17,6 +17,12 @@
 	cursor: pointer;
 	transition: box-shadow 0.2s ease-out;
 
+	.card--info & {
+		@media all and (min-width: $bp-med) {
+			margin-left:-.5em;
+		}
+	}
+
 	.corner {
 		width: 100px;
 		height: 100%;

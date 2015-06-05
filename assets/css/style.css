@@ -1177,6 +1177,9 @@ main {
   cursor: pointer;
   -webkit-transition: box-shadow 0.2s ease-out;
           transition: box-shadow 0.2s ease-out; }
+  @media all and (min-width: 46.8em) {
+    .card--info .btn {
+      margin-left: -.5em; } }
   .btn .corner {
     width: 100px;
     height: 100%;
@@ -1639,7 +1642,7 @@ section {
   box-shadow: 0 2px 25px rgba(0, 0, 0, 0.5);
   margin-bottom: 5.7142857143%;
   position: relative;
-  height: 500px;
+  height: 560px;
   padding-top: 97px; }
   @media (min-width: 46.8em) {
     .hero {
@@ -1659,7 +1662,7 @@ section {
     background: #00b2a9;
     padding: 2em;
     padding-top: 97px;
-    height: 500px; }
+    height: 560px; }
     @media (min-width: 46.8em) {
       .hero .container {
         background: transparent;
@@ -1750,7 +1753,8 @@ section {
     line-height: 2rem; }
     @media all and (min-width: 46.8em) {
       .hero--cta p {
-        padding-left: 2.5em; } }
+        padding-left: 4rem;
+        padding-top: 1.25rem; } }
   @media (min-width: 46.8em) {
     .hero--cta {
       width: 48.5714285714%;
