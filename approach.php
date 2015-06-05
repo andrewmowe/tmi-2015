@@ -102,7 +102,9 @@ get_header();
 				<?php
 				$args = array(
 					'post_type' => 'service',
-					'order'	=> 'ASC'
+					'order'	=> 'ASC',
+					'orberby' => 'menu_order',
+					'numberposts' => '-1'
 				);
 				$services = get_posts($args);
 				foreach ($services as $service) : ?>
