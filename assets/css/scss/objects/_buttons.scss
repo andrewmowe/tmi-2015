@@ -3,11 +3,10 @@
 \*------------------------------------*/
 .btn {
 	display: block;
-	height: 56px;
 	background: $btn-primary;
 	color: $white;
 	line-height: 1;
-	padding: $pad $pad * 4;
+	padding: $pad*1.1 $pad * 3.5;
 	border: 0;
 	text-align: center;
 	transform: skew(-16deg);
@@ -47,7 +46,7 @@
 		letter-spacing: 0.210em;
 		font-weight: bold;
 		text-decoration: none;
-		@include font-size(1);
+		font-size:1.25em;
 	}
 	
 	&.disabled {

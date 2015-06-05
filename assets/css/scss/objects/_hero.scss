@@ -25,7 +25,8 @@
 
 		@include susy-media($bp-med) {
 			background: transparent;
-			top: 60%;
+			top: 61%;
+			height: 400px;
 			transform: translateY(-50%);
 		}
 	}
@@ -72,20 +73,35 @@
 	}
 
 
+
 	.hero--img-text {
+
+		text-align: center;
+		padding:1em 0;
+		border-bottom:1px solid $mustard;
+
 		@include span(4 of 4);
 		margin-bottom: $space*2;
 
 		.h3 {
-			@include font-size(1.6);
+			@include font-size(2);
 		}
 
 		@include susy-media($bp-med) {
 			@include span(6 of 12);
 			margin-bottom: 0;
+			text-align: left;
+			padding:0;
+			border-bottom:none;
 
 			.h3 {
-				@include font-size(2.3);
+				@include font-size(3.25);
+				letter-spacing: -.01em;
+				line-height:3.75rem;
+
+				&.tisa {
+					line-height:5rem;
+				}
 			}
 		}
 
@@ -95,16 +111,21 @@
 	}
 
 	.hero--cta {
+		text-align: center;
 		p {
 			color: $white;
 			font-family: $font-secondary;
-			@include font-size(1.4);
+			@include font-size(1.75);
+			line-height:2rem;
+			@media all and (min-width: $bp-med) {
+				padding-left:2.5em;
+			}
 		}
 
 		@include span(4 of 4);
 
 		@include susy-media($bp-med) {
-			@include span(5 of 12 last);
+			@include span(6 of 12 last);
 			text-align: right;
 
 			button {

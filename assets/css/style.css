@@ -1161,11 +1161,10 @@ main {
 \*------------------------------------*/
 .btn {
   display: block;
-  height: 56px;
   background: #aa0061;
   color: #fff;
   line-height: 1;
-  padding: 1em 4em;
+  padding: 1.1em 3.5em;
   border: 0;
   text-align: center;
   -webkit-transform: skew(-16deg);
@@ -1206,8 +1205,7 @@ main {
     letter-spacing: 0.210em;
     font-weight: bold;
     text-decoration: none;
-    font-size: 16px;
-    font-size: 1rem; }
+    font-size: 1.25em; }
   .btn.disabled {
     background: #eee;
     color: #808080; }
@@ -1665,7 +1663,8 @@ section {
     @media (min-width: 46.8em) {
       .hero .container {
         background: transparent;
-        top: 60%;
+        top: 61%;
+        height: 400px;
         -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%); } }
@@ -1707,27 +1706,38 @@ section {
       left: 0; } }
 
 .hero--img-text {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid #ffc72c;
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 5.7142857143%; }
   .hero--img-text .h3 {
-    font-size: 25.6px;
-    font-size: 1.6rem; }
+    font-size: 32px;
+    font-size: 2rem; }
   @media (min-width: 46.8em) {
     .hero--img-text {
       width: 48.5714285714%;
       float: left;
       margin-right: 2.8571428571%;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      text-align: left;
+      padding: 0;
+      border-bottom: none; }
       .hero--img-text .h3 {
-        font-size: 36.8px;
-        font-size: 2.3rem; } }
+        font-size: 52px;
+        font-size: 3.25rem;
+        letter-spacing: -.01em;
+        line-height: 3.75rem; }
+        .hero--img-text .h3.tisa, .hero--img-text blockquote.h3 {
+          line-height: 5rem; } }
   .hero--img-text span {
     color: #fff; }
 
 .hero--cta {
+  text-align: center;
   width: 100%;
   float: left;
   margin-left: 0;
@@ -1735,11 +1745,15 @@ section {
   .hero--cta p {
     color: #fff;
     font-family: Arquitecta, Helvetica, Arial, sans-serif;
-    font-size: 22.4px;
-    font-size: 1.4rem; }
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 2rem; }
+    @media all and (min-width: 46.8em) {
+      .hero--cta p {
+        padding-left: 2.5em; } }
   @media (min-width: 46.8em) {
     .hero--cta {
-      width: 40%;
+      width: 48.5714285714%;
       float: right;
       margin-right: 0;
       text-align: right; }
