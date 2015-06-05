@@ -34,6 +34,9 @@
 			    </form>
 
 			</div>
+			<div class="footer--bcorp">
+				<a href="https://www.bcorporation.net/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/b-corp-logo.png" alt="B Corp logo" class="logo"></a>
+			</div>
 		</div>
 		<div class="sub-footer">
 			<div class="container">

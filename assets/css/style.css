@@ -961,8 +961,8 @@ main {
   @media (min-width: 60em) {
     .footer--links {
       width: 40%;
-      float: right;
-      margin-right: 0; } }
+      float: left;
+      margin-right: 2.8571428571%; } }
   .footer--links p {
     margin-bottom: 5.7142857143%; }
 
@@ -1015,6 +1015,28 @@ main {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px; }
+
+.footer--bcorp {
+  margin-bottom: 5.7142857143%;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  .footer--bcorp a {
+    color: #fff; }
+  .footer--bcorp img {
+    width: 100%; }
+  @media (min-width: 46.8em) {
+    .footer--bcorp {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
+  @media (min-width: 60em) {
+    .footer--bcorp {
+      width: 5.7142857143%;
+      float: right;
+      margin-right: 0; } }
 
 .sub-footer {
   background: #53534b;

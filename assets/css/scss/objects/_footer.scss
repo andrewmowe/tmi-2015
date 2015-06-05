@@ -55,7 +55,7 @@
 		}
 
 		@include susy-media($bp-large) {
-			@include span(5 of 12 last);
+			@include span(5 of 12);
 		}
 
 		p {
@@ -108,6 +108,30 @@
 			}
 
 		}
+
+	.footer--bcorp {
+
+		margin-bottom: $space*2;
+
+		a {
+			color: $white;
+		}
+
+		img {
+			width:100%;
+		}
+
+		@include span(1 of 1);
+
+		@include susy-media($bp-med) {
+			@include span(12 of 12);
+		}
+
+		@include susy-media($bp-large) {
+			@include span(1 of 12 last);
+		}
+
+	}
 
 	.sub-footer {
 		background: $footer-secondary;
