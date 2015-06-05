@@ -458,6 +458,116 @@ figcaption {
           -ms-transform: skew(-16deg);
               transform: skew(-16deg); } }
 
+.member--thumb {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2.8571428571%;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 46.8em) {
+    .member--thumb {
+      width: 22.8571428571%;
+      float: left; }
+      .member--thumb:nth-child(4n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .member--thumb:nth-child(4n + 2) {
+        margin-left: 25.7142857143%;
+        margin-right: -100%;
+        clear: none; }
+      .member--thumb:nth-child(4n + 3) {
+        margin-left: 51.4285714286%;
+        margin-right: -100%;
+        clear: none; }
+      .member--thumb:nth-child(4n + 4) {
+        margin-left: 77.1428571429%;
+        margin-right: -100%;
+        clear: none; } }
+  @media (min-width: 60em) {
+    .member--thumb {
+      width: 14.2857142857%;
+      float: left; }
+      .member--thumb:nth-child(6n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .member--thumb:nth-child(6n + 2) {
+        margin-left: 17.1428571429%;
+        margin-right: -100%;
+        clear: none; }
+      .member--thumb:nth-child(6n + 3) {
+        margin-left: 34.2857142857%;
+        margin-right: -100%;
+        clear: none; }
+      .member--thumb:nth-child(6n + 4) {
+        margin-left: 51.4285714286%;
+        margin-right: -100%;
+        clear: none; }
+      .member--thumb:nth-child(6n + 5) {
+        margin-left: 68.5714285714%;
+        margin-right: -100%;
+        clear: none; }
+      .member--thumb:nth-child(6n + 6) {
+        margin-left: 85.7142857143%;
+        margin-right: -100%;
+        clear: none; } }
+  .member--thumb:hover {
+    box-shadow: 0 6px 5px -3px rgba(0, 0, 0, 0.5); }
+  .member--thumb img {
+    width: 100%;
+    float: left; }
+
+.press--thumb {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2.8571428571%;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 60em) {
+    .press--thumb {
+      width: 48.5714285714%;
+      float: left; }
+      .press--thumb:nth-child(2n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .press--thumb:nth-child(2n + 2) {
+        margin-left: 51.4285714286%;
+        margin-right: -100%;
+        clear: none; } }
+  .press--thumb img {
+    width: 100%;
+    float: left; }
+  .press--thumb .text {
+    clear: both; }
+
+.press--title {
+  border-bottom: 1px solid; }
+
+.press--subtitle {
+  font-style: italic;
+  margin-top: 0;
+  padding-top: 0;
+  float: left; }
+
+.press--date {
+  float: right;
+  font-style: italic; }
+
 /*------------------------------------*    $FORMS
 \*------------------------------------*/
 form ol, form ul {
@@ -1627,7 +1737,7 @@ section {
 .family--desc {
   font-style: italic; }
 
-.family {
+.family, .memberships {
   padding-top: 8.5714285714%; }
 
 .family--the-content > * {
@@ -1637,6 +1747,18 @@ section {
 .family--the-content p:first-of-type {
   padding-left: 0%;
   padding-right: 0%; }
+
+.memberships.secondary-section {
+  background: white;
+  padding-left: 5rem;
+  padding-right: 5rem; }
+  @media all and (min-width: 46.8em) {
+    .memberships.secondary-section {
+      padding-left: 0;
+      padding-right: 0; } }
+  .memberships.secondary-section h3 {
+    border-bottom: 1px solid #3f5b58;
+    margin-bottom: 2em; }
 
 .hero {
   width: 100%;

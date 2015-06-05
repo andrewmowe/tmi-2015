@@ -76,7 +76,7 @@
 			font-style: italic;
 		}
 
-.family {
+.family, .memberships {
 	padding-top: $space*3;
 }
 
@@ -89,3 +89,16 @@
 			@include pad(0);
 		}
 	}
+.memberships.secondary-section {
+	background:white;
+	padding-left:5rem;
+	padding-right:5rem;
+	@media all and (min-width: $bp-med) {
+		padding-left:0;
+		padding-right:0;
+	}
+	h3 {
+		border-bottom: 1px solid $graygreen;
+  		margin-bottom: 2em;
+	}
+}
