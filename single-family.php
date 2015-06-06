@@ -77,6 +77,8 @@ $talks = get_field('talks', false, false );
 					data-cycle-slides="> a"
 					data-cycle-carousel-visible="4"
 					data-cycle-carousel-fluid="true"
+					data-cycle-prev=".pager-left"
+					data-cycle-next=".pager-right"
 					>
 					
 					<?php
@@ -110,6 +112,11 @@ $talks = get_field('talks', false, false );
 					?>
 
 				</div>
+
+				<div class="pager pager-right">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/src/pager-right.png" alt="">
+				</div>
+
 
 			</div>
 

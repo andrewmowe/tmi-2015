@@ -2139,18 +2139,16 @@ section {
     margin: 0 auto; }
   .family--single--list .pager {
     position: absolute;
-    text-align: center; }
-    .family--single--list .pager:after {
-      content: '';
-      width: 50%;
-      height: 50px;
-      display: block;
-      background: black; }
+    text-align: center;
+    cursor: pointer; }
     .family--single--list .pager img {
-      width: 50%;
+      width: 30%;
       height: auto; }
   .family--single--list .pager-left {
     left: 0;
+    top: 50%; }
+  .family--single--list .pager-right {
+    right: 0;
     top: 50%; }
   .family--single--list .family--thumb {
     -webkit-transition: none;

@@ -85,23 +85,29 @@
 	.pager {
 		position: absolute;
 		text-align: center;
+		cursor: pointer;
 
-		&:after {
-			content: '';
-			width: 50%;
-			height: 50px;
-			display: block;
-			background: black;
-		}
+		// &:after {
+		// 	content: '';
+		// 	width: 50%;
+		// 	height: 50px;
+		// 	display: block;
+		// 	background: black;
+		// }
 
 		img {
-			width: 50%;
+			width: 30%;
 			height: auto;
 		}
 	}
 
 	.pager-left {
 		left: 0;
+		top: 50%;
+	}
+
+	.pager-right {
+		right: 0;
 		top: 50%;
 	}
 
