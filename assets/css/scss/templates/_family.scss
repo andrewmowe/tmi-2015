@@ -73,3 +73,52 @@
 		}
 	}
 }
+
+.family--single--list {
+	position: relative;
+
+	.cycle-slideshow {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.pager {
+		position: absolute;
+		text-align: center;
+
+		&:after {
+			content: '';
+			width: 50%;
+			height: 50px;
+			display: block;
+			background: black;
+		}
+
+		img {
+			width: 50%;
+			height: auto;
+		}
+	}
+
+	.pager-left {
+		left: 0;
+		top: 50%;
+	}
+
+	.family--thumb {
+		transition: none;
+		width: 250px;
+		height: auto;
+		position: relative !important;
+		margin-bottom: 0;
+		margin-right: $pad;
+	}
+
+	.family--card {
+		top: 60%;
+	}
+
+	.family--meta {
+		opacity: 1;
+	}
+}

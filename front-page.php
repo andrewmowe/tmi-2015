@@ -52,7 +52,7 @@ endif;
 		<?php if( isset( $top_left_img ) && !empty( $top_left_img ) ) :
 			echo wp_get_attachment_image( $top_left_img, 'full', false, array( 'class' => 'card--img' ) );
 		endif; ?>
-		<div class="card--info">
+		<div class="card--info text">
 			<?php if( isset( $top_left_title ) && !empty( $top_left_title ) ) : ?>
 				<h4 class="card--title"><?php echo $top_left_title; ?></h4>
 			<?php endif; ?>
@@ -79,7 +79,7 @@ endif;
 		<?php if( isset( $top_right_img ) && !empty( $top_right_img ) ) :
 			echo wp_get_attachment_image( $top_right_img, 'full', false, array( 'class' => 'card--img' ) );
 		endif; ?>
-		<div class="card--info">
+		<div class="card--info text">
 			<?php if( isset( $top_right_title ) && !empty( $top_right_title ) ) : ?>
 				<h4 class="card--title"><?php echo $top_right_title; ?></h4>
 			<?php endif; ?>
@@ -106,7 +106,7 @@ endif;
 		<?php if( isset( $large_img ) && !empty( $large_img ) ) :
 			echo '<div class="sliced-img card--img">'.wp_get_attachment_image( $large_img, 'full', false, array() ).'</div>';
 		endif; ?>
-		<div class="card--info">
+		<div class="card--info text">
 			<?php if( isset( $large_title ) && !empty( $large_title ) ) : ?>
 				<h4 class="card--title"><?php echo $large_title; ?></h4>
 			<?php endif; ?>

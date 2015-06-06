@@ -23,7 +23,7 @@ $talks = get_field('talks', false, false );
 
 			<div class="family--content">
 				
-				<header class="family--header">
+				<header class="family--header text">
 					
 					<h1 class="h3"><?php the_title(); ?></h1>
 
@@ -61,13 +61,23 @@ $talks = get_field('talks', false, false );
 
 		</section>
 
-		<section class="family secondary-section">
+		<section class="family family--single--list secondary-section">
 			
 			<div class="container">
 				
 				<h3 class="section--title">The TMI Family</h3>
 
-				<div>
+				<div class="pager pager-left">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/src/pager-left.png" alt="">
+				</div>
+
+				<div class="cycle-slideshow"
+					data-cycle-fx="carousel"
+					data-cycle-timeout="0"
+					data-cycle-slides="> a"
+					data-cycle-carousel-visible="4"
+					data-cycle-carousel-fluid="true"
+					>
 					
 					<?php
 
@@ -75,7 +85,7 @@ $talks = get_field('talks', false, false );
 
 					$args = array(
 						'post_type' => 'family',
-						'numberposts' => '4',
+						'numberposts' => '-1',
 						'orderby' => 'rand',
 						'post__not_in' => $exclude
 					);

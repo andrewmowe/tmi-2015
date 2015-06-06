@@ -21,7 +21,7 @@ get_header();
 
 		</header>
 
-		<section class="family secondary-section">
+		<section class="family family--archive secondary-section">
 			
 			<div class="container">
 
