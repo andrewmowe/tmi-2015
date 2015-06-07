@@ -186,13 +186,19 @@ a {
     color: #00afaa; }
 
 .text > a, .text > p > a, .contact-hero .hero--cta .contact--email, .family--single .family--info ul li a {
+  color: #333;
   text-decoration: none;
-  background: -webkit-linear-gradient(#00afaa, #00afaa) no-repeat;
-  background: linear-gradient(#00afaa, #00afaa) no-repeat;
-  background-size: 100% 1px;
-  background-position: 0 1.3em;
-  text-shadow: 0.1em 0 #fafceb, -0.1em 0 #fafceb;
-  display: inline-block; }
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 178, 169, 0) 15%, #00b2a9 15%, #00b2a9 18%, rgba(0, 178, 169, 0) 18%);
+  background-image: linear-gradient(to top, rgba(0, 178, 169, 0) 15%, #00b2a9 15%, #00b2a9 18%, rgba(0, 178, 169, 0) 18%);
+  text-shadow: -1px -1px 0 #fafceb, 1px -1px 0 #fafceb, -1px 1px 0 #fafceb, 1px 1px 0 #fafceb; }
+  .text > a:hover, .text > p > a:hover, .contact-hero .hero--cta .contact--email:hover, .family--single .family--info ul li a:hover {
+    color: #fafceb;
+    -webkit-transition: background-color 0.25s ease;
+            transition: background-color 0.25s ease;
+    -webkit-transition: color 0.25s ease;
+            transition: color 0.25s ease;
+    background-color: #00b2a9;
+    text-shadow: none; }
   .contact-hero .text > a, .contact-hero .text > p > a, .contact-hero .hero--cta .contact--email, .contact-hero .family--single .family--info ul li a, .family--single .family--info ul li .contact-hero a {
     text-shadow: 0.1em 0 #d6d2b5, -0.1em 0 #d6d2b5; }
   .sub-footer .text > a, .sub-footer .text > p > a, .sub-footer .contact-hero .hero--cta .contact--email, .contact-hero .hero--cta .sub-footer .contact--email, .sub-footer .family--single .family--info ul li a, .family--single .family--info ul li .sub-footer a {
@@ -290,6 +296,7 @@ blockquote {
   font: 1.6em/2;
   color: #00afaa;
   margin: 5.7142857143% 0;
+  padding-left: 5.7142857143%;
   font-style: italic;
   quotes: "“" "”" "‘" "’";
   position: relative; }
@@ -882,7 +889,7 @@ td {
       .nav a {
         margin-right: 10px; } }
 
-.current-menu-item a {
+.nav .current-menu-item a {
   border-bottom: 1px solid #d6d2b5; }
 
 .pagination {

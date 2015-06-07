@@ -10,12 +10,18 @@ a {
 }
 
 %smart-underline {
-	text-decoration: none;
-	background: linear-gradient($link-color, $link-color) no-repeat;
-	background-size: 100% 1px;
-	background-position: 0 1.3em;
-	text-shadow: .1em 0 $main-bg, -.1em 0 $main-bg;
-	display: inline-block;
+	color: $gray-dark;
+  text-decoration:none;
+  background-image: linear-gradient(to top, rgba(0, 178, 169, 0) 15%, $aqua 15%, $aqua 18%, rgba(0, 178, 169, 0) 18%);
+  text-shadow: -1px -1px 0 $paper, 1px -1px 0 $paper, -1px 1px 0 $paper, 1px 1px 0 $paper;
+  
+  &:hover {
+    color:$paper;
+    transition: background-color 0.25s ease;
+    transition: color 0.25s ease;
+    background-color:$aqua;
+    text-shadow:none;
+  }
 
 	.contact-hero & {
 		text-shadow: .1em 0 $secondary-bg, -.1em 0 $secondary-bg;
