@@ -22,6 +22,8 @@
 
 		</style>
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.min.js"></script>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class( 'tisa' ); ?>>

@@ -67,19 +67,7 @@ $talks = get_field('talks', false, false );
 				
 				<h3 class="section--title">The TMI Family</h3>
 
-				<div class="pager pager-left">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/src/pager-left.png" alt="">
-				</div>
-
-				<div class="cycle-slideshow"
-					data-cycle-fx="carousel"
-					data-cycle-timeout="0"
-					data-cycle-slides="> a"
-					data-cycle-carousel-visible="4"
-					data-cycle-carousel-fluid="true"
-					data-cycle-prev=".pager-left"
-					data-cycle-next=".pager-right"
-					>
+				<div class="js-flickety">
 					
 					<?php
 
@@ -112,11 +100,6 @@ $talks = get_field('talks', false, false );
 					?>
 
 				</div>
-
-				<div class="pager pager-right">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/src/pager-right.png" alt="">
-				</div>
-
 
 			</div>
 
