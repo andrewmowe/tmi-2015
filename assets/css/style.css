@@ -2141,30 +2141,18 @@ section {
 
 .family--single--list {
   position: relative; }
-  .family--single--list .cycle-slideshow {
-    width: 80%;
-    margin: 0 auto; }
-  .family--single--list .pager {
-    position: absolute;
-    text-align: center;
-    cursor: pointer; }
-    .family--single--list .pager img {
-      width: 30%;
-      height: auto; }
-  .family--single--list .pager-left {
-    left: 0;
-    top: 50%; }
-  .family--single--list .pager-right {
-    right: 0;
-    top: 50%; }
-  .family--single--list .family--thumb {
-    -webkit-transition: none;
-            transition: none;
-    width: 250px;
+  .family--single--list .gallery-cell {
+    width: 100%;
     height: auto;
-    position: relative !important;
-    margin-bottom: 0;
-    margin-right: 1em; }
+    position: relative; }
+    @media (min-width: 46.8em) {
+      .family--single--list .gallery-cell {
+        width: 25%;
+        margin-right: 2.8571428571%; } }
+    .family--single--list .gallery-cell img {
+      width: 100%;
+      height: auto;
+      float: left; }
   .family--single--list .family--card {
     top: 60%; }
   .family--single--list .family--meta {
