@@ -276,7 +276,11 @@ h4, .h4 {
     -webkit-transform: skew(-16deg);
         -ms-transform: skew(-16deg);
             transform: skew(-16deg);
-    margin: 0 50px; }
+    margin: 0 50px;
+    display: none; }
+    @media all and (min-width: 46.8em) {
+      .subheading .backslash {
+        display: inline-block; } }
 
 .section--title {
   width: 100%;
@@ -1679,14 +1683,23 @@ section {
   border-color: #f00;
   background: #ffbebe; }
 
+section.family .container {
+  max-width: 273px; }
+  @media all and (min-width: 46.8em) {
+    section.family .container {
+      max-width: none; } }
+
 .family--thumb {
   display: block;
   position: relative;
   overflow: hidden;
-  margin-bottom: 2.8571428571%;
+  margin-bottom: 2em;
   box-shadow: 0 6px 5px -3px rgba(0, 0, 0, 0.25);
   -webkit-transition: box-shadow 0.2s ease-out;
   transition: box-shadow 0.2s ease-out; }
+  @media all and (min-width: 46.8em) {
+    .family--thumb {
+      margin-bottom: 2.8571428571%; } }
   .family--thumb:hover {
     box-shadow: 0 6px 5px -3px rgba(0, 0, 0, 0.5); }
   .family--thumb img {
@@ -1739,7 +1752,7 @@ section {
 .family--card {
   position: absolute;
   background: #00afaa;
-  top: 120%;
+  top: 60%;
   bottom: -120%;
   left: 0;
   right: 0;
@@ -1750,6 +1763,9 @@ section {
   opacity: 0.95;
   -webkit-transition: top 0.3s ease-out;
   transition: top 0.3s ease-out; }
+  @media all and (min-width: 46.8em) {
+    .family--card {
+      top: 120%; } }
   .family--thumb:hover .family--card {
     top: 60%; }
   a .family--card {
@@ -1761,11 +1777,13 @@ section {
   top: 67%;
   text-align: right;
   width: 100%;
-  opacity: 0;
   -webkit-transition: opacity 0s ease-out;
   transition: opacity 0s ease-out;
   -webkit-transition-delay: 0s;
           transition-delay: 0s; }
+  @media all and (min-width: 46.8em) {
+    .family--meta {
+      opacity: 0; } }
   .family--thumb:hover .family--meta {
     opacity: 1;
     -webkit-transition: opacity 0.25s ease-in-out;
@@ -2029,15 +2047,15 @@ section {
         .card.small + .small {
           float: right;
           margin-right: 0; } }
-  .card.large {
+  .card.large p {
     font-size: 1.2em;
     line-height: 1.6; }
-    @media (min-width: 46.8em) {
-      .card.large {
-        width: 100%;
-        float: left;
-        margin-left: 0;
-        margin-right: 0; } }
+  @media (min-width: 46.8em) {
+    .card.large {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .page-template-approach .card.small {
   font-size: 1em; }
@@ -2289,18 +2307,37 @@ section {
         padding: 0;
         left: 0; }
 
+.flickity-enabled {
+  max-width: 273px;
+  margin: 0 auto; }
+  @media all and (min-width: 46.8em) {
+    .flickity-enabled {
+      max-width: none; } }
+
+.flickity-prev-next-button.previous {
+  left: -35px; }
+  @media all and (min-width: 46.8em) {
+    .flickity-prev-next-button.previous {
+      left: 10px; } }
+
+.flickity-prev-next-button.next {
+  right: -35px; }
+  @media all and (min-width: 46.8em) {
+    .flickity-prev-next-button.next {
+      right: 10px; } }
+
 .family--single--list {
   position: relative;
   padding-bottom: 6em; }
   .family--single--list .gallery-cell {
     width: 100%;
     height: auto;
-    position: relative; }
+    position: relative;
+    margin-right: 2.8571428571%; }
     @media (min-width: 46.8em) {
       .family--single--list .gallery-cell {
         width: 22.8571428571%;
-        height: auto;
-        margin-right: 2.8571428571%; } }
+        height: auto; } }
     .family--single--list .gallery-cell img {
       width: 100%;
       height: auto;
@@ -2325,6 +2362,9 @@ section {
         margin-bottom: 1em; } }
   .contact--intro a {
     clear: left; }
+
+.contact--main {
+  margin-bottom: 5rem; }
 
 .contact--main.contact--main.contact--main {
   width: 100%;

@@ -18,8 +18,10 @@
 	}
 
 	&.large {
-		font-size:1.2em;
-		line-height:1.6;
+		p {
+			font-size:1.2em;
+			line-height:1.6;
+		}
 		@include susy-media($bp-med) {
 			@include span(12 of 12);
 		}

@@ -1,8 +1,18 @@
+section.family .container {
+  max-width: 273px;
+  @media all and (min-width: $bp-med) {
+	max-width:none;
+  }
+}
+
 .family--thumb {
 	display: block;
 	position: relative;
 	overflow: hidden;
-	margin-bottom: $space;
+	margin-bottom: 2em;
+	@media all and (min-width: $bp-med) {
+		margin-bottom: $space;
+	}
 	box-shadow: 0 6px 5px -3px rgba(0,0,0,0.25);
 	@include transition( box-shadow, 0.2s, ease-out );
 
@@ -31,7 +41,10 @@
 	.family--card {
 		position: absolute;
 		background: $link-color;
-		top: 120%;
+		top: 60%;
+		@media all and (min-width: $bp-med) {
+			top: 120%;
+		}
 		bottom: -120%;
 		left: 0;
 		right: 0;
@@ -56,7 +69,9 @@
 		top: 67%;
 		text-align: right;
 		width: 100%;
-		opacity: 0;
+		@media all and (min-width: $bp-med) {
+			opacity: 0;
+		}
 		@include transition( opacity, 0s, ease-out);
 		transition-delay: 0s;
 

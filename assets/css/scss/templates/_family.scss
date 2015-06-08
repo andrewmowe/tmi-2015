@@ -80,6 +80,27 @@
 	}
 }
 
+
+.flickity-enabled {
+	max-width: 273px;
+	margin:0 auto;
+	@media all and (min-width: $bp-med) {
+		max-width:none;
+	}
+}
+.flickity-prev-next-button.previous {
+  left: -35px;
+  	@media all and (min-width: $bp-med) {
+		left:10px;
+	}
+}
+.flickity-prev-next-button.next {
+  right: -35px;
+  	@media all and (min-width: $bp-med) {
+		right:10px;
+	}
+}
+
 .family--single--list {
 	position: relative;
 	padding-bottom: $pad*6;
@@ -88,11 +109,12 @@
 		width: 100%;
 		height: auto;
 		position: relative;
+		margin-right: $space;
 
 		@include susy-media($bp-med) {
 			width: span(3 of 12);
 			height: auto;
-			margin-right: $space;
+			
 		}
 	
 		img {
