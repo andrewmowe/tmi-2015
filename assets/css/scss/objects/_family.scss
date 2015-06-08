@@ -1,7 +1,7 @@
 section.family .container {
   max-width: 273px;
   @media all and (min-width: $bp-med) {
-	max-width:none;
+	max-width: $max-width;
   }
 }
 

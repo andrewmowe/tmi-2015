@@ -1687,7 +1687,7 @@ section.family .container {
   max-width: 273px; }
   @media all and (min-width: 46.8em) {
     section.family .container {
-      max-width: none; } }
+      max-width: 72em; } }
 
 .family--thumb {
   display: block;
@@ -2087,8 +2087,10 @@ section.family .container {
       font-size: 32px;
       font-size: 2rem;
       font-weight: normal;
-      letter-spacing: -1px;
+      letter-spacing: .02em;
       line-height: 1.1; }
+      .page-template-approach .large .card--title {
+        letter-spacing: -1px; }
       .large .card--title.punchline {
         border: none;
         color: #00afaa;

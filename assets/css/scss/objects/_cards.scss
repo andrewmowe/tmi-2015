@@ -70,7 +70,10 @@
 					text-transform: none;
 					@include font-size(2);
 					font-weight: normal;
-  					letter-spacing: -1px;
+					letter-spacing: .02em;
+					.page-template-approach & {
+  						letter-spacing: -1px;
+  					}
   					  line-height: 1.1;
 
 					&.punchline {
