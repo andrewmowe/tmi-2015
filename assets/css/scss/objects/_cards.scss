@@ -41,7 +41,7 @@
 		@include susy-media($bp-med) {
 			.large & {
 				width: span(6 of 12);
-				margin-right: gutter();
+				// margin-right: gutter();
 				display: inline-block;
 				vertical-align: middle;
 			}

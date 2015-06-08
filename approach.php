@@ -19,7 +19,7 @@ get_header();
 				<div class="sliced-img card--img">
 					<?php
 					if( isset( $img ) && !empty( $img ) ) :
-						echo wp_get_attachment_image( $img, 'large' );
+						echo wp_get_attachment_image( $img, 'full' );
 					endif;
 					?>
 				</div>
