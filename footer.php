@@ -26,12 +26,19 @@
 					);
 				wp_nav_menu( $args ); ?>
 
-				<p>Get in our heads on the topics of diversity and inclusion in the workplace. Sign up for our quarterly-ish newsletter.</p>
+				<p>Stay informed on topics of diversity and inclusion in the workplace. Sign up for our quarterly-ish newsletter.</p>
 
-			    <form class="newsletter cf" name="newsletter" action="">
-			        <input id="text" type="text" placeholder="Your name...">
-				    <button class="footer--btn">Sign Up</button>
-			    </form>
+				<!-- Begin MailChimp Signup Form -->
+				<div id="mc_embed_signup">
+				<form action="//tmiconsultinginc.us11.list-manage.com/subscribe/post?u=fc6dee560aebbee21d9c670a3&amp;id=edb83fca2a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate newsletter cf" target="_blank" novalidate>
+					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address..." required>
+				    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;"><input type="text" name="b_fc6dee560aebbee21d9c670a3_edb83fca2a" tabindex="-1" value=""></div>
+				    <input type="submit" value="Sign Up" name="signup" id="mc-embedded-subscribe" class="footer--btn">
+				</form>
+				</div>
+
+				<!--End mc_embed_signup-->
 
 			</div>
 			<div class="footer--bcorp">
