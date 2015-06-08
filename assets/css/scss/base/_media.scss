@@ -85,6 +85,10 @@ figcaption {
 	img {
 		width: 100%;
 		float: left;
+		@media all and (min-width: $bp-med) {
+			width: 30%;
+			margin: 0 1em 1em 0;
+		}
 	}
 	.text {
 		clear:both;

@@ -552,6 +552,10 @@ figcaption {
   .press--thumb img {
     width: 100%;
     float: left; }
+    @media all and (min-width: 46.8em) {
+      .press--thumb img {
+        width: 30%;
+        margin: 0 1em 1em 0; } }
   .press--thumb .text {
     clear: both; }
 
