@@ -1565,8 +1565,8 @@ section {
   overflow: hidden;
   margin-bottom: 2.8571428571%;
   box-shadow: 0 6px 5px -3px rgba(0, 0, 0, 0.25);
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out; }
+  -webkit-transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out; }
   .family--thumb:hover {
     box-shadow: 0 6px 5px -3px rgba(0, 0, 0, 0.5); }
   .family--thumb img {
