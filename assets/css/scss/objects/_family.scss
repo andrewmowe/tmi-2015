@@ -44,6 +44,10 @@
 		.family--thumb:hover & {
 			top: 60%;
 		}
+
+		a & {
+			cursor: pointer;
+		}
 	}
 
 	.family--meta {
@@ -60,11 +64,13 @@
 			opacity: 1;
 			@include transition( opacity, 0.25s, ease-in-out);
 			transition-delay: 0.2s;
+			cursor: pointer;
 		}
 	}
 
 		.family--name, .family--desc {
 			padding: 0 15px;
+			display: block;
 		}
 
 		.family--name {

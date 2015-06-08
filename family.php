@@ -35,16 +35,32 @@ get_header();
 				$query = new WP_Query( $args );
 
 				if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
-				?>
-				
-				<a href="<?php the_permalink(); ?>" class="family--thumb">
-					<?php the_post_thumbnail( 'family-thumb' ); ?>
-					<div class="family--card"></div>
-					<div class="family--meta">
-						<span class="family--name"><?php the_title(); ?></span>
-						<span class="family--desc"><?php the_field( 'position' ); ?></span>
+
+
+					if( get_field('no-clickthru') ) { ?>
+
+					<div class="family--thumb">
+						<?php the_post_thumbnail( 'family-thumb' ); ?>
+						<div class="family--card"></div>
+						<div class="family--meta">
+							<span class="family--name"><?php the_title(); ?></span>
+							<span class="family--desc"><?php the_field( 'position' ); ?></span>
+						</div>
 					</div>
-				</a>
+
+					<?php } else { ?>
+
+					<a href="<?php the_permalink(); ?>" class="family--thumb">
+						<?php the_post_thumbnail( 'family-thumb' ); ?>
+						<div class="family--card"></div>
+						<div class="family--meta">
+							<span class="family--name"><?php the_title(); ?></span>
+							<span class="family--desc"><?php the_field( 'position' ); ?></span>
+						</div>
+					</a>
+
+					<?php } ?>
+				
 
 				<?php
 				endwhile;

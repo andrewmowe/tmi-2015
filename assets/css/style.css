@@ -1752,6 +1752,8 @@ section {
   transition: top 0.3s ease-out; }
   .family--thumb:hover .family--card {
     top: 60%; }
+  a .family--card {
+    cursor: pointer; }
 
 .family--meta {
   position: absolute;
@@ -1769,10 +1771,12 @@ section {
     -webkit-transition: opacity 0.25s ease-in-out;
     transition: opacity 0.25s ease-in-out;
     -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s; }
+            transition-delay: 0.2s;
+    cursor: pointer; }
 
 .family--name, .family--desc {
-  padding: 0 15px; }
+  padding: 0 15px;
+  display: block; }
 
 .family--name {
   display: block;
