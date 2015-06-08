@@ -22,9 +22,12 @@
 		line-height:1.6;
 		@include susy-media($bp-med) {
 			@include span(12 of 12);
-			font-size: 0;
 		}
 	}
+}
+
+.page-template-approach .card.small {
+	font-size:1em;
 }
 
 	.card--img {
@@ -52,7 +55,6 @@
 				margin-right: 0;
 				display: inline-block;
 				vertical-align: middle;
-				@include font-size(1);
 			}
 
 		}
@@ -72,7 +74,7 @@
 					&.punchline {
 						border: none;
 						color: $link-color;
-						@include font-size(3.5);
+						@include font-size(3.25);
 					}
 				}
 			}

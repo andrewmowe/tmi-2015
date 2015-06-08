@@ -2033,8 +2033,10 @@ section {
         width: 100%;
         float: left;
         margin-left: 0;
-        margin-right: 0;
-        font-size: 0; } }
+        margin-right: 0; } }
+
+.page-template-approach .card.small {
+  font-size: 1em; }
 
 .card--img {
   width: 100%;
@@ -2053,9 +2055,7 @@ section {
     width: 48.5714285714%;
     margin-right: 0;
     display: inline-block;
-    vertical-align: middle;
-    font-size: 16px;
-    font-size: 1rem; } }
+    vertical-align: middle; } }
 
 .card--title {
   border-bottom: 1px solid #3f5b58;
@@ -2071,8 +2071,8 @@ section {
       .large .card--title.punchline {
         border: none;
         color: #00afaa;
-        font-size: 56px;
-        font-size: 3.5rem; } }
+        font-size: 52px;
+        font-size: 3.25rem; } }
 
 .approach-cases {
   position: relative; }
@@ -2198,7 +2198,8 @@ section {
     -webkit-transform: skew(-16deg, -16deg);
         -ms-transform: skew(-16deg, -16deg);
             transform: skew(-16deg, -16deg);
-    display: inline-block; }
+    display: inline-block;
+    opacity: 0.5; }
   .btn-separator .btn {
     margin: 0 auto;
     z-index: 1; }
