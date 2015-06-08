@@ -85,6 +85,7 @@
 
 		@include susy-media($bp-med) {
 			width: span(3 of 12);
+			height: auto;
 			margin-right: $space;
 		}
 	

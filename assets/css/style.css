@@ -2150,6 +2150,7 @@ section {
     @media (min-width: 46.8em) {
       .family--single--list .gallery-cell {
         width: 22.8571428571%;
+        height: auto;
         margin-right: 2.8571428571%; } }
     .family--single--list .gallery-cell img {
       width: 100%;
