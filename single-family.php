@@ -70,7 +70,8 @@ $talks = get_field('talks', false, false );
 				<div class="js-flickity"
 					data-flickity-options='{
 					"wrapAround": true,
-					"cellAlign": "left" }'>
+					"cellAlign": "left",
+					"pageDots": false }'>
 					
 					<?php
 
@@ -89,12 +90,12 @@ $talks = get_field('talks', false, false );
 
 						<?php $pos = get_field( 'position', $member->ID ); ?>
 
-						<a href="<?php echo get_permalink( $member->ID ); ?>" class="gallery-cell">
+						<a href="<?php echo get_permalink( $member->ID ); ?>" class="gallery-cell family--thumb">
 							<?php echo get_the_post_thumbnail( $member->ID, 'family-thumb' ); ?>
 							<div class="family--card"></div>
 							<div class="family--meta">
 								<span class="family--name"><?php echo get_the_title($member->ID); ?></span>
-								<span class="family--desc"><?php $pos; ?></span>
+								<span class="family--desc"><?php echo $pos; ?></span>
 							</div>
 						</a>
 

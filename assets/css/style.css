@@ -2141,23 +2141,20 @@ section {
         left: 0; }
 
 .family--single--list {
-  position: relative; }
+  position: relative;
+  padding-bottom: 6em; }
   .family--single--list .gallery-cell {
     width: 100%;
     height: auto;
     position: relative; }
     @media (min-width: 46.8em) {
       .family--single--list .gallery-cell {
-        width: 25%;
+        width: 22.8571428571%;
         margin-right: 2.8571428571%; } }
     .family--single--list .gallery-cell img {
       width: 100%;
       height: auto;
       float: left; }
-  .family--single--list .family--card {
-    top: 60%; }
-  .family--single--list .family--meta {
-    opacity: 1; }
 
 .contact--intro {
   margin-bottom: 4.2857142857%;

@@ -76,6 +76,7 @@
 
 .family--single--list {
 	position: relative;
+	padding-bottom: $pad*6;
 
 	.gallery-cell {
 		width: 100%;
@@ -83,7 +84,7 @@
 		position: relative;
 
 		@include susy-media($bp-med) {
-			width: 25%;
+			width: span(3 of 12);
 			margin-right: $space;
 		}
 	
@@ -95,10 +96,8 @@
 	}
 
 	.family--card {
-		top: 60%;
 	}
 
 	.family--meta {
-		opacity: 1;
 	}
 }
