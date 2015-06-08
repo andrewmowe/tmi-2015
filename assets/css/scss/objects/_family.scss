@@ -4,17 +4,7 @@
 	overflow: hidden;
 	margin-bottom: $space;
 	box-shadow: 0 6px 5px -3px rgba(0,0,0,0.25);
-	@include transition( all, 0.2s, ease-out );
-
-	@include span(full);
-
-	@include susy-media($bp-med) {
-		@include gallery(4 of 12);
-	}
-
-	@include susy-media($bp-large) {
-		@include gallery(3 of 12);
-	}
+	@include transition( box-shadow, 0.2s, ease-out );
 
 	&:hover {
 		box-shadow: 0 6px 5px -3px rgba(0,0,0,0.5);
@@ -23,6 +13,18 @@
 	img {
 		width: 100%;
 		float: left;
+	}
+
+	.family--archive & {
+		@include span(full);
+
+		@include susy-media($bp-med) {
+			@include gallery(4 of 12);
+		}
+
+		@include susy-media($bp-large) {
+			@include gallery(3 of 12);
+		}
 	}
 }
 

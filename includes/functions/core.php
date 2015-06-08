@@ -61,6 +61,22 @@ function scripts( $debug = false ) {
 	wp_enqueue_script(
 		'jquery'
 	);
+
+	wp_enqueue_script(
+		'cycle',
+		TMI_TEMPLATE_URL . "/assets/js/vendor/jquery.cycle2.min.js",
+		array('jquery'),
+		TMI_VERSION,
+		true
+	);
+
+	wp_enqueue_script(
+		'cycle_carousel',
+		TMI_TEMPLATE_URL . "/assets/js/vendor/jquery.cycle2.carousel.min.js",
+		array('jquery', 'cycle'),
+		TMI_VERSION,
+		true
+	);
 }
 
 /**

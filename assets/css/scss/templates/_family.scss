@@ -73,3 +73,32 @@
 		}
 	}
 }
+
+.family--single--list {
+	position: relative;
+	padding-bottom: $pad*6;
+
+	.gallery-cell {
+		width: 100%;
+		height: auto;
+		position: relative;
+
+		@include susy-media($bp-med) {
+			width: span(3 of 12);
+			height: auto;
+			margin-right: $space;
+		}
+	
+		img {
+			width: 100%;
+			height: auto;
+			float: left;
+		}
+	}
+
+	.family--card {
+	}
+
+	.family--meta {
+	}
+}

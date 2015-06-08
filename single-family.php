@@ -23,7 +23,7 @@ $talks = get_field('talks', false, false );
 
 			<div class="family--content">
 				
-				<header class="family--header">
+				<header class="family--header text">
 					
 					<h1 class="h3"><?php the_title(); ?></h1>
 
@@ -61,13 +61,18 @@ $talks = get_field('talks', false, false );
 
 		</section>
 
-		<section class="family secondary-section">
+		<section class="family family--single--list secondary-section">
 			
 			<div class="container">
 				
 				<h3 class="section--title">The TMI Family</h3>
 
-				<div>
+				<div class="js-flickity"
+					data-flickity-options='{
+					"wrapAround": true,
+					"cellAlign": "left",
+					"pageDots": false,
+					"imagesLoaded": true }'>
 					
 					<?php
 
@@ -75,7 +80,7 @@ $talks = get_field('talks', false, false );
 
 					$args = array(
 						'post_type' => 'family',
-						'numberposts' => '4',
+						'numberposts' => '-1',
 						'orderby' => 'rand',
 						'post__not_in' => $exclude
 					);
@@ -86,11 +91,11 @@ $talks = get_field('talks', false, false );
 
 						<?php $pos = get_field( 'position', $member->ID ); ?>
 
-						<a href="<?php echo get_permalink( $member->ID ); ?>" class="family--thumb">
+						<a href="<?php echo get_permalink( $member->ID ); ?>" class="gallery-cell family--thumb">
 							<?php echo get_the_post_thumbnail( $member->ID, 'family-thumb' ); ?>
 							<div class="family--card"></div>
 							<div class="family--meta">
-								<span class="family--name"><?php echo $member->post_title; ?></span>
+								<span class="family--name"><?php echo get_the_title($member->ID); ?></span>
 								<span class="family--desc"><?php echo $pos; ?></span>
 							</div>
 						</a>

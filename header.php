@@ -22,6 +22,10 @@
 
 		</style>
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class( 'tisa' ); ?>>
@@ -30,6 +34,7 @@
 			<div class="container">
 				<a class="logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/src/tmi-logo-light.svg" alt="Logo Alt Text" /></a>
 				<nav id="nav" class="nav">
+					<i class="icon-menu mobile-toggle"></i>
 					<?php wp_nav_menu( array( 'theme_location' => 'main', 'container' => '' ) ); ?>
 				</nav><!--end .nav-->
 			</div>

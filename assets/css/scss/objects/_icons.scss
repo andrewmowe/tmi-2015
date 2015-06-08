@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icons';
-	src:url('../fonts/icons.eot?hn5ye2');
-	src:url('../fonts/icons.eot?#iefixhn5ye2') format('embedded-opentype'),
-		url('../fonts/icons.woff?hn5ye2') format('woff'),
-		url('../fonts/icons.ttf?hn5ye2') format('truetype'),
-		url('../fonts/icons.svg?hn5ye2#icons') format('svg');
+	src:url('../fonts/icons.eot?9lwk18');
+	src:url('../fonts/icons.eot?#iefix9lwk18') format('embedded-opentype'),
+		url('../fonts/icons.ttf?9lwk18') format('truetype'),
+		url('../fonts/icons.woff?9lwk18') format('woff'),
+		url('../fonts/icons.svg?9lwk18#icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,18 +23,18 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-menu:before {
+	content: "\e603";
+}
 .icon-linkedin:before {
 	content: "\e600";
 }
-
 .icon-facebook:before {
 	content: "\e601";
 }
-
 .icon-twitter:before {
 	content: "\e602";
 }
-
 .icon-twitter, .icon-facebook, .icon-linkedin {
 	font-size: 1.5em;
 	background: $btn-secondary-corner;
