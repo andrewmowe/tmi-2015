@@ -61,7 +61,7 @@ $location = get_field('map');
 
 			<p class="text-emphasis"><?php the_field('subtitle'); ?></p>
 
-			<p><?php the_field('text'); ?></p>
+			<?php the_field('text'); ?>
 
 		</div>
 

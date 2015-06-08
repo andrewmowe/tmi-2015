@@ -80,6 +80,10 @@
 		@include susy-media($bp-large) {
 			@include span(4 last);
 		}
+
+		p a {
+			@extend %smart-underline;
+		}
 	}
 
 		.contact--careers--header {
