@@ -49,9 +49,9 @@
 			<div class="container">
 				<span class="copyright">&copy; 2015 TMI Consulting Inc / site by <a href="http://team-eight.com">Team Eight</a></span>
 				<div class="icons social-list cf">
-					<a href="http://www.linkedin.com/company/tmi-consulting-inc" class="icon-linkedin"></a>
-					<a href="https://www.facebook.com/tmiconsulting" class="icon-facebook"></a>
-					<a href="https://twitter.com/tmi_consulting" class="icon-twitter"></a>
+					<a href="http://www.linkedin.com/company/tmi-consulting-inc" class="icon-linkedin" target="_blank"></a>
+					<a href="https://www.facebook.com/tmiconsulting" class="icon-facebook" target="_blank"></a>
+					<a href="https://twitter.com/tmi_consulting" class="icon-twitter" target="_blank"></a>
 				</div>
 			</div>
 		</div>
