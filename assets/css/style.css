@@ -1193,7 +1193,7 @@ main {
 
 .sub-footer {
   background: #53534b;
-  margin-top: 5.7142857143%;
+  margin-top: 0;
   padding: 2em 0; }
 
 .copyright {
@@ -2010,24 +2010,31 @@ section {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 2.8571428571%; }
-  @media (min-width: 46.8em) {
-    .card.small {
-      width: 48.5714285714%;
-      float: left;
-      margin-right: 2.8571428571%;
-      padding-left: 8.5714285714%;
-      padding-right: 0%; }
-      .card.small + .small {
-        float: right;
-        margin-right: 0; } }
-  @media (min-width: 46.8em) {
-    .card.large {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      font-size: 0; } }
+  margin-bottom: 5%; }
+  .card.small {
+    font-size: 1.2em;
+    line-height: 1.6; }
+    @media (min-width: 46.8em) {
+      .card.small {
+        width: 48.5714285714%;
+        float: left;
+        margin-right: 2.8571428571%;
+        padding-left: 8.5714285714%;
+        padding-right: 0%;
+        margin-bottom: 5em; }
+        .card.small + .small {
+          float: right;
+          margin-right: 0; } }
+  .card.large {
+    font-size: 1.2em;
+    line-height: 1.6; }
+    @media (min-width: 46.8em) {
+      .card.large {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 0; } }
 
 .card--img {
   width: 100%;

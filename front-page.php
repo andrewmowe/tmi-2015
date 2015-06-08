@@ -57,9 +57,7 @@ endif;
 				<h4 class="card--title"><?php echo $top_left_title; ?></h4>
 			<?php endif; ?>
 			<?php if( isset( $top_left_text ) && !empty( $top_left_text ) ) : ?>
-				<p class="text-emphasis">
-					<?php echo $top_left_text; ?>
-				</p>
+				<?php echo $top_left_text; ?>
 			<?php endif; ?>
 		</div>
 	</div>
@@ -84,9 +82,7 @@ endif;
 				<h4 class="card--title"><?php echo $top_right_title; ?></h4>
 			<?php endif; ?>
 			<?php if( isset( $top_right_text ) && !empty( $top_right_text ) ) : ?>
-				<p class="text-emphasis">
-					<?php echo $top_right_text; ?>
-				</p>
+				<?php echo $top_right_text; ?>
 			<?php endif; ?>
 		</div>
 	</div>
@@ -111,9 +107,7 @@ endif;
 				<h4 class="card--title"><?php echo $large_title; ?></h4>
 			<?php endif; ?>
 			<?php if( isset( $large_text ) && !empty( $large_text ) ) : ?>
-				<p class="text-emphasis">
-					<?php echo $large_text; ?>
-				</p>
+				<?php echo $large_text; ?>
 			<?php endif; ?>
 		</div>
 	</div>
