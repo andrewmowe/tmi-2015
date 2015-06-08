@@ -71,7 +71,8 @@ $talks = get_field('talks', false, false );
 					data-flickity-options='{
 					"wrapAround": true,
 					"cellAlign": "left",
-					"pageDots": false }'>
+					"pageDots": false,
+					"imagesLoaded": true }'>
 					
 					<?php
 
