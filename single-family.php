@@ -17,7 +17,7 @@ $talks = get_field('talks', false, false );
 
 			<div class="sliced-img family--portrait">
 			
-			<?php echo wp_get_attachment_image( $img, 'large' ); ?>
+			<?php echo wp_get_attachment_image( $img, 'full' ); ?>
 
 			</div>
 
@@ -29,13 +29,13 @@ $talks = get_field('talks', false, false );
 
 					<?php if( isset( $position ) && !empty( $position ) ) : ?>
 
-						<span class="h4"><?php echo $position ; ?></span>
+						<h4><?php echo $position ; ?></h4>
 
 					<?php endif; ?>
 
 					<?php if( isset( $email ) && !empty( $email ) ) : ?>
 
-						<a href="mailto:<?php echo esc_html( $email ); ?>" target="_blank" class="h4"><?php echo esc_html( $email ); ?></a>
+						<a href="mailto:<?php echo esc_html( $email ); ?>" target="_blank" class="email"><?php echo esc_html( $email ); ?></a>
 
 					<?php endif; ?>
 

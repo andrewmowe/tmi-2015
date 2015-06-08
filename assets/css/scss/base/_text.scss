@@ -24,12 +24,18 @@ blockquote:before {
     line-height: 0.1em;
     position: absolute;
     font-size: 3em;
-    left: 0.15em;
+    left: 0;
     top: 0.5em;
+    
 
     @include susy-media($bp-med) {
+        @include pad(1, 0);
+        left: 0.25em;
         font-size: 5em;
     }
+}
+blockquote p:last-of-type:after {
+    content: close-quote;
 }
 
 /* Horizontal Rule */ 

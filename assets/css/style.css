@@ -309,11 +309,17 @@ blockquote:before {
   line-height: 0.1em;
   position: absolute;
   font-size: 3em;
-  left: 0.15em;
+  left: 0;
   top: 0.5em; }
   @media (min-width: 46.8em) {
     blockquote:before {
+      padding-left: 8.5714285714%;
+      padding-right: 0%;
+      left: 0.25em;
       font-size: 5em; } }
+
+blockquote p:last-of-type:after {
+  content: close-quote; }
 
 /* Horizontal Rule */
 hr {
@@ -1781,9 +1787,10 @@ section {
 .family, .memberships {
   padding-top: 8.5714285714%; }
 
-.family--the-content > * {
-  padding-left: 8.5714285714%;
-  padding-right: 0%; }
+@media (min-width: 46.8em) {
+  .family--the-content > * {
+    padding-left: 17.1428571429%;
+    padding-right: 0%; } }
 
 .family--the-content p:first-of-type {
   padding-left: 0%;
@@ -2230,12 +2237,16 @@ section {
       margin-right: 2.8571428571%; } }
 
 .family--single .family--header {
-  margin-bottom: 5.7142857143%; }
+  margin-bottom: 5.7142857143%;
+  text-align: right; }
   .family--single .family--header .h3 {
     border-bottom: 1px solid #3f5b58;
-    margin-bottom: 2.8571428571%; }
-  .family--single .family--header span, .family--single .family--header a {
-    display: block; }
+    margin-bottom: 2.8571428571%;
+    text-align: left; }
+  .family--single .family--header h4 {
+    text-align: left; }
+  .family--single .family--header a {
+    display: inline; }
 
 .family--single .family--info {
   margin-bottom: 2.8571428571%;
@@ -2254,10 +2265,11 @@ section {
     border-bottom: 1px solid #3f5b58; }
   .family--single .family--info ul {
     list-style: none;
-    margin-bottom: 2.8571428571%;
-    margin-left: 0; }
+    margin-bottom: 1.25em;
+    margin-left: 0;
+    margin-top: .75em; }
     .family--single .family--info ul li {
-      padding: 0.5em 0 0.5em 1em;
+      padding: 0em 0 0.25em 1em;
       position: relative; }
       .family--single .family--info ul li:before {
         content: '\2022';
