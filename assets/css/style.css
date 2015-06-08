@@ -1257,7 +1257,8 @@ main {
 
 a.btn {
   text-decoration: none;
-  display: inline-block; }
+  display: inline-block;
+  text-shadow: none; }
 
 .footer--btn {
   font-family: Arquitecta, Helvetica, Arial, sans-serif;
