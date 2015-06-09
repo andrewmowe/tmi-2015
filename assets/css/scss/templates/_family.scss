@@ -15,7 +15,7 @@
 	}
 
 	.family--content {
-		margin-bottom: $space;
+		margin-bottom: $space*2;
 		@include span(4 of 4);
 
 		@include susy-media($bp-large) {
@@ -101,9 +101,22 @@
 	}
 }
 
+.flickity-prev-next-button {
+  background: rgba(214,210,181,0.5);
+
+  .arrow {
+	  fill:$aqua;
+	}
+
+	&:hover {
+		background:$graygreen-trans;
+	}
+
+}
+
 .family--single--list {
 	position: relative;
-	padding-bottom: $pad*6;
+	padding-bottom: $space*2;
 
 	.gallery-cell {
 		width: 100%;
