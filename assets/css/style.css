@@ -264,7 +264,7 @@ h4, .h4 {
   @media (min-width: 46.8em) {
     .subheading {
       padding: 3em 0; } }
-  .category .subheading, .page-template-dialogue .subheading {
+  .category .subheading, .blog .subheading {
     margin-bottom: 5%; }
   .subheading .container > * {
     display: inline-block;
@@ -2519,7 +2519,6 @@ section.family .container {
       margin-right: 0; }
       @media (min-width: 60em) {
         .entry-list .entry.has-post-thumbnail .entry--thumb {
-          margin-bottom: 0;
           width: 34.7826086957%;
           float: left;
           margin-right: 4.347826087%; } }

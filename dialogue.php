@@ -31,7 +31,14 @@ get_header(); ?>
 					'post_type' => 'post'
 				);
 
+			$args['paged'] = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+
 			$query = new WP_Query( $args );
+
+			// Pagination fix
+			$temp_query = $wp_query;
+			$wp_query   = NULL;
+			$wp_query   = $custom_query;
 
 			if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
 
@@ -65,13 +72,21 @@ get_header(); ?>
 
 			<?php endwhile; endif; ?>
 
-			<?php echo paginate_links(); ?>
-
+<!-- 			<?php
+			echo paginate_links();
+			?>
+ -->
 			</div>
 
 			<?php get_sidebar(); ?>
 
-			<?php wp_reset_postdata(); ?>
+			<?php wp_reset_postdata();
+
+			// Reset main query object
+			$wp_query = NULL;
+			$wp_query = $temp_query;
+
+			?>
 
 		</div>
 

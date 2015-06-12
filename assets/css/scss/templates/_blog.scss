@@ -98,7 +98,6 @@
 				@include span(full);
 
 				@include susy-media($bp-large) {
-					margin-bottom: 0;
 					@include span(3 of 8);					
 				}
 
