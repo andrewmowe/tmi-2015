@@ -415,7 +415,7 @@ dd {
       content: '\2022';
       color: #00afaa;
       position: absolute;
-      padding: 10px 0; }
+      padding: 8px 0; }
     .link-list li:hover.linked {
       background: #00b2a9; }
       .link-list li:hover.linked:before {
