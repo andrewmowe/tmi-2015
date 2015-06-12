@@ -936,6 +936,8 @@ td {
   @media all and (min-width: 46.8em) {
     .logo {
       max-width: 9em; } }
+  .logo img {
+    width: 100%; }
 
 .nav-toggle {
   float: right;

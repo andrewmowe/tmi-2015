@@ -32,7 +32,7 @@
 		<!-- Begin .header -->
 		<header class="header cf" role="banner">
 			<div class="container">
-				<a class="logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/src/tmi-logo-light.svg" alt="Logo Alt Text" /></a>
+				<a class="logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/src/tmi-logo-light.svg" onerror="this.src='<?php echo get_stylesheet_directory_uri(); ?>/images/src/tmi-logo-light.png'; this.onerror=null;" alt="Logo Alt Text" /></a>
 				<nav id="nav" class="nav">
 					<i class="icon-menu mobile-toggle"></i>
 					<?php wp_nav_menu( array( 'theme_location' => 'main', 'container' => '' ) ); ?>
