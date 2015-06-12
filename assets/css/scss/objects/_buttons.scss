@@ -90,6 +90,7 @@ a.btn {
 	color: $white;
 	font-weight: bold;
 	letter-spacing: 0.21em;
+	-webkit-appearance: none;
 
 	&:hover {
 		background: $link-secondary;

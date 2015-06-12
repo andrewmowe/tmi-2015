@@ -1394,7 +1394,8 @@ a.btn {
   font-size: 1.6em;
   color: #fff;
   font-weight: bold;
-  letter-spacing: 0.21em; }
+  letter-spacing: 0.21em;
+  -webkit-appearance: none; }
   .footer--btn:hover, input.footer--btn:hover {
     background: #ffc72c; }
 
@@ -2405,7 +2406,8 @@ section.family .container {
     font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 0.21em;
-    margin-bottom: 5.7142857143%; }
+    margin-bottom: 5.7142857143%;
+    -webkit-appearance: none; }
     .contact--main.contact--main.contact--main input[type="submit"]:hover {
       background: #ffc72c; }
 
