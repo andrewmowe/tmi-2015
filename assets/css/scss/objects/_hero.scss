@@ -210,21 +210,15 @@
 		.social-list {
 			float: left;
 			margin-top: $space*2;
+			width: 100%;
 
 			a {
 				color: $secondary-bg;
-
-				&:first-child {
-					margin-left: 0;
-				}
 			}
 
 			@include susy-media($bp-med) {
 				float: right;
-
-				a:first-child {
-					margin-left: 20px;
-				}
+				width: auto;
 			}
 		}
 	}

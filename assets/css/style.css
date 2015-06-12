@@ -1210,18 +1210,21 @@ main {
   margin-bottom: 5.7142857143%; }
   @media (min-width: 46.8em) {
     .copyright {
-      width: 75%;
+      width: 65%;
       text-align: left;
       margin-bottom: 0; } }
 
 .social-list {
   display: block;
-  margin: 0 auto 5.7142857143%; }
+  margin: 0 auto 5.7142857143%;
+  text-align: center;
+  width: 100%; }
   @media (min-width: 46.8em) {
     .social-list {
       display: inline-block;
       vertical-align: middle;
-      margin: 0; } }
+      margin: 0;
+      width: 34%; } }
 
 /*------------------------------------*    $TEXT Styles
 \*------------------------------------*/
@@ -1289,12 +1292,19 @@ main {
   background: #3cc3b2;
   width: 45px;
   height: 45px;
-  margin: 10px 20px;
-  float: left;
+  margin: 10px 3%;
+  float: none;
   border-radius: 50%;
   text-align: center;
   color: #f8f7ea;
-  text-decoration: none; }
+  text-decoration: none;
+  display: inline-block !important;
+  vertical-align: middle; }
+  @media (min-width: 46.8em) {
+    .icon-twitter, .icon-facebook, .icon-linkedin {
+      float: left;
+      display: block;
+      margin: 10px 20px; } }
   .icon-twitter:hover, .icon-facebook:hover, .icon-linkedin:hover {
     background: #606737;
     color: #f8f7ea; }
@@ -1316,8 +1326,11 @@ main {
 .icon-linkedin {
   padding-top: 8px; }
 
-.social-list a:last-child {
-  margin-right: 0; }
+@media (min-width: 46.8em) {
+  .social-list a:last-child {
+    margin-right: 0; }
+  .social-list a:first-child {
+    margin-left: 0; } }
 
 /*------------------------------------*    $BUTTONS
 \*------------------------------------*/
@@ -2019,16 +2032,14 @@ section.family .container {
         font-size: 2.3rem; } }
   .contact-hero .hero--cta .social-list {
     float: left;
-    margin-top: 5.7142857143%; }
+    margin-top: 5.7142857143%;
+    width: 100%; }
     .contact-hero .hero--cta .social-list a {
       color: #d6d2b5; }
-      .contact-hero .hero--cta .social-list a:first-child {
-        margin-left: 0; }
     @media (min-width: 46.8em) {
       .contact-hero .hero--cta .social-list {
-        float: right; }
-        .contact-hero .hero--cta .social-list a:first-child {
-          margin-left: 20px; } }
+        float: right;
+        width: auto; } }
 
 .card {
   width: 100%;

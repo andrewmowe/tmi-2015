@@ -40,12 +40,20 @@
 	background: $btn-secondary-corner;
 	width: 45px;
 	height: 45px;
-	margin: 10px 20px;
-	float: left;
+	margin: 10px 3%;
+	float: none;
 	border-radius: 50%;
 	text-align: center;
 	color: $main-bg;
 	text-decoration: none;
+	display: inline-block !important;
+	vertical-align: middle;
+
+	@include susy-media($bp-med) {
+		float: left;
+		display: block;
+		margin: 10px 20px;
+	}
 
 	&:hover {
 		background: rgb(96,103,55); 
@@ -77,6 +85,12 @@
 	padding-top: 8px;
 }
 
-.social-list a:last-child {
-	margin-right: 0;
+@include susy-media($bp-med) {
+	.social-list a:last-child {
+		margin-right: 0;
+	}
+	.social-list a:first-child {
+		margin-left: 0;
+	}
 }
+	
