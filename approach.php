@@ -19,7 +19,7 @@ get_header();
 				<div class="sliced-img card--img">
 					<?php
 					if( isset( $img ) && !empty( $img ) ) :
-						echo wp_get_attachment_image( $img, 'large' );
+						echo wp_get_attachment_image( $img, 'full' );
 					endif;
 					?>
 				</div>
@@ -35,9 +35,7 @@ get_header();
 
 					<?php
 					if( isset( $content ) && !empty( $content ) ) : ?>
-						<p class="text-emphasis">
 							<?php echo $content; ?>
-						</p>
 					<?php
 					endif;
 					?>
@@ -59,9 +57,7 @@ get_header();
 
 					<?php
 					if( isset( $l_card_text ) && !empty( $l_card_text ) ) : ?>
-						<p class="text-emphasis">
 							<?php echo $l_card_text; ?>
-						</p>
 					<?php endif; ?>
 				</div>
 			</div>
@@ -81,9 +77,7 @@ get_header();
 
 					<?php
 					if( isset( $r_card_text ) && !empty( $r_card_text ) ) : ?>
-						<p class="text-emphasis">
 							<?php echo $r_card_text; ?>
-						</p>
 					<?php endif; ?>
 				</div>
 			</div>

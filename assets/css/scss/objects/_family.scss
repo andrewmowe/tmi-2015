@@ -1,8 +1,18 @@
+section.family .container {
+  max-width: 273px;
+  @media all and (min-width: $bp-med) {
+	max-width: $max-width;
+  }
+}
+
 .family--thumb {
 	display: block;
 	position: relative;
 	overflow: hidden;
-	margin-bottom: $space;
+	margin-bottom: 2em;
+	@media all and (min-width: $bp-med) {
+		margin-bottom: $space;
+	}
 	box-shadow: 0 6px 5px -3px rgba(0,0,0,0.25);
 	@include transition( box-shadow, 0.2s, ease-out );
 
@@ -31,7 +41,10 @@
 	.family--card {
 		position: absolute;
 		background: $link-color;
-		top: 120%;
+		top: 60%;
+		@media all and (min-width: $bp-med) {
+			top: 120%;
+		}
 		bottom: -120%;
 		left: 0;
 		right: 0;
@@ -44,6 +57,10 @@
 		.family--thumb:hover & {
 			top: 60%;
 		}
+
+		a & {
+			cursor: pointer;
+		}
 	}
 
 	.family--meta {
@@ -52,7 +69,9 @@
 		top: 67%;
 		text-align: right;
 		width: 100%;
-		opacity: 0;
+		@media all and (min-width: $bp-med) {
+			opacity: 0;
+		}
 		@include transition( opacity, 0s, ease-out);
 		transition-delay: 0s;
 
@@ -60,11 +79,13 @@
 			opacity: 1;
 			@include transition( opacity, 0.25s, ease-in-out);
 			transition-delay: 0.2s;
+			cursor: pointer;
 		}
 	}
 
 		.family--name, .family--desc {
 			padding: 0 15px;
+			display: block;
 		}
 
 		.family--name {
@@ -78,16 +99,31 @@
 			font-style: italic;
 		}
 
-.family {
-	padding-top: $space*3;
+.family, .memberships {
+	padding-top: $space*2;
 }
 
 	.family--the-content {
 		> * {
-			@include pad(1, 0);
+			@include susy-media($bp-med) {
+				@include pad(2, 0);
+			}
 		}
 		p:first-of-type {
 			@extend .text-emphasis;
 			@include pad(0);
 		}
 	}
+.memberships.secondary-section {
+	background:white;
+	padding-left:5rem;
+	padding-right:5rem;
+	@media all and (min-width: $bp-med) {
+		padding-left:0;
+		padding-right:0;
+	}
+	h3 {
+		border-bottom: 1px solid $graygreen;
+  		margin-bottom: 2em;
+	}
+}

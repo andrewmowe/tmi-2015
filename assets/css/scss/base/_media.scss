@@ -41,3 +41,69 @@ figcaption {
 	}
 
 }
+.member--thumb {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: $space;
+	@include transition( all, 0.2s, ease-out );
+
+	@include span(full);
+
+	@include susy-media($bp-med) {
+		@include gallery(3 of 12);
+	}
+
+	@include susy-media($bp-large) {
+		@include gallery(2 of 12);
+	}
+
+	&:hover {
+		box-shadow: 0 6px 5px -3px rgba(0,0,0,0.5);
+	}
+
+	img {
+		width: 100%;
+		float: left;
+	}
+}
+
+.press--thumb {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: $space;
+	@include transition( all, 0.2s, ease-out );
+
+	@include span(full);
+
+
+	@include susy-media($bp-large) {
+		@include gallery(6 of 12);
+	}
+
+	img {
+		width: 100%;
+		float: left;
+		@media all and (min-width: $bp-med) {
+			width: 30%;
+			margin: 0 1em 1em 0;
+		}
+	}
+	.text {
+		clear:both;
+	}
+}
+.press--title {
+	border-bottom: 1px solid;
+}
+.press--subtitle {
+	font-style:italic;
+	margin-top:0;
+	padding-top:0;
+	float:left;
+}
+.press--date {
+	float:right;
+	font-style:italic;
+}

@@ -84,6 +84,10 @@ h6, .h6    {
 		background: $heading-color;
 		transform: skew(-16deg);
 		margin: 0 50px;
+		display: none;
+		@media all and (min-width: $bp-med) {
+			display: inline-block;
+		}
 	}
 }
 

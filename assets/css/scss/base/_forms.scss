@@ -51,7 +51,7 @@ input, textarea {
 		}
 	}
 
-	button {
+	button, input[type="submit"] {
 		width: 100%;
 		font-size: 1.2em;
 		height: 46px;

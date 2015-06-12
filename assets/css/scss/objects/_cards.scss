@@ -1,11 +1,15 @@
 .card {
 	@include span(4 of 4);
-	margin-bottom: $space;
+	margin-bottom: $space*1.75;
 
 	&.small {
+
+		font-size:1.2em;
+		line-height:1.6;
 		@include susy-media($bp-med) {
 			@include span(6 of 12);
 			@include pad(1, 0);
+			margin-bottom:5em;
 
 			&+.small {
 				@include last();
@@ -14,11 +18,18 @@
 	}
 
 	&.large {
+		p {
+			font-size:1.2em;
+			line-height:1.6;
+		}
 		@include susy-media($bp-med) {
 			@include span(12 of 12);
-			font-size: 0;
 		}
 	}
+}
+
+.page-template-approach .card.small {
+	font-size:1em;
 }
 
 	.card--img {
@@ -32,7 +43,7 @@
 		@include susy-media($bp-med) {
 			.large & {
 				width: span(6 of 12);
-				margin-right: gutter();
+				// margin-right: gutter();
 				display: inline-block;
 				vertical-align: middle;
 			}
@@ -46,7 +57,6 @@
 				margin-right: 0;
 				display: inline-block;
 				vertical-align: middle;
-				@include font-size(1);
 			}
 
 		}
@@ -60,13 +70,16 @@
 					text-transform: none;
 					@include font-size(2);
 					font-weight: normal;
-  					letter-spacing: .1px;
+					letter-spacing: .02em;
+					.page-template-approach & {
+  						letter-spacing: -1px;
+  					}
   					  line-height: 1.1;
 
 					&.punchline {
 						border: none;
 						color: $link-color;
-						@include font-size(3.5);
+						@include font-size(3.25);
 					}
 				}
 			}

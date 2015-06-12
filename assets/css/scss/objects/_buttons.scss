@@ -81,7 +81,7 @@ a.btn {
 	text-shadow: none;
 }
 
-.footer--btn {
+.footer--btn, input.footer--btn {
 	font-family: $font-secondary;
 	text-transform: uppercase;
 	background: $link-secondary-alt;
