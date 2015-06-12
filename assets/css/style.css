@@ -921,6 +921,7 @@ td {
 /*------------------------------------*    $PAGE STRUCTURE
 \*------------------------------------*/
 .header {
+  background: white;
   background: -webkit-linear-gradient(165deg, rgba(255, 255, 255, 0.88) 0, rgba(255, 255, 255, 0.88) 48%, #fff 48%);
   background: linear-gradient(-75deg, rgba(255, 255, 255, 0.88) 0, rgba(255, 255, 255, 0.88) 48%, #fff 48%);
   padding: 1em 0;
