@@ -53,6 +53,7 @@
 			font-weight: bold;
 			letter-spacing: 0.21em;
 			margin-bottom: $space*2;
+			-webkit-appearance: none;
 
 			&:hover {
 				background: $link-secondary;

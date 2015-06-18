@@ -147,7 +147,7 @@
 			margin-bottom: $space*2;
 
 			@include susy-media($bp-med) {
-				width: 75%;
+				width: 65%;
 				text-align: left;
 				margin-bottom: 0;
 			}
@@ -156,10 +156,13 @@
 		.social-list {
 			display: block;
 			margin: 0 auto $space*2;
+			text-align: center;
+			width: 100%;
 
 			@include susy-media($bp-med) {
 				display: inline-block;
 				vertical-align: middle;
-				margin: 0;		
+				margin: 0;
+				width: 34%;	
 			}
 		}

@@ -1,4 +1,5 @@
 .header {
+	background: white;
 	background: linear-gradient( -75deg, $header-highlight 0, $header-highlight 48%, $white 48%);
 	padding: $pad 0;
 	position: fixed;
@@ -14,6 +15,10 @@
 
 	@media all and (min-width: $bp-med) {
 		max-width: 9em;
+	}
+
+	img {
+		width: 100%;
 	}
 }
 

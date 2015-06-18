@@ -4,16 +4,11 @@
 				
 				<ul class="link-list linked">
 				<?php
-				$args = array(
-					'title_li' => '',
-					'hide_empty' => 0
-				);
-
-				$list = get_the_category_list();
-				$list = str_replace('</a>', '<span class="link-list--corner"></span></a>', $list);
-
-				echo $list;
-
+				$cats = get_categories();
+				foreach( $cats as $cat ) { ?>
+					<li><a href="<?php echo get_category_link( $cat->term_id ); ?>"><?php echo $cat->name; ?><span class="link-list--corner"></span></a>
+				<?php
+				}
 				?>
 				</ul>
 
