@@ -81,7 +81,8 @@ $talks = get_field('talks', false, false );
 					$args = array(
 						'post_type' => 'family',
 						'numberposts' => '-1',
-						'orderby' => 'rand',
+						'orderby' => 'menu_order',
+						'order' => 'ASC',
 						'post__not_in' => $exclude
 					);
 
@@ -89,16 +90,31 @@ $talks = get_field('talks', false, false );
 
 					foreach( $family as $member ) : ?>
 
-						<?php $pos = get_field( 'position', $member->ID ); ?>
+						<?php $pos = get_field( 'position', $member->ID );
+
+						if( get_field('no-clickthru', $member->ID ) ) { ?>
+
+						<div class="gallery-cell family--thumb">
+							<?php echo get_the_post_thumbnail( $member->ID, 'family-thumb' ); ?>
+								<div class="family--card"></div>
+								<div class="family--meta">
+									<span class="family--name"><?php echo get_the_title($member->ID); ?></span>
+									<span class="family--desc"><?php echo $pos; ?></span>
+								</div>
+						</div>
+
+						<?php } else { ?>
 
 						<a href="<?php echo get_permalink( $member->ID ); ?>" class="gallery-cell family--thumb">
-							<?php echo get_the_post_thumbnail( $member->ID, 'family-thumb' ); ?>
-							<div class="family--card"></div>
-							<div class="family--meta">
-								<span class="family--name"><?php echo get_the_title($member->ID); ?></span>
-								<span class="family--desc"><?php echo $pos; ?></span>
-							</div>
-						</a>
+								<?php echo get_the_post_thumbnail( $member->ID, 'family-thumb' ); ?>
+								<div class="family--card"></div>
+								<div class="family--meta">
+									<span class="family--name"><?php echo get_the_title($member->ID); ?></span>
+									<span class="family--desc"><?php echo $pos; ?></span>
+								</div>
+							</a>
+
+						<?php } ?>
 
 					<?php
 					endforeach;
