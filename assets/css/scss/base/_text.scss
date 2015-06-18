@@ -18,20 +18,19 @@ blockquote {
 
 blockquote:before {
     color: $link-color;
-    font-family: $font-secondary;
     content: open-quote;
     font-style: normal;
     line-height: 0.1em;
     position: absolute;
     font-size: 3em;
     left: 0;
-    top: 0.5em;
+    top: 0.32em;
     
 
     @include susy-media($bp-med) {
         @include pad(1, 0);
-        left: 0.25em;
-        font-size: 5em;
+        left: 0.6em;
+        font-size: 3.25em;
     }
 }
 blockquote p:last-of-type:after {

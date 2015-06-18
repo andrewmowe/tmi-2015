@@ -307,20 +307,19 @@ blockquote {
 
 blockquote:before {
   color: #00afaa;
-  font-family: Arquitecta, Helvetica, Arial, sans-serif;
   content: open-quote;
   font-style: normal;
   line-height: 0.1em;
   position: absolute;
   font-size: 3em;
   left: 0;
-  top: 0.5em; }
+  top: 0.32em; }
   @media (min-width: 46.8em) {
     blockquote:before {
       padding-left: 8.5714285714%;
       padding-right: 0%;
-      left: 0.25em;
-      font-size: 5em; } }
+      left: 0.6em;
+      font-size: 3.25em; } }
 
 blockquote p:last-of-type:after {
   content: close-quote; }
@@ -1349,7 +1348,7 @@ main {
   margin: 1em;
   position: relative;
   overflow: hidden;
-  box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   -webkit-transition: box-shadow 0.2s ease-out;
           transition: box-shadow 0.2s ease-out; }
@@ -1369,7 +1368,7 @@ main {
     -webkit-transition: background 0.2s ease-out, right 0.2s ease-out;
             transition: background 0.2s ease-out, right 0.2s ease-out; }
   .btn:hover, .btn:focus {
-    box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.5); }
+    box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.35); }
     .btn:hover .corner, .btn:focus .corner {
       right: -64px;
       background: #ffc72c; }
@@ -1394,6 +1393,39 @@ main {
       background: #3cc3b2; }
     .btn.alt:hover .corner {
       background: #ffc72c; }
+  .btn.round-yellow {
+    background: #b99f30;
+    border-radius: 5px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    text-align: left;
+    padding: 1em 3.5em 1em 1.5em; }
+    @media all and (min-width: 46.8em) {
+      .btn.round-yellow {
+        width: 100%; } }
+    .btn.round-yellow .corner {
+      background: #3cc3b2;
+      -webkit-transform: skew(-16deg);
+          -ms-transform: skew(-16deg);
+              transform: skew(-16deg);
+      background: #ffc72c;
+      right: -110px; }
+    .btn.round-yellow:hover .corner {
+      background: #ffc72c;
+      right: -64px; }
+    .btn.round-yellow > span, .btn.round-yellow > a {
+      display: block;
+      color: #fff;
+      text-transform: uppercase;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
+      font-family: Arquitecta, Helvetica, Arial, sans-serif;
+      letter-spacing: 0.210em;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1em; }
 
 a.btn {
   text-decoration: none;
@@ -2366,6 +2398,34 @@ section.family .container {
       width: 100%;
       height: auto;
       float: left; }
+
+.services--single .services--content {
+  margin-bottom: 5.7142857143%;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 60em) {
+    .services--single .services--content {
+      width: 57.1428571429%;
+      float: left;
+      margin-right: 2.8571428571%; } }
+
+.services--single .services--back {
+  margin-bottom: 2.8571428571%;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center; }
+  @media (min-width: 60em) {
+    .services--single .services--back {
+      width: 40%;
+      float: right;
+      margin-right: 0;
+      padding-left: 8.5714285714%;
+      padding-right: 0%;
+      padding-top: 2.75rem; } }
 
 .contact--intro {
   margin-bottom: 4.2857142857%;

@@ -143,3 +143,30 @@
 	.family--meta {
 	}
 }
+
+.services--single {
+
+
+	.services--content {
+		margin-bottom: $space*2;
+		@include span(4 of 4);
+
+		@include susy-media($bp-large) {
+			@include span(7);
+		}
+	}
+
+		
+	.services--back {
+		margin-bottom: $space;
+		@include span(4 of 4);
+		text-align: center;
+
+		@include susy-media($bp-large) {
+			@include span(5 last);
+			@include pad(1, 0);
+			padding-top: 2.75rem;
+		}
+
+	}
+}
