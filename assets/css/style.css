@@ -394,7 +394,7 @@ dd {
         .link-list li:nth-child(-n+3) {
           border-top: 1px solid #00afaa; } }
     .link-list li a {
-      padding: 10px 5px 10px 1em;
+      padding: 10px 32px 10px 1em;
       width: 100%;
       display: block;
       text-decoration: none;
@@ -409,7 +409,11 @@ dd {
     .link-list li.linked a:after, .link-list li .linked a:after {
       content: '\2192';
       color: #00afaa;
-      margin-left: 1em; }
+      margin-left: 1em;
+      position: absolute;
+      display: block;
+      top: .7em;
+      right: 0; }
     .link-list li:before {
       content: '\2022';
       color: #00afaa;
@@ -426,10 +430,10 @@ dd {
 .link-list--corner {
   position: absolute;
   width: 50px;
-  height: 56px;
+  height: 76px;
   background: #ffc72c;
   top: 0;
-  right: -56px;
+  right: -60px;
   -webkit-transform: skew(-16deg);
       -ms-transform: skew(-16deg);
           transform: skew(-16deg);
@@ -1048,7 +1052,7 @@ main {
       main.has-subheading {
         padding-top: 97px; } }
   @media (min-width: 46.8em) {
-    .page-template-default main .container, .single-service main .container {
+    .page-template-default main .container, .single-service main .services--single.container {
       padding-left: 8.5714285714%;
       padding-right: 8.5714285714%; } }
 
@@ -2400,7 +2404,7 @@ section.family .container {
       float: left; }
 
 .services--single .services--content {
-  margin-bottom: 5.7142857143%;
+  margin-bottom: 11.4285714286%;
   width: 100%;
   float: left;
   margin-left: 0;

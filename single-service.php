@@ -19,7 +19,7 @@ get_header(); ?>
 				</section>
 				<section class="container approach-services">
 			
-			<h4>We implement a broad array of resources and interventions</h4>
+			<h4>We implement a broad array of diversity resources and interventions</h4>
 
 			<ul class="link-list">
 				

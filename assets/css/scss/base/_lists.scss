@@ -45,7 +45,7 @@ dd {
 		}
 
 		a {
-			padding: 10px 5px 10px 1em;
+			padding: 10px 32px 10px 1em;
 			width: 100%;
 			display: block;
 			text-decoration: none;
@@ -66,6 +66,10 @@ dd {
 			content: '\2192';
 			color: $link-color;
 			margin-left: 1em;
+			  position: absolute;
+			  display: block;
+			  top: .7em;
+			  right: 0;
 		}
 
 		&:before {
@@ -93,10 +97,10 @@ dd {
 .link-list--corner {
 	position: absolute;
 	width: 50px;
-	height: 56px;
+	height: 76px;
 	background: $mustard;
 	top: 0;
-	right: -56px;
+	right: -60px;
 	transform: skew(-16deg);
 	@include transition( right, 0.1s, ease-out);
 

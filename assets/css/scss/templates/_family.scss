@@ -148,7 +148,7 @@
 
 
 	.services--content {
-		margin-bottom: $space*2;
+		margin-bottom: $space*4;
 		@include span(4 of 4);
 
 		@include susy-media($bp-large) {

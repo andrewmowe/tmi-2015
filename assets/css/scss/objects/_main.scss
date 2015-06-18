@@ -27,7 +27,7 @@ main {
 		}
 	}
 
-	.page-template-default & .container, .single-service & .container {
+	.page-template-default & .container, .single-service & .services--single.container {
 		@include susy-media($bp-med) {
 			@include pad(1, 1);
 		}
