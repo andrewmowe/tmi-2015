@@ -1,7 +1,7 @@
 .family--single {
 
 	.family--portrait {
-		margin-bottom: $space;
+		margin-bottom: $space/2;
 		@include span(4 of 4);
 
 		@include susy-media($bp-large) {
@@ -47,7 +47,7 @@
 
 		@include susy-media($bp-large) {
 			@include span(6 last);
-			@include pad(1, 1);
+			padding: 0 10.5% 0 5.5%;
 		}
 
 		h4 {
@@ -87,33 +87,33 @@
 	@media all and (min-width: $bp-med) {
 		max-width:none;
 	}
-}
-.flickity-prev-next-button.previous {
-  left: -35px;
-  	@media all and (min-width: $bp-med) {
-		left:10px;
-	}
-}
-.flickity-prev-next-button.next {
-  right: -35px;
-  	@media all and (min-width: $bp-med) {
-		right:10px;
-	}
-}
 
-.flickity-prev-next-button {
-  background: rgba(214,210,181,0.5);
-
-  .arrow {
-	  fill:$aqua;
+	.flickity-prev-next-button.previous {
+	  left: -35px;
+	  	@media all and (min-width: $bp-med) {
+			left:10px;
+		}
+	}
+	.flickity-prev-next-button.next {
+	  right: -35px;
+	  	@media all and (min-width: $bp-med) {
+			right:10px;
+		}
 	}
 
-	&:hover {
-		background:$graygreen-trans;
+	.flickity-prev-next-button {
+	  background: rgba(214,210,181,0.5);
+
+	  .arrow {
+		  fill:$aqua;
+		}
+
+		&:hover {
+			background:$graygreen-trans;
+		}
+
 	}
-
 }
-
 .family--single--list {
 	position: relative;
 	padding-bottom: $space*2;
