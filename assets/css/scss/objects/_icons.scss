@@ -1,3 +1,4 @@
+/*- $ICONS -*/
 @font-face {
 	font-family: 'icons';
 	src:url('../fonts/icons.eot?9lwk18');
@@ -50,7 +51,6 @@
 	vertical-align: middle;
 
 	@include susy-media($bp-med) {
-		float: left;
 		display: block;
 		margin: 10px 20px;
 	}

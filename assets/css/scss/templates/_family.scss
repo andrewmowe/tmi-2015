@@ -8,6 +8,13 @@
 			margin-bottom: $space*3;
 			@include span(6 last);
 		}
+		&.tall {
+			@include susy-media($bp-large) {
+				@include prefix(1 of 12);
+				@include suffix(1 of 12);
+				&:after{ display:none; }
+			}
+		}
 
 		img {
 			width: 100%;
@@ -86,23 +93,25 @@
 	margin:0 auto;
 	@media all and (min-width: $bp-med) {
 		max-width:none;
+		padding: 0 50px;
 	}
 
 	.flickity-prev-next-button.previous {
 	  left: -35px;
 	  	@media all and (min-width: $bp-med) {
-			left:10px;
+			left:0;
 		}
 	}
 	.flickity-prev-next-button.next {
 	  right: -35px;
 	  	@media all and (min-width: $bp-med) {
-			right:10px;
+			right:0;
 		}
 	}
 
 	.flickity-prev-next-button {
 	  background: rgba(214,210,181,0.5);
+	  top: 42%;
 
 	  .arrow {
 		  fill:$aqua;

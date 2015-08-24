@@ -11,10 +11,17 @@
 			<div class="footer--logo">
 				<a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/src/tmi-logo.svg" onerror="this.src='<?php echo get_stylesheet_directory_uri(); ?>/images/src/tmi-logo.png'; this.onerror=null;" alt="TMI logo" class="logo"></a>
 			</div>
-			<div class="footer--contact-info">
-				<p>213 E Grace Street, #101,<br>Richmond, Virginia 23219, USA</p>
-				<p>tmi@tmiconsultinginc.com</p>
-				<p>phone: 804.225.5537<br>fax: 804.205.1243</p>
+			<div class="footer--contact-info" itemscope itemtype="http://schema.org/LocalBusiness">
+			   <span itemprop="name">TMI Consulting Inc</span>
+			   <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+			     <span itemprop="streetAddress">213 E Grace Street, #101</span><br>
+			     <span itemprop="addressLocality">Richmond</span>,
+			     <span itemprop="addressRegion">VA</span>
+			     <span itemprop="postalCode">23219</span>
+			   </p>
+			   <p><a href="tmi@tmiconsultinginc.com" itemprop="email">tmi@tmiconsultinginc.com</a></p>
+			   <p>phone: <span itemprop="telephone">804-225-5537</span><br>
+			   		fax: <span itemprop="faxNumber">804-205-1243</span></p>
 			</div>
 			<div class="footer--links">
 				<?php

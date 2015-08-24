@@ -73,10 +73,58 @@ h6, .h6    {
 		margin-bottom: 5%;
 	}
 
+	.container {
+
+		@include susy-media($bp-med) {
+			max-width:$max-width;
+		}
+
+	}
+
 	.container > * {
 		display: inline-block;
 		vertical-align: middle;
 	}
+
+	h1.w-bslash {
+		position:relative;
+		float:left;
+
+		@include susy-media($bp-med) {
+			@include span(2 of 12);
+			margin-right:0;
+			margin-top: .18625em;
+		}
+
+	}
+
+	div.w-bslash {
+		position:relative;
+		float:left;
+		margin-top: 1.8625em;
+
+		@include susy-media($bp-med) {
+			@include span(10 of 12 last);
+			padding-left: 100px;
+		}
+
+		&::before {
+			content:'';
+			width: 1px;
+			height: 75px;
+			background: $heading-color;
+			transform: skew(-16deg);
+			margin: 0 50px;
+			display: none;
+			position: absolute;
+		    top: -30px;
+		    left: 0px;
+			@media all and (min-width: $bp-med) {
+				display: inline-block;
+			}
+		}
+	}
+
 
 	.backslash {
 		width: 1px;

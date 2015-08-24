@@ -7,6 +7,15 @@ a {
 	&:hover, &:focus {
 		color: $link-color;
 	}
+
+	.footer & {
+		color: $paper;
+		text-decoration:none;
+
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
 }
 
 %smart-underline {
@@ -18,7 +27,7 @@ a {
   &:hover {
     color:$paper;
     transition: background-color 0.25s ease;
-    transition: color 0.25s ease;
+    transition: color 0.25s ease, background 0.25s ease;
     background-color:$aqua;
     text-shadow:none;
   }

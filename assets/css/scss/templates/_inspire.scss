@@ -1,0 +1,162 @@
+/*- INSPIRE -*/
+
+.page-template-inspire .subheading {
+	background:$tan;
+}
+
+section.inspire--archive {
+	background:$paper;
+	padding:$pad*4 0;
+}
+
+.inspire--archive .container .inspire--card {
+	
+	text-decoration:none;
+	
+	@include span(full);
+
+/*	@include susy-media($bp-med) {
+		@include gallery(6 of 12);
+	}
+	*/
+
+	@include susy-media($bp-med) {
+		@include gallery(6 of 12);
+	}
+
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 2em;
+	padding-bottom:1em;
+	@media all and (min-width: $bp-med) {
+		margin-bottom: $space;
+	}
+	
+	&:hover {
+		color:$graygreen;
+	}
+
+	&:hover .inspire--thumb  {
+		box-shadow: 0 6px 5px -3px rgba(0,0,0,0.5);
+	}
+
+	&:hover h3 {
+		color:$aqua;
+	}
+
+	.inspire--thumb {
+
+		width:40%;
+		height:0;
+		padding:20% 0;
+		border-radius:50%;
+		background:$tan;
+		overflow:hidden;
+		position:relative;
+		float:left;
+		margin-right:5%;
+
+		@include transition( box-shadow, 0.2s, ease-out );
+		box-shadow: 0 6px 5px -3px rgba(0,0,0,0.25);
+		
+
+		img {
+			    width: 100%;
+			    position: absolute;
+			    top: 0;
+			    left: 0;		
+		}
+	}
+	.inspire--meta {
+		width:55%;
+		float: left;
+		margin-top:12%;
+
+
+		h3 {
+			@include font-size(1.4);
+			border-bottom: 1px solid;
+		}
+		.inspire--title {
+			font-style:italic;
+		}
+
+		.inspire--desc {
+			font-size:.8625em;
+		}
+
+	}
+
+
+}
+.family--single .speaker-content {
+	margin-top: $space*2;
+	@include susy-media($bp-med) {
+		@include pad(2, 0);
+	}
+
+	.btn2 {
+		float:right;
+	}
+}
+.family--single--list.speakers {
+
+	.family--thumb {
+	    box-shadow: none;
+	    -webkit-transition: none;
+	    transition: none;
+	    padding-bottom: 20px;
+
+	}
+    .family--thumb .family--card {
+			top: 120%;
+	}
+
+    .family--thumb:hover .family--card {
+	    top: -10%;
+	}
+
+	.speaker--thumbwrap {
+	    width: 100%;
+	    height: 0;
+	    padding: 50% 0;
+	    border-radius: 50%;
+	    position: relative;
+	    overflow: hidden;
+	    box-shadow: 0 6px 5px -3px rgba(0, 0, 0, 0.25);
+	    -webkit-transition: box-shadow 0.2s ease-out;
+	    transition: box-shadow 0.2s ease-out;
+
+	    &:hover {
+		    box-shadow: 0 6px 5px -3px rgba(0, 0, 0, 0.5);
+
+		    .family--meta {
+		    	opacity:1;
+		    }
+		}
+
+	    img {
+	    	position:absolute;
+	    	top:0;
+	    	left:0;
+	    }
+
+	    .family--meta{
+			top: 38%;
+			text-align: center;
+			opacity: 0;
+	    }
+	    .family--card {
+			-webkit-transition: top 0.5s ease-out;
+			transition: top 0.5s ease-out;
+	    }
+
+	    .family--name, .family--desc {
+		    padding: 0 10px;
+		    display: block;
+		}
+
+	}
+
+}

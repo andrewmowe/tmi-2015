@@ -160,6 +160,7 @@
 			width: 100%;
 
 			@include susy-media($bp-med) {
+				text-align: right;
 				display: inline-block;
 				vertical-align: middle;
 				margin: 0;

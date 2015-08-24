@@ -28,6 +28,7 @@ get_header();
 				<?php
 				$args = array(
 					'post_type' => 'family',
+					'status' => 'show-on-family',
 					'orderby' => 'menu_order',
 					'order' => 'ASC',
 					'posts_per_page' => -1
@@ -37,6 +38,9 @@ get_header();
 
 				if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
 
+					$post_nom = get_field('post-noms');
+					if ( isset($post_nom )  && !empty( $post_nom ) ) $post_nom = ', <span class="post-nom">'.$post_nom.'</span>';
+
 
 					if( get_field('no-clickthru') ) { ?>
 
@@ -44,7 +48,7 @@ get_header();
 						<?php the_post_thumbnail( 'family-thumb' ); ?>
 						<div class="family--card"></div>
 						<div class="family--meta">
-							<span class="family--name"><?php the_title(); ?></span>
+							<span class="family--name"><?php the_title(); ?><?php echo $post_nom; ?></span>
 							<span class="family--desc"><?php the_field( 'position' ); ?></span>
 						</div>
 					</div>
@@ -55,7 +59,7 @@ get_header();
 						<?php the_post_thumbnail( 'family-thumb' ); ?>
 						<div class="family--card"></div>
 						<div class="family--meta">
-							<span class="family--name"><?php the_title(); ?></span>
+							<span class="family--name"><?php the_title(); ?><?php echo $post_nom; ?></span>
 							<span class="family--desc"><?php the_field( 'position' ); ?></span>
 						</div>
 					</a>

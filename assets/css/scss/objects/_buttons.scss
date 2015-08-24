@@ -110,6 +110,55 @@
 	}
 }
 
+
+.btn2 {
+    font-family: Arquitecta, Helvetica, Arial, sans-serif;
+    position:relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:$aqua;
+    border:1px solid $aqua;
+    padding: 10px 32px;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    overflow:hidden;
+
+    .corner {
+	    background: #b99f30;
+	}
+	.corner {
+	    position: absolute;
+	    width: 50px;
+	    height: 76px;
+	    background: #ffc72c;
+	    top: -1;
+	    right: -60px;
+	    -webkit-transform: skew(-16deg);
+	    -ms-transform: skew(-16deg);
+	    transform: skew(-16deg);
+	    -webkit-transition: right 0.1s ease-out;
+	    transition: right 0.1s ease-out;
+	}
+
+    &:hover {
+    	color:$paper;
+    	background:$aqua;
+    	border: none;
+    	padding: 11px 33px;
+
+		.corner {
+			right: -24px;
+		}
+    }
+
+
+}
+
+
+
 a.btn {
 	text-decoration: none;
 	display: inline-block;

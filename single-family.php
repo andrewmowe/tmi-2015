@@ -3,21 +3,44 @@ get_header();
 
 the_post();
 
+$post_nom = get_field('post-noms');
+if ( isset($post_nom )  && !empty( $post_nom ) ) $post_nom = ', <span class="post-nom">'.$post_nom.'</span>';
 $img = get_field('wide_img');
 $position = get_field('position');
+$first_name = get_field('first_name');
+$f_name = get_the_title();
+if ( isset($first_name )  && !empty( $first_name ) ) $f_name = $first_name;
 $email = get_field('email');
 $awards = get_field('awards', false, false );
 $certs = get_field('certs', false, false );
 $talks = get_field('talks', false, false );
+
+$is_speaker = $is_family = 0;
+if( has_term( 'speaker', 'status' ) ) $is_speaker = 1;
+if( has_term( 'show-on-family', 'status' ) ) $is_family = 1;
+
 ?>
 
 	<main role="main">
 
 		<section class="family--single container">
-
-			<div class="sliced-img family--portrait">
 			
-			<?php echo wp_get_attachment_image( $img, 'full' ); ?>
+			<?php 
+
+			if($img){
+
+				echo '<div class="sliced-img family--portrait">';
+
+				echo wp_get_attachment_image( $img, 'full' ); 
+
+				echo '</div>';
+
+			} else {
+				echo '<div class="sliced-img family--portrait tall">';
+				the_post_thumbnail( 'family-thumb' );
+				echo '</div>';
+			}
+			?>
 
 			</div>
 
@@ -25,7 +48,7 @@ $talks = get_field('talks', false, false );
 				
 				<header class="family--header text">
 					
-					<h1 class="h3"><?php the_title(); ?></h1>
+					<h1 class="h3"><?php the_title(); ?><?php echo $post_nom; ?></h1>
 
 					<?php if( isset( $position ) && !empty( $position ) ) : ?>
 
@@ -47,6 +70,14 @@ $talks = get_field('talks', false, false );
 
 				</div>
 
+				<?php if( has_term( 'speaker', 'status' ) ) {
+					$booktext = "Book ". $f_name . " as a speaker";
+
+					echo '<div class="speaker-content">';
+				    echo do_shortcode( '[button link="/contact/" class="basic"]' . $booktext . '[/button]' );
+				    echo '</div>';
+				} ?>
+
 			</div>
 
 			<div class="family--info text">
@@ -61,70 +92,13 @@ $talks = get_field('talks', false, false );
 
 		</section>
 
-		<section class="family family--single--list secondary-section">
-			
-			<div class="container">
-				
-				<h3 class="section--title">The TMI Family</h3>
-
-				<div class="js-flickity"
-					data-flickity-options='{
-					"wrapAround": true,
-					"cellAlign": "left",
-					"pageDots": false,
-					"imagesLoaded": true }'>
-					
-					<?php
-
-					$exclude = array( $post->ID );
-
-					$args = array(
-						'post_type' => 'family',
-						'numberposts' => '-1',
-						'orderby' => 'menu_order',
-						'order' => 'ASC',
-						'post__not_in' => $exclude
-					);
-
-					$family = get_posts( $args );
-
-					foreach( $family as $member ) : ?>
-
-						<?php $pos = get_field( 'position', $member->ID );
-
-						if( get_field('no-clickthru', $member->ID ) ) { ?>
-
-						<div class="gallery-cell family--thumb">
-							<?php echo get_the_post_thumbnail( $member->ID, 'family-thumb' ); ?>
-								<div class="family--card"></div>
-								<div class="family--meta">
-									<span class="family--name"><?php echo get_the_title($member->ID); ?></span>
-									<span class="family--desc"><?php echo $pos; ?></span>
-								</div>
-						</div>
-
-						<?php } else { ?>
-
-						<a href="<?php echo get_permalink( $member->ID ); ?>" class="gallery-cell family--thumb">
-								<?php echo get_the_post_thumbnail( $member->ID, 'family-thumb' ); ?>
-								<div class="family--card"></div>
-								<div class="family--meta">
-									<span class="family--name"><?php echo get_the_title($member->ID); ?></span>
-									<span class="family--desc"><?php echo $pos; ?></span>
-								</div>
-							</a>
-
-						<?php } ?>
-
-					<?php
-					endforeach;
-					?>
-
-				</div>
-
-			</div>
-
-		</section>
+		<?php 
+			if($is_speaker && !$is_family){ 
+				get_template_part( 'partials/speakers', 'list' ); 
+			} else {
+				get_template_part( 'partials/family', 'list' ); 
+			}
+		?>
 
 	</main>
 
