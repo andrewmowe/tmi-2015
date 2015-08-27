@@ -14,7 +14,7 @@
  */
 
 // Useful global constants
-define( 'TMI_VERSION',      '0.1.26' );
+define( 'TMI_VERSION',      '0.1.27' );
 define( 'TMI_URL',          get_stylesheet_directory_uri() );
 define( 'TMI_TEMPLATE_URL', get_template_directory_uri() );
 define( 'TMI_PATH',         get_template_directory() . '/' );
